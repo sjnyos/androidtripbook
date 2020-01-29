@@ -1,37 +1,35 @@
 package com.machamasisuraj.socialapp.Model;
 
 public class BannerItem {
-    private String bannerName;
-    private String images;
-    private String  descriptions;
+    private String bannerImage, title,description;
 
-    public BannerItem(String bannerName, String images, String descriptions) {
-        this.bannerName = bannerName;
-        this.images = images;
-        this.descriptions = descriptions;
+    public BannerItem(String bannerImage, String title, String description) {
+        this.bannerImage = bannerImage;
+        this.title = title;
+        this.description = description;
     }
 
-    public String getBannerName() {
-        return bannerName;
+    public String getBannerImage() {
+        return bannerImage;
     }
 
-    public void setBannerName(String bannerName) {
-        this.bannerName = bannerName;
+    public void setBannerImage(String bannerImage) {
+        this.bannerImage = bannerImage;
     }
 
-    public String getImages() {
-        return images;
+    public String getTitle() {
+        return title;
     }
 
-    public void setImages(String images) {
-        images = images;
+    public void setTitle(String title) {
+        this.title = title;
     }
 
-    public String getDescriptions() {
-        return descriptions;
+    public String getDescription() {
+        return description;
     }
 
-    public void setDescriptions(String descriptions) {
-        this.descriptions = descriptions;
+    public void setDescription(String description) {
+        this.description = description;
     }
 }
