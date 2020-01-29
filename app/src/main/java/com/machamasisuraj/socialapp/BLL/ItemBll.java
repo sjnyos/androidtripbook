@@ -1,6 +1,5 @@
 package com.machamasisuraj.socialapp.BLL;
 
-import com.machamasisuraj.socialapp.Api.ItemApi;
 import com.machamasisuraj.socialapp.Api.RetrofitCaller;
 import com.machamasisuraj.socialapp.Model.Item;
 import com.machamasisuraj.socialapp.StrictMode.StrictModeClass;

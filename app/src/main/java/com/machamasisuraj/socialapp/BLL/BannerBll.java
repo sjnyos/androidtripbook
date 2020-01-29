@@ -1,7 +1,6 @@
 package com.machamasisuraj.socialapp.BLL;
 
 
-import com.machamasisuraj.socialapp.Api.BannerImageApi;
 import com.machamasisuraj.socialapp.Api.RetrofitCaller;
 import com.machamasisuraj.socialapp.Model.BannerItem;
 import com.machamasisuraj.socialapp.StrictMode.StrictModeClass;

@@ -2,7 +2,6 @@ package com.machamasisuraj.socialapp.BLL;
 
 import android.content.Context;
 
-import com.machamasisuraj.socialapp.Api.ItemApi;
 import com.machamasisuraj.socialapp.Api.RetrofitCaller;
 import com.machamasisuraj.socialapp.Response.ImageResponse;
 import com.machamasisuraj.socialapp.StrictMode.StrictModeClass;
