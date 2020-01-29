@@ -1,20 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "/home/snyos/Documents/CustomAndroid/stw300cem-final-assignment-sjnyos/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
+            "outputFile": "/home/sjnyos/android Kiran sir/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-v16/values-v16.xml",
             "map": [
                 {
-                    "source": "/home/snyos/.gradle/caches/transforms-2/files-2.1/57692e4753601536b7ad4be218820432/core-1.1.0/res/values-v16/values-v16.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endColumns": "65",
-                        "endOffsets": "116"
-                    }
-                },
-                {
-                    "source": "/home/snyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/values-v16/values-v16.xml",
+                    "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/values-v16/values-v16.xml",
                     "from": {
                         "startLines": "2",
                         "startColumns": "4",
@@ -30,6 +20,16 @@
                         "endLines": "6",
                         "endColumns": "12",
                         "endOffsets": "289"
+                    }
+                },
+                {
+                    "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/57692e4753601536b7ad4be218820432/core-1.1.0/res/values-v16/values-v16.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endColumns": "65",
+                        "endOffsets": "116"
                     }
                 }
             ]

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+
+    <item android:id="@+id/showall"
+        android:title="Show All Items"/>
+    <item android:id="@+id/resturants"
+        android:title="resturants"/>
+    <item android:id="@+id/Liquros"
+        android:title="Liquors"/>
+    <item android:id="@+id/bakaries"
+        android:title="Bakaries"/>
+    <item android:id="@+id/myfav"
+        android:title="My Favourites"/>
+
+    <item android:id="@+id/ItemcreateItem"
+        android:title="Add Item"/>
+    <item android:id="@+id/createBanner"
+        android:title="Add Slider Images"/>
+
+
+
+</menu>
