@@ -37,65 +37,64 @@
 22-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:14:9-54
 23        android:supportsRtl="true"
 23-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:15:9-35
-24        android:testOnly="true"
-25        android:theme="@style/AppTheme"
-25-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:16:9-40
-26        android:usesCleartextTraffic="true" >
-26-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:17:9-44
-27        <activity android:name="com.machamasisuraj.socialapp.GUI.AdminDashboardActivity" />
-27-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:18:9-73
-27-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:18:19-61
-28        <activity android:name="com.machamasisuraj.socialapp.GUI.BottomNavbarActivity" >
-28-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:19:9-25:20
-28-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:19:19-59
-29            <intent-filter>
-29-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:20:13-24:29
-30                <action android:name="android.intent.action.MAIN" />
-30-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:21:17-69
-30-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:21:25-66
-31
-32                <category android:name="android.intent.category.LAUNCHER" />
-32-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:23:17-77
-32-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:23:27-74
-33            </intent-filter>
-34        </activity>
-35        <activity android:name="com.machamasisuraj.socialapp.GUI.BannerActivity" />
-35-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:26:9-56
-35-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:26:19-53
-36        <activity android:name="com.machamasisuraj.socialapp.GUI.ItemListActivity" />
-36-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:27:9-58
-36-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:27:19-55
-37        <activity android:name="com.machamasisuraj.socialapp.GUI.MainActivity" />
-37-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:28:9-54
-37-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:28:19-51
-38        <activity
-38-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:29:9-31:78
-39            android:name="com.machamasisuraj.socialapp.GUI.SplashActivity"
-39-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:30:13-47
-40            android:theme="@style/Theme.Design.Light.NoActionBar" />
-40-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:31:13-66
-41        <activity android:name="com.machamasisuraj.socialapp.GUI.LoginActivity" />
-41-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:32:9-55
-41-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:32:19-52
-42
-43        <provider
-43-->[com.squareup.picasso:picasso:2.71828] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/c61cb784fb48d21909ffca53e7bbcba3/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
-44            android:name="com.squareup.picasso.PicassoProvider"
-44-->[com.squareup.picasso:picasso:2.71828] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/c61cb784fb48d21909ffca53e7bbcba3/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
-45            android:authorities="com.machamasisuraj.socialapp.com.squareup.picasso"
-45-->[com.squareup.picasso:picasso:2.71828] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/c61cb784fb48d21909ffca53e7bbcba3/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
-46            android:exported="false" />
-46-->[com.squareup.picasso:picasso:2.71828] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/c61cb784fb48d21909ffca53e7bbcba3/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
-47        <provider
-47-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/762f234f9bf5aec8d03ea05168ad9072/lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
-48            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-48-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/762f234f9bf5aec8d03ea05168ad9072/lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
-49            android:authorities="com.machamasisuraj.socialapp.lifecycle-process"
-49-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/762f234f9bf5aec8d03ea05168ad9072/lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
-50            android:exported="false"
-50-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/762f234f9bf5aec8d03ea05168ad9072/lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
-51            android:multiprocess="true" />
-51-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/762f234f9bf5aec8d03ea05168ad9072/lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
-52    </application>
-53
-54</manifest>
+24        android:theme="@style/AppTheme"
+24-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:16:9-40
+25        android:usesCleartextTraffic="true" >
+25-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:17:9-44
+26        <activity android:name="com.machamasisuraj.socialapp.GUI.AdminDashboardActivity" />
+26-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:18:9-73
+26-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:18:19-61
+27        <activity android:name="com.machamasisuraj.socialapp.GUI.BottomNavbarActivity" >
+27-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:19:9-25:20
+27-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:19:19-59
+28            <intent-filter>
+28-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:20:13-24:29
+29                <action android:name="android.intent.action.MAIN" />
+29-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:21:17-69
+29-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:21:25-66
+30
+31                <category android:name="android.intent.category.LAUNCHER" />
+31-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:23:17-77
+31-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:23:27-74
+32            </intent-filter>
+33        </activity>
+34        <activity android:name="com.machamasisuraj.socialapp.GUI.BannerActivity" />
+34-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:26:9-56
+34-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:26:19-53
+35        <activity android:name="com.machamasisuraj.socialapp.GUI.ItemListActivity" />
+35-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:27:9-58
+35-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:27:19-55
+36        <activity android:name="com.machamasisuraj.socialapp.GUI.MainActivity" />
+36-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:28:9-54
+36-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:28:19-51
+37        <activity
+37-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:29:9-31:78
+38            android:name="com.machamasisuraj.socialapp.GUI.SplashActivity"
+38-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:30:13-47
+39            android:theme="@style/Theme.Design.Light.NoActionBar" />
+39-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:31:13-66
+40        <activity android:name="com.machamasisuraj.socialapp.GUI.LoginActivity" />
+40-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:32:9-55
+40-->/home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:32:19-52
+41
+42        <provider
+42-->[com.squareup.picasso:picasso:2.71828] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/c61cb784fb48d21909ffca53e7bbcba3/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
+43            android:name="com.squareup.picasso.PicassoProvider"
+43-->[com.squareup.picasso:picasso:2.71828] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/c61cb784fb48d21909ffca53e7bbcba3/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
+44            android:authorities="com.machamasisuraj.socialapp.com.squareup.picasso"
+44-->[com.squareup.picasso:picasso:2.71828] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/c61cb784fb48d21909ffca53e7bbcba3/jetified-picasso-2.71828/AndroidManifest.xml:10:13-72
+45            android:exported="false" />
+45-->[com.squareup.picasso:picasso:2.71828] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/c61cb784fb48d21909ffca53e7bbcba3/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
+46        <provider
+46-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/762f234f9bf5aec8d03ea05168ad9072/lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
+47            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+47-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/762f234f9bf5aec8d03ea05168ad9072/lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
+48            android:authorities="com.machamasisuraj.socialapp.lifecycle-process"
+48-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/762f234f9bf5aec8d03ea05168ad9072/lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
+49            android:exported="false"
+49-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/762f234f9bf5aec8d03ea05168ad9072/lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
+50            android:multiprocess="true" />
+50-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/762f234f9bf5aec8d03ea05168ad9072/lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
+51    </application>
+52
+53</manifest>

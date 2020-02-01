@@ -62,8 +62,6 @@ public class BottomNavbarActivity extends AppCompatActivity {
 
                 dl.closeDrawer(GravityCompat.START);
                 if(item.getItemId()==R.id.navigation_aboutus){
-
-
                 }
                 return false;
 
