@@ -2,7 +2,8 @@ package com.machamasisuraj.socialapp.BLL;
 
 import android.content.Context;
 
-import com.machamasisuraj.socialapp.Api.RetrofitCaller;
+import com.machamasisuraj.socialapp.ApiService.ImageUploadApi;
+import com.machamasisuraj.socialapp.ApiService.RetrofitCaller;
 import com.machamasisuraj.socialapp.Response.ImageResponse;
 import com.machamasisuraj.socialapp.StrictMode.StrictModeClass;
 
@@ -15,34 +16,35 @@ import okhttp3.RequestBody;
 import retrofit2.Call;
 import retrofit2.Response;
 
-public class ImageUploadBll {
+public class ImageUpload {
     private String imagepath;
     private Context mContext;
 
-    public ImageUploadBll(String imagepath, Context mContext) {
+    public ImageUpload(String imagepath, Context mContext) {
         this.imagepath = imagepath;
         this.mContext = mContext;
 
     }
 
     public String uploadFile() {
-
         File file = new File(imagepath);
-        RequestBody requestBody= RequestBody.create(MediaType.parse("multipart/from-data"),file);
-        MultipartBody.Part part = MultipartBody.Part.createFormData("imageFile",file.getName(),requestBody);
+        RequestBody requestBody = RequestBody.create(MediaType.parse("multipart/from-data"), file);
+        MultipartBody.Part part = MultipartBody.Part.createFormData("imageFile", file.getName(), requestBody);
 
-        ItemApi itemApi= RetrofitCaller.getInstance().create(ItemApi.class);
-        Call<ImageResponse> imageResponseCall= itemApi.uploadImage(part);
+        ImageUploadApi imageuploadApi = RetrofitCaller.getInstance().create(ImageUploadApi.class);
+        Call<ImageResponse> imageResponseCall = imageuploadApi.uploadImage(part);
         StrictModeClass.StrictMode();
         try {
             Response<ImageResponse> imageResponseResponse = imageResponseCall.execute();
-               return imageResponseResponse.body().getFilename();
+            return imageResponseResponse.body().getFilename();
 
-            } catch (IOException e) {
+        } catch (IOException e) {
             e.printStackTrace();
-                return "Error";
-            }
+            return "Error";
+
+        }
     }
-
-
 }
+
+
+

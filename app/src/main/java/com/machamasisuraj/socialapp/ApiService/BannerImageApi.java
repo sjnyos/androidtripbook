@@ -1,4 +1,4 @@
-package com.machamasisuraj.socialapp.Api;
+package com.machamasisuraj.socialapp.ApiService;
 
 import com.machamasisuraj.socialapp.Model.BannerItem;
 import com.machamasisuraj.socialapp.Model.Trip;
@@ -13,21 +13,21 @@ import retrofit2.http.POST;
 import retrofit2.http.PUT;
 import retrofit2.http.Path;
 
-public interface ImageSlider {
+public interface BannerImageApi {
 
-    @POST("/trip")
-    Call<BannerItem> createBanner(@Body Trip trip);
+    @POST("/banner")
+    Call<BannerItem> createBanner(@Body BannerItem bannerItem);
 
-    @GET("/trip")
+    @GET("/banner/list")
     Call<List<BannerItem>> lstsBanners();
 
-    @GET("/trip/{id}")
+    @GET("/banner/{id}")
     Call<BannerItem> getByID(@Path("id") String id);
 
-    @PUT("/trip/{id}")
-    Call<BannerItem> updateBannerItem(@Path("id") String id, @Body Trip  trip);
+    @PUT("/banner/{id}")
+    Call<BannerItem> updateBannerItem(@Path("id") String id, @Body BannerItem  banneritem);
 
-    @DELETE("/trip/{id}")
+    @DELETE("/banner/{id}")
     Call<BannerItem> deleteBanner(@Path("id") String id);
 
 }

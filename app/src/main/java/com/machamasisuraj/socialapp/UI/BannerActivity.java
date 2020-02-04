@@ -13,7 +13,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.machamasisuraj.socialapp.BLL.BannerBll;
-import com.machamasisuraj.socialapp.BLL.ImageUploadBll;
+import com.machamasisuraj.socialapp.BLL.ImageUpload;
 import com.machamasisuraj.socialapp.Model.BannerItem;
 import com.machamasisuraj.socialapp.R;
 import com.machamasisuraj.socialapp.permissonsAndUri.LinkPermisson;
@@ -83,8 +83,8 @@ public class BannerActivity extends AppCompatActivity {
     }
 
     private void UploadImageAndSaveData(){
-        ImageUploadBll imageUploadBll= new ImageUploadBll(imagepath,this);
-        String getmageName= imageUploadBll.uploadFile();
+        ImageUpload imageUpload = new ImageUpload(imagepath,this);
+        String getmageName= imageUpload.uploadFile();
         if(!getmageName.equals("Error")){
             SaveData(getmageName);
         }

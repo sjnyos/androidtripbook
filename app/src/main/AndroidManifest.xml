@@ -19,7 +19,6 @@
 
         </activity>
         <activity android:name=".UI.ItemListActivity" />
-        <activity android:name=".UI.ItemCreateActivity" />
         <activity android:name=".UI.MainActivity"></activity>
         <activity android:name=".UI.SplashActivity"
             android:theme="@style/Theme.Design.Light.NoActionBar">
@@ -30,7 +29,6 @@
             </intent-filter>
         </activity>
         <activity android:name=".UI.LoginActivity" />
-        <activity android:name=".UI.SignupActivity" />
     </application>
 
 </manifest>

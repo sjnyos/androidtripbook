@@ -1,7 +1,8 @@
 package com.machamasisuraj.socialapp.BLL;
 
 
-import com.machamasisuraj.socialapp.Api.RetrofitCaller;
+import com.machamasisuraj.socialapp.ApiService.BannerImageApi;
+import com.machamasisuraj.socialapp.ApiService.RetrofitCaller;
 import com.machamasisuraj.socialapp.Model.BannerItem;
 import com.machamasisuraj.socialapp.StrictMode.StrictModeClass;
 
@@ -20,7 +21,7 @@ public class BannerBll {
 
     public List<BannerItem> getAllBanners() {
         StrictModeClass.StrictMode();
-        Call<List<BannerItem>> apicaller = bannerImageApi.getAllBanners();
+        Call<List<BannerItem>> apicaller = bannerImageApi.lstsBanners();
         try {
             lstBanners = apicaller.execute().body();
         } catch (IOException e) {
@@ -31,17 +32,17 @@ public class BannerBll {
     }
 
     public boolean InsertBanner(BannerItem bannerItem) {
-        Call<Void> bannerCaller = bannerImageApi.insertBanner(bannerItem);
-        bannerCaller.enqueue(new Callback<Void>() {
+        Call<BannerItem> bannerCaller = bannerImageApi.createBanner(bannerItem);
+        bannerCaller.enqueue(new Callback<BannerItem>() {
             @Override
-            public void onResponse(Call<Void> call, Response<Void> response) {
+            public void onResponse(Call<BannerItem> call, Response<BannerItem> response) {
                 if (response.isSuccessful()) {
                     status = true;
                 }
             }
 
             @Override
-            public void onFailure(Call<Void> call, Throwable t) {
+            public void onFailure(Call<BannerItem> call, Throwable t) {
                 status = false;
             }
         });
