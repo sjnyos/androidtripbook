@@ -3,26 +3,27 @@
     android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:padding="10dp"
     android:background="@color/colorPrimaryDark">
 
     <ImageView
-        android:layout_width="190dp"
+        android:layout_width="92dp"
         android:layout_height="92dp"
         android:layout_marginTop="15dp"
         android:layout_marginBottom="15dp"
-        android:src="@drawable/ic_launcher_foreground" />
+        android:src="@drawable/trekkingman" />
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="20sp"
         android:textColor="@color/colorWhite"
-        android:text="Food Land App"/>
+        android:text="@string/app_name"/>
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:textSize="15sp"
         android:textColor="@color/colorWhite"
-        android:text="Order Your Desired Food "/>
+        android:text="Trek and Travel to Places, Creat Memories"/>
 
 
 </LinearLayout>
