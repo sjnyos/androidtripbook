@@ -61,7 +61,7 @@ public class MainActivity extends AppCompatActivity {
                 {
                    // case R.id.ItemcreateItem: startActivity(new Intent(MainActivity.this,ItemCreateActivity.class));
 
-                    case R.id.createBanner:{startActivity(new Intent(MainActivity.this,BannerActivity.class));}
+//                    case R.id.createBanner:{startActivity(new Intent(MainActivity.this,BannerActivity.class));}
                     default:
                         return false;
                 }
