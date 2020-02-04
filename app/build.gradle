@@ -47,4 +47,7 @@ dependencies {
     //implementing smart android image slider
     implementation 'com.github.smarteist:autoimageslider:1.3.2'
 
+    //implementation of animated menunavigation for best GUI interface
+    implementation 'com.etebarian:meow-bottom-navigation-java:1.2.0'
+
 }

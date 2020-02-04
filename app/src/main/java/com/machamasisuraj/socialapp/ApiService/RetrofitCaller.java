@@ -1,6 +1,6 @@
 package com.machamasisuraj.socialapp.ApiService;
 
-import com.machamasisuraj.socialapp.Url.Url;
+import com.machamasisuraj.socialapp.BaseUrl.Url;
 
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;

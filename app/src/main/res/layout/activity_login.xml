@@ -8,11 +8,16 @@
     android:background="#FFFFFF"
     android:gravity="center"
     android:layout_height="match_parent"
-    tools:context=".UI.LoginActivity">
+    tools:context=".GUI.LoginActivity">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:text="Travel and Make your Day"/>
 
     <ImageView
-        android:layout_width="99dp"
-        android:layout_height="92dp"
+        android:layout_width="150dp"
+        android:layout_height="150dp"
         android:scaleType="fitXY"
         android:src="@drawable/trekkingman" />
 
@@ -52,7 +57,7 @@
 
     <TextView
         android:id="@+id/tvForget"
-        android:textSize="16sp"
+        android:textSize="14sp"
         android:layout_margin="15dp"
         android:textColor="#A1A5B3"
         android:text="Forget your Password?"
@@ -70,8 +75,8 @@
 
     <TextView
         android:id="@+id/tvSignup"
-        android:textSize="16sp"
-        android:layout_margin="15dp"
+        android:textSize="14sp"
+        android:layout_margin="14dp"
         android:textColor="#A1A5B3"
         android:text="No account ? Sign up"
         android:layout_width="match_parent"

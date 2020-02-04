@@ -1,12 +1,10 @@
-package com.machamasisuraj.socialapp.UI;
+package com.machamasisuraj.socialapp.GUI;
 
 import android.os.Bundle;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.machamasisuraj.socialapp.Adapter.ItemRecyclerAdapter;
 import com.machamasisuraj.socialapp.R;
 
 public class ItemListActivity extends AppCompatActivity {
