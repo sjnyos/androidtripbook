@@ -11,10 +11,10 @@
     tools:context=".UI.LoginActivity">
 
     <ImageView
-        android:layout_width="178dp"
-        android:layout_height="166dp"
+        android:layout_width="99dp"
+        android:layout_height="92dp"
         android:scaleType="fitXY"
-        android:src="@drawable/unnamed" />
+        android:src="@drawable/trekkingman" />
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -50,6 +50,15 @@
             android:textSize="15sp" />
     </com.google.android.material.textfield.TextInputLayout>
 
+    <TextView
+        android:id="@+id/tvForget"
+        android:textSize="16sp"
+        android:layout_margin="15dp"
+        android:textColor="#A1A5B3"
+        android:text="Forget your Password?"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
     <Button
         android:id="@+id/btnLogin"
         android:layout_width="match_parent"
@@ -61,9 +70,9 @@
 
     <TextView
         android:id="@+id/tvSignup"
-        android:textSize="20sp"
+        android:textSize="16sp"
         android:layout_margin="15dp"
-        android:textColor="#2C52F9"
+        android:textColor="#A1A5B3"
         android:text="No account ? Sign up"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"/>

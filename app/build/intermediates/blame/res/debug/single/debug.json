@@ -572,10 +572,6 @@
         "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/drawable-xxhdpi-v4/abc_list_focused_holo.9.png"
     },
     {
-        "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/layout_activity_signup.xml.flat",
-        "source": "/home/sjnyos/android Kiran sir/app/src/main/res/layout/activity_signup.xml"
-    },
-    {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/layout_design_layout_tab_text.xml.flat",
         "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/0a787c0ac8f42da800013c2d9496a009/material-1.0.0/res/layout/design_layout_tab_text.xml"
     },
@@ -878,6 +874,10 @@
     {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
         "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/drawable-xhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/drawable_trekkingman.png.flat",
+        "source": "/home/sjnyos/android Kiran sir/app/src/main/res/drawable/trekkingman.png"
     },
     {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_textfield_search_default_mtrl_alpha.9.png.flat",

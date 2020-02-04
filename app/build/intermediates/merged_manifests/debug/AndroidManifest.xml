@@ -21,12 +21,12 @@
         android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
+        android:testOnly="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
         <activity android:name="com.machamasisuraj.socialapp.UI.BannerActivity" >
         </activity>
         <activity android:name="com.machamasisuraj.socialapp.UI.ItemListActivity" />
-        <activity android:name="com.machamasisuraj.socialapp.UI.ItemCreateActivity" />
         <activity android:name="com.machamasisuraj.socialapp.UI.MainActivity" />
         <activity
             android:name="com.machamasisuraj.socialapp.UI.SplashActivity"
@@ -38,7 +38,6 @@
             </intent-filter>
         </activity>
         <activity android:name="com.machamasisuraj.socialapp.UI.LoginActivity" />
-        <activity android:name="com.machamasisuraj.socialapp.UI.SignupActivity" />
 
         <provider
             android:name="com.squareup.picasso.PicassoProvider"

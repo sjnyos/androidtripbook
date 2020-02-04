@@ -11,6 +11,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.machamasisuraj.socialapp.BLL.LoginBLL;
+import com.machamasisuraj.socialapp.BLL.ReservationBLL;
 import com.machamasisuraj.socialapp.R;
 import com.machamasisuraj.socialapp.StrictMode.StrictModeClass;
 
@@ -32,19 +33,16 @@ public class LoginActivity extends AppCompatActivity {
         etUsername.setText("suraj1");
         etPassword.setText("suraj1");
 
-        tvSignup.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(LoginActivity.this, SignupActivity.class);
-                startActivity(intent);
-            }
-        });
+
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 login(); }
         });
+
+        ReservationBLL reservationBLL= new ReservationBLL();
+        reservationBLL.getReservationByUser("5e3114800c6e6248b984f9b9");
     }
 
     private void login() {

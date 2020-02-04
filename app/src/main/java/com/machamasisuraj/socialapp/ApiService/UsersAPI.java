@@ -1,4 +1,4 @@
-package com.machamasisuraj.socialapp.Api;
+package com.machamasisuraj.socialapp.ApiService;
 
 import com.machamasisuraj.socialapp.Model.User;
 import com.machamasisuraj.socialapp.Response.ImageResponse;

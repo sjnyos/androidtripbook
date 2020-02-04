@@ -1,4 +1,4 @@
-package com.machamasisuraj.socialapp.Api;
+package com.machamasisuraj.socialapp.ApiService;
 
 import com.machamasisuraj.socialapp.Url.Url;
 
