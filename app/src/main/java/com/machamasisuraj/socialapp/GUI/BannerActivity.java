@@ -1,4 +1,4 @@
-package com.machamasisuraj.socialapp.UI;
+package com.machamasisuraj.socialapp.GUI;
 
 import android.content.Intent;
 import android.net.Uri;

@@ -1,7 +1,6 @@
-package com.machamasisuraj.socialapp.UI;
+package com.machamasisuraj.socialapp.GUI;
 
 import android.content.Intent;
-import android.graphics.Color;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -14,12 +13,8 @@ import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.navigation.NavigationView;
-import com.machamasisuraj.socialapp.BLL.BannerBll;
 import com.machamasisuraj.socialapp.R;
-import com.machamasisuraj.socialapp.Url.Url;
-import com.smarteist.autoimageslider.IndicatorAnimations;
-import com.smarteist.autoimageslider.SliderAnimations;
-import com.smarteist.autoimageslider.SliderView;
+import com.machamasisuraj.socialapp.BaseUrl.Url;
 
 public class MainActivity extends AppCompatActivity {
     private RecyclerView item_recyclerView;

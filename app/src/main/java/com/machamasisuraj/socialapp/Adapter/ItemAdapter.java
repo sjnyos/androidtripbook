@@ -12,17 +12,17 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.machamasisuraj.socialapp.Model.Item;
 import com.machamasisuraj.socialapp.R;
-import com.machamasisuraj.socialapp.Url.Url;
+import com.machamasisuraj.socialapp.BaseUrl.Url;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
 
-public class ItemRecyclerAdapter extends  RecyclerView.Adapter<ItemRecyclerAdapter.ItemViewHolder> {
+public class ItemAdapter extends  RecyclerView.Adapter<ItemAdapter.ItemViewHolder> {
 
     private Context mContext;
     private List<Item> itemList;
 
-    public ItemRecyclerAdapter(Context mContext, List<Item> itemList) {
+    public ItemAdapter(Context mContext, List<Item> itemList) {
         this.mContext = mContext;
         this.itemList = itemList;
     }

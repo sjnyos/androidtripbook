@@ -1,4 +1,4 @@
-package com.machamasisuraj.socialapp.Url;
+package com.machamasisuraj.socialapp.BaseUrl;
 
 public class Url {
 
