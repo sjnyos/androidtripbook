@@ -15,18 +15,20 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true">
-        <activity android:name=".GUI.BottomNavbarActivity"></activity>
+        <activity android:name=".GUI.BottomNavbarActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
         <activity android:name=".GUI.BannerActivity"></activity>
         <activity android:name=".GUI.ItemListActivity" />
         <activity android:name=".GUI.MainActivity" />
         <activity
             android:name=".GUI.SplashActivity"
             android:theme="@style/Theme.Design.Light.NoActionBar">
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
         </activity>
         <activity android:name=".GUI.LoginActivity" />
     </application>
