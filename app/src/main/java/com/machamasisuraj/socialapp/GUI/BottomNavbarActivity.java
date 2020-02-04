@@ -34,9 +34,6 @@ public class BottomNavbarActivity extends AppCompatActivity {
         fragmentTransaction.commit();
 
         navigations();
-
-
-
     }
 
     public void navigations(){
