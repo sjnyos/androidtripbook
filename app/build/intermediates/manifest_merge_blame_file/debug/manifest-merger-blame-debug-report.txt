@@ -84,15 +84,15 @@
 45            android:exported="false" />
 45-->[com.squareup.picasso:picasso:2.71828] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/c61cb784fb48d21909ffca53e7bbcba3/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
 46        <provider
-46-->[androidx.lifecycle:lifecycle-process:2.1.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/de98a4bbc2dfc7911ae62a05941c7eba/lifecycle-process-2.1.0/AndroidManifest.xml:23:9-27:43
+46-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/762f234f9bf5aec8d03ea05168ad9072/lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
 47            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
-47-->[androidx.lifecycle:lifecycle-process:2.1.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/de98a4bbc2dfc7911ae62a05941c7eba/lifecycle-process-2.1.0/AndroidManifest.xml:24:13-79
+47-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/762f234f9bf5aec8d03ea05168ad9072/lifecycle-process-2.2.0/AndroidManifest.xml:26:13-79
 48            android:authorities="com.machamasisuraj.socialapp.lifecycle-process"
-48-->[androidx.lifecycle:lifecycle-process:2.1.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/de98a4bbc2dfc7911ae62a05941c7eba/lifecycle-process-2.1.0/AndroidManifest.xml:25:13-69
+48-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/762f234f9bf5aec8d03ea05168ad9072/lifecycle-process-2.2.0/AndroidManifest.xml:27:13-69
 49            android:exported="false"
-49-->[androidx.lifecycle:lifecycle-process:2.1.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/de98a4bbc2dfc7911ae62a05941c7eba/lifecycle-process-2.1.0/AndroidManifest.xml:26:13-37
+49-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/762f234f9bf5aec8d03ea05168ad9072/lifecycle-process-2.2.0/AndroidManifest.xml:28:13-37
 50            android:multiprocess="true" />
-50-->[androidx.lifecycle:lifecycle-process:2.1.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/de98a4bbc2dfc7911ae62a05941c7eba/lifecycle-process-2.1.0/AndroidManifest.xml:27:13-40
+50-->[androidx.lifecycle:lifecycle-process:2.2.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/762f234f9bf5aec8d03ea05168ad9072/lifecycle-process-2.2.0/AndroidManifest.xml:29:13-40
 51    </application>
 52
 53</manifest>

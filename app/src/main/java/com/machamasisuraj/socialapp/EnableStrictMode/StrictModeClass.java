@@ -1,4 +1,4 @@
-package com.machamasisuraj.socialapp.StrictMode;
+package com.machamasisuraj.socialapp.EnableStrictMode;
 
 public class StrictModeClass {
 

@@ -1,4 +1,4 @@
-package com.machamasisuraj.socialapp.permissonsAndUri;
+package com.machamasisuraj.socialapp.AndroidPermisson;
 
 import android.content.Context;
 import android.database.Cursor;

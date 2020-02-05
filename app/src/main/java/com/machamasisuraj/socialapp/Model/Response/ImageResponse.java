@@ -1,4 +1,4 @@
-package com.machamasisuraj.socialapp.Response;
+package com.machamasisuraj.socialapp.Model.Response;
 
 public class ImageResponse {
 

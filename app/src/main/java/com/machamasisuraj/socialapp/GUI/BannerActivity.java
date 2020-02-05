@@ -13,15 +13,14 @@ import android.widget.ImageView;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
-import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
 
 import com.machamasisuraj.socialapp.BLL.BannerBll;
 import com.machamasisuraj.socialapp.BLL.ImageUpload;
 import com.machamasisuraj.socialapp.Model.BannerItem;
 import com.machamasisuraj.socialapp.R;
-import com.machamasisuraj.socialapp.permissonsAndUri.LinkPermisson;
-import com.machamasisuraj.socialapp.permissonsAndUri.StoragePath;
+import com.machamasisuraj.socialapp.AndroidPermisson.LinkPermisson;
+import com.machamasisuraj.socialapp.AndroidPermisson.StoragePath;
 
 import static android.app.Activity.RESULT_OK;
 

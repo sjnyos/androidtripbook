@@ -1,8 +1,8 @@
 package com.machamasisuraj.socialapp.ApiService;
 
 import com.machamasisuraj.socialapp.Model.User;
-import com.machamasisuraj.socialapp.Response.ImageResponse;
-import com.machamasisuraj.socialapp.Response.SignUpResponse;
+import com.machamasisuraj.socialapp.Model.Response.ImageResponse;
+import com.machamasisuraj.socialapp.Model.Response.SignUpResponse;
 
 import okhttp3.MultipartBody;
 import retrofit2.Call;
