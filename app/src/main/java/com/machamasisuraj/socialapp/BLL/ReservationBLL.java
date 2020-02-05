@@ -2,9 +2,8 @@ package com.machamasisuraj.socialapp.BLL;
 
 import com.machamasisuraj.socialapp.ApiService.ReservationAPI;
 import com.machamasisuraj.socialapp.ApiService.RetrofitCaller;
-import com.machamasisuraj.socialapp.Model.BannerItem;
 import com.machamasisuraj.socialapp.Model.Reservation;
-import com.machamasisuraj.socialapp.StrictMode.StrictModeClass;
+import com.machamasisuraj.socialapp.EnableStrictMode.StrictModeClass;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -15,6 +14,7 @@ import retrofit2.Callback;
 import retrofit2.Response;
 
 public class ReservationBLL {
+
     private List<Reservation> mlists = new ArrayList<>();
     ReservationAPI reservationAPI = RetrofitCaller.getInstance().create(ReservationAPI.class);
     Boolean status = false;

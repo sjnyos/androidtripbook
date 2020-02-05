@@ -4,7 +4,7 @@ package com.machamasisuraj.socialapp.BLL;
 import com.machamasisuraj.socialapp.ApiService.BannerImageApi;
 import com.machamasisuraj.socialapp.ApiService.RetrofitCaller;
 import com.machamasisuraj.socialapp.Model.BannerItem;
-import com.machamasisuraj.socialapp.StrictMode.StrictModeClass;
+import com.machamasisuraj.socialapp.EnableStrictMode.StrictModeClass;
 
 import java.io.IOException;
 import java.util.ArrayList;

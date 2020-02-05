@@ -13,7 +13,7 @@ import androidx.appcompat.app.AppCompatActivity;
 import com.machamasisuraj.socialapp.BLL.LoginBLL;
 import com.machamasisuraj.socialapp.BLL.ReservationBLL;
 import com.machamasisuraj.socialapp.R;
-import com.machamasisuraj.socialapp.StrictMode.StrictModeClass;
+import com.machamasisuraj.socialapp.EnableStrictMode.StrictModeClass;
 
 public class LoginActivity extends AppCompatActivity {
 

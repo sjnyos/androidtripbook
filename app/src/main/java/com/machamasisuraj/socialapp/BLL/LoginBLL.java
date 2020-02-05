@@ -2,7 +2,7 @@ package com.machamasisuraj.socialapp.BLL;
 
 import com.machamasisuraj.socialapp.ApiService.RetrofitCaller;
 import com.machamasisuraj.socialapp.ApiService.UsersAPI;
-import com.machamasisuraj.socialapp.Response.SignUpResponse;
+import com.machamasisuraj.socialapp.Model.Response.SignUpResponse;
 
 import java.io.IOException;
 

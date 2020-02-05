@@ -4,8 +4,8 @@ import android.content.Context;
 
 import com.machamasisuraj.socialapp.ApiService.ImageUploadApi;
 import com.machamasisuraj.socialapp.ApiService.RetrofitCaller;
-import com.machamasisuraj.socialapp.Response.ImageResponse;
-import com.machamasisuraj.socialapp.StrictMode.StrictModeClass;
+import com.machamasisuraj.socialapp.Model.Response.ImageResponse;
+import com.machamasisuraj.socialapp.EnableStrictMode.StrictModeClass;
 
 import java.io.File;
 import java.io.IOException;
