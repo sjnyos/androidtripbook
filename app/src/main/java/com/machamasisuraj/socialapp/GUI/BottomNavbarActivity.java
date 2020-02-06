@@ -28,7 +28,7 @@ public class BottomNavbarActivity extends AppCompatActivity {
 
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        BannerActivity firstFragment = new BannerActivity(this);
+        TripListFragment firstFragment = new TripListFragment(this);
         fragmentTransaction.replace(R.id.frame_container,firstFragment);
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();

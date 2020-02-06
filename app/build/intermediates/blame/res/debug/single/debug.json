@@ -44,6 +44,10 @@
         "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/drawable-xxxhdpi-v4/abc_switch_track_mtrl_alpha.9.png"
     },
     {
+        "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/layout_fragment_trip_list.xml.flat",
+        "source": "/home/sjnyos/android Kiran sir/app/src/main/res/layout/fragment_trip_list.xml"
+    },
+    {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/drawable_notification_icon_background.xml.flat",
         "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/57692e4753601536b7ad4be218820432/core-1.1.0/res/drawable/notification_icon_background.xml"
     },
@@ -78,6 +82,10 @@
     {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/color_abc_search_url_text.xml.flat",
         "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/drawable_ic_accessibility_black_24dp.xml.flat",
+        "source": "/home/sjnyos/android Kiran sir/app/src/main/res/drawable/ic_accessibility_black_24dp.xml"
     },
     {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/color_abc_btn_colored_text_material.xml.flat",
@@ -228,6 +236,10 @@
         "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/layout/abc_tooltip.xml"
     },
     {
+        "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/anim_fragment_fade_exit.xml.flat",
+        "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/2c1a9eb3a89dee5cffca4077dd94f739/fragment-1.2.0/res/anim/fragment_fade_exit.xml"
+    },
+    {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/interpolator_btn_checkbox_checked_mtrl_animation_interpolator_0.xml.flat",
         "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/interpolator/btn_checkbox_checked_mtrl_animation_interpolator_0.xml"
     },
@@ -289,7 +301,7 @@
     },
     {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/anim_nav_default_exit_anim.xml.flat",
-        "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/c9bf15f22568601a599109a1757d3c8e/jetified-navigation-ui-2.1.0/res/anim/nav_default_exit_anim.xml"
+        "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/b984a3c2fca340b09f3bb0bc964b01a5/jetified-navigation-ui-2.2.0/res/anim/nav_default_exit_anim.xml"
     },
     {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/layout_mtrl_layout_snackbar.xml.flat",
@@ -350,6 +362,10 @@
     {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_btn_switch_to_on_mtrl_00012.9.png.flat",
         "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/drawable-xxhdpi-v4/abc_btn_switch_to_on_mtrl_00012.9.png"
+    },
+    {
+        "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/anim_fragment_close_enter.xml.flat",
+        "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/2c1a9eb3a89dee5cffca4077dd94f739/fragment-1.2.0/res/anim/fragment_close_enter.xml"
     },
     {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/layout_abc_popup_menu_item_layout.xml.flat",
@@ -940,6 +956,10 @@
         "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/layout/select_dialog_singlechoice_material.xml"
     },
     {
+        "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/anim_fragment_open_exit.xml.flat",
+        "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/2c1a9eb3a89dee5cffca4077dd94f739/fragment-1.2.0/res/anim/fragment_open_exit.xml"
+    },
+    {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_star_half_black_48dp.png.flat",
         "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/drawable-xxxhdpi-v4/abc_ic_star_half_black_48dp.png"
     },
@@ -1072,6 +1092,10 @@
         "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/drawable-xxhdpi-v4/abc_cab_background_top_mtrl_alpha.9.png"
     },
     {
+        "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/anim_fragment_close_exit.xml.flat",
+        "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/2c1a9eb3a89dee5cffca4077dd94f739/fragment-1.2.0/res/anim/fragment_close_exit.xml"
+    },
+    {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/layout-sw600dp-v13_design_layout_snackbar.xml.flat",
         "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/0a787c0ac8f42da800013c2d9496a009/material-1.0.0/res/layout-sw600dp-v13/design_layout_snackbar.xml"
     },
@@ -1160,6 +1184,10 @@
         "source": "/home/sjnyos/android Kiran sir/app/src/main/res/drawable/ic_notifications_black_24dp.xml"
     },
     {
+        "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/drawable_ic_search_black_24dp.xml.flat",
+        "source": "/home/sjnyos/android Kiran sir/app/src/main/res/drawable/ic_search_black_24dp.xml"
+    },
+    {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_tab_indicator_mtrl_alpha.9.png.flat",
         "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/drawable-xhdpi-v4/abc_tab_indicator_mtrl_alpha.9.png"
     },
@@ -1206,6 +1234,10 @@
     {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/color_mtrl_btn_text_color_selector.xml.flat",
         "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/0a787c0ac8f42da800013c2d9496a009/material-1.0.0/res/color/mtrl_btn_text_color_selector.xml"
+    },
+    {
+        "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/anim-v21_fragment_fast_out_extra_slow_in.xml.flat",
+        "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/2c1a9eb3a89dee5cffca4077dd94f739/fragment-1.2.0/res/anim-v21/fragment_fast_out_extra_slow_in.xml"
     },
     {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_ic_menu_paste_mtrl_am_alpha.png.flat",
@@ -1588,16 +1620,16 @@
         "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/57692e4753601536b7ad4be218820432/core-1.1.0/res/drawable/notification_bg.xml"
     },
     {
-        "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
-        "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/drawable-hdpi-v4/abc_textfield_activated_mtrl_alpha.9.png"
+        "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/drawable-v21_abc_btn_colored_material.xml.flat",
+        "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/drawable-v21/abc_btn_colored_material.xml"
     },
     {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_ic_star_black_36dp.png.flat",
         "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/drawable-hdpi-v4/abc_ic_star_black_36dp.png"
     },
     {
-        "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/drawable-v21_abc_btn_colored_material.xml.flat",
-        "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/drawable-v21/abc_btn_colored_material.xml"
+        "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
+        "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/drawable-hdpi-v4/abc_textfield_activated_mtrl_alpha.9.png"
     },
     {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/anim_abc_tooltip_exit.xml.flat",
@@ -1622,6 +1654,10 @@
     {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
         "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/drawable-hdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png"
+    },
+    {
+        "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/anim_fragment_open_enter.xml.flat",
+        "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/2c1a9eb3a89dee5cffca4077dd94f739/fragment-1.2.0/res/anim/fragment_open_enter.xml"
     },
     {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/color_abc_hint_foreground_material_dark.xml.flat",
@@ -1761,7 +1797,7 @@
     },
     {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/anim_nav_default_enter_anim.xml.flat",
-        "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/c9bf15f22568601a599109a1757d3c8e/jetified-navigation-ui-2.1.0/res/anim/nav_default_enter_anim.xml"
+        "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/b984a3c2fca340b09f3bb0bc964b01a5/jetified-navigation-ui-2.2.0/res/anim/nav_default_enter_anim.xml"
     },
     {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_text_select_handle_right_mtrl_light.png.flat",
@@ -2009,7 +2045,7 @@
     },
     {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/anim_nav_default_pop_exit_anim.xml.flat",
-        "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/c9bf15f22568601a599109a1757d3c8e/jetified-navigation-ui-2.1.0/res/anim/nav_default_pop_exit_anim.xml"
+        "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/b984a3c2fca340b09f3bb0bc964b01a5/jetified-navigation-ui-2.2.0/res/anim/nav_default_pop_exit_anim.xml"
     },
     {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_divider_mtrl_alpha.9.png.flat",
@@ -2052,6 +2088,10 @@
         "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/drawable-hdpi-v4/abc_btn_radio_to_on_mtrl_000.png"
     },
     {
+        "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/anim_fragment_fade_enter.xml.flat",
+        "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/2c1a9eb3a89dee5cffca4077dd94f739/fragment-1.2.0/res/anim/fragment_fade_enter.xml"
+    },
+    {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_check_to_on_mtrl_015.png.flat",
         "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/drawable-hdpi-v4/abc_btn_check_to_on_mtrl_015.png"
     },
@@ -2065,7 +2105,7 @@
     },
     {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/anim_nav_default_pop_enter_anim.xml.flat",
-        "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/c9bf15f22568601a599109a1757d3c8e/jetified-navigation-ui-2.1.0/res/anim/nav_default_pop_enter_anim.xml"
+        "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/b984a3c2fca340b09f3bb0bc964b01a5/jetified-navigation-ui-2.2.0/res/anim/nav_default_pop_enter_anim.xml"
     },
     {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_text_select_handle_right_mtrl_dark.png.flat",
