@@ -7,12 +7,18 @@ import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentTransaction;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.text.Layout;
 import android.view.MenuItem;
+import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
+import com.machamasisuraj.socialapp.Adapter.UserListAdapter;
+import com.machamasisuraj.socialapp.BLL.UserBLL;
 import com.machamasisuraj.socialapp.R;
 
 public class BottomNavbarActivity extends AppCompatActivity {
@@ -34,6 +40,7 @@ public class BottomNavbarActivity extends AppCompatActivity {
         fragmentTransaction.commit();
 
         navigations();
+        PopulatatChatHead();
     }
 
     public void navigations(){
@@ -56,10 +63,28 @@ public class BottomNavbarActivity extends AppCompatActivity {
                 dl.closeDrawer(GravityCompat.START);
                 if(item.getItemId()==R.id.navigation_aboutus){
 
+
                 }
                 return false;
 
             }
         });
+    }
+
+    public void PopulatatChatHead(){
+       RecyclerView  recyclerView= findViewById(R.id.userchatRecyclerView);
+
+      //make sute to use active users
+        try {
+            UserBLL userBLL = new UserBLL();
+            UserListAdapter userListAdapter = new UserListAdapter(this, userBLL.GetAllActiveUsers());
+
+            recyclerView.setAdapter(userListAdapter);
+            recyclerView.setLayoutManager(new LinearLayoutManager(this));
+        }
+        catch (Exception ex){
+            Toast.makeText(this, ex.getMessage(), Toast.LENGTH_SHORT).show();
+        }
+
     }
 }

@@ -4,6 +4,8 @@ import com.machamasisuraj.socialapp.Model.User;
 import com.machamasisuraj.socialapp.Model.Response.ImageResponse;
 import com.machamasisuraj.socialapp.Model.Response.SignUpResponse;
 
+import java.util.List;
+
 import okhttp3.MultipartBody;
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -30,5 +32,8 @@ public interface UsersAPI {
 
     @GET("/users/me")
     Call<User> getUserDetails(@Header("Authorization") String token);
+
+    @GET("/users/active")
+    Call<List<User>> getActiveUserLists();
 
 }
