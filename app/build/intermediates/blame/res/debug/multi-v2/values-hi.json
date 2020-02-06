@@ -4,7 +4,7 @@
             "outputFile": "/home/sjnyos/android Kiran sir/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-hi/values-hi.xml",
             "map": [
                 {
-                    "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/c9bf15f22568601a599109a1757d3c8e/jetified-navigation-ui-2.1.0/res/values-hi/values-hi.xml",
+                    "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/b984a3c2fca340b09f3bb0bc964b01a5/jetified-navigation-ui-2.2.0/res/values-hi/values-hi.xml",
                     "from": {
                         "startLines": "2,3",
                         "startColumns": "4,4",
