@@ -5,10 +5,10 @@ import java.util.Date;
 public class User {
 
     private String username, password,firstname,lastname,
-    bio,interestedin,gender,userstatus;
+    bio,interestedin,gender,userstatus,image;
     private Date dateofbirth;
 
-    public User(String username, String password, String firstname, String lastname, String bio, String interestedin, String gender, String userstatus, Date dateofbirth) {
+    public User(String username, String password, String firstname, String lastname, String bio, String interestedin, String gender, String userstatus, Date dateofbirth,String image) {
         this.username = username;
         this.password = password;
         this.firstname = firstname;
@@ -18,6 +18,7 @@ public class User {
         this.gender = gender;
         this.userstatus = userstatus;
         this.dateofbirth = dateofbirth;
+        this.image=image;
     }
 
     public String getUsername() {
@@ -91,4 +92,7 @@ public class User {
     public void setDateofbirth(Date dateofbirth) {
         this.dateofbirth = dateofbirth;
     }
+
+    public void setImage(String image){   this.image=image;}
+    public String getImage(){ return image;}
 }

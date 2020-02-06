@@ -25,6 +25,7 @@
         android:testOnly="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
+        <activity android:name="com.machamasisuraj.socialapp.GUI.AdminDashboardActivity" />
         <activity android:name="com.machamasisuraj.socialapp.GUI.BottomNavbarActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -37,8 +38,7 @@
         <activity android:name="com.machamasisuraj.socialapp.GUI.MainActivity" />
         <activity
             android:name="com.machamasisuraj.socialapp.GUI.SplashActivity"
-            android:theme="@style/Theme.Design.Light.NoActionBar" >
-        </activity>
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
         <activity android:name="com.machamasisuraj.socialapp.GUI.LoginActivity" />
 
         <provider
