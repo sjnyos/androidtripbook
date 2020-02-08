@@ -20,6 +20,10 @@ public class User {
         this.dateofbirth = dateofbirth;
         this.image=image;
     }
+    public User(String username, String password){
+        this.username=username;
+        this.password =password;
+    }
 
     public String getUsername() {
         return username;

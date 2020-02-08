@@ -12,7 +12,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.machamasisuraj.socialapp.Model.Item;
 import com.machamasisuraj.socialapp.R;
-import com.machamasisuraj.socialapp.BaseUrl.Url;
+import com.machamasisuraj.socialapp.BaseUrl.BaseUrl;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -37,7 +37,7 @@ public class ItemAdapter extends  RecyclerView.Adapter<ItemAdapter.ItemViewHolde
     @Override
     public void onBindViewHolder(@NonNull ItemViewHolder holder, int position) {
         Item item = itemList.get(position);
-       Picasso.get().load(Url.base_url+"/"+item.getImage()).into(holder.imageView);
+       Picasso.get().load(BaseUrl.base_url+"/"+item.getImage()).into(holder.imageView);
 
         holder.textView.setText(item.getItemName());
         holder.textView2.setText("Rs. "+item.getPrice());
