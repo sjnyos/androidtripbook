@@ -1,11 +1,11 @@
 package com.machamasisuraj.socialapp.Model.Response;
 
-public class SignUpResponse {
+public class LoginAndSignUpResponse {
 
     private String status;
     private String token;
 
-    public SignUpResponse(String status, String token) {
+    public LoginAndSignUpResponse(String status, String token) {
         this.status = status;
         this.token = token;
     }

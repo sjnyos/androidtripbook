@@ -2,7 +2,7 @@ package com.machamasisuraj.socialapp.BLL;
 
 import com.machamasisuraj.socialapp.ApiService.RetrofitCaller;
 import com.machamasisuraj.socialapp.ApiService.UsersAPI;
-import com.machamasisuraj.socialapp.Model.Response.SignUpResponse;
+import com.machamasisuraj.socialapp.Model.Response.LoginAndSignUpResponse;
 
 import java.io.IOException;
 
@@ -16,10 +16,10 @@ public class LoginBLL {
     public boolean checkUser(String username, String password) {
 
         UsersAPI usersAPI = RetrofitCaller.getInstance().create(UsersAPI.class);
-        Call<SignUpResponse> usersCall = usersAPI.checkUser(username, password);
+        Call<LoginAndSignUpResponse> usersCall = usersAPI.checkUser(username, password);
 
         try {
-            Response<SignUpResponse> loginResponse = usersCall.execute();
+            Response<LoginAndSignUpResponse> loginResponse = usersCall.execute();
             if (loginResponse.isSuccessful() &&
                     loginResponse.body().getStatus().equals("Login success!")) {
 
