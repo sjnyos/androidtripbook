@@ -1,6 +1,5 @@
 package com.machamasisuraj.socialapp.GUI;
 
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.MenuItem;
 import android.widget.Toast;
@@ -14,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.google.android.material.navigation.NavigationView;
 import com.machamasisuraj.socialapp.R;
-import com.machamasisuraj.socialapp.BaseUrl.Url;
+import com.machamasisuraj.socialapp.BaseUrl.BaseUrl;
 
 public class MainActivity extends AppCompatActivity {
     private RecyclerView item_recyclerView;
@@ -31,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
 
 
         navigations();
-        Toast.makeText(this, Url.base_url, Toast.LENGTH_SHORT).show();
+        Toast.makeText(this, BaseUrl.base_url, Toast.LENGTH_SHORT).show();
     }
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {

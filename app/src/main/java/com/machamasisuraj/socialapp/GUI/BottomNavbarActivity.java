@@ -14,12 +14,15 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.text.Layout;
 import android.view.MenuItem;
+import android.widget.TextView;
 import android.widget.Toast;
 
 import com.google.android.material.navigation.NavigationView;
 import com.machamasisuraj.socialapp.Adapter.UserListAdapter;
 import com.machamasisuraj.socialapp.BLL.UserBLL;
 import com.machamasisuraj.socialapp.R;
+
+import static android.widget.LinearLayout.HORIZONTAL;
 
 public class BottomNavbarActivity extends AppCompatActivity {
     private DrawerLayout dl;
@@ -30,12 +33,13 @@ public class BottomNavbarActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_bottom_navbar);
-
+        TextView tokendisplay = findViewById(R.id.tokendisplay);
+        tokendisplay.setText(getIntent().getExtras().getString("token"));
 
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         TripListFragment firstFragment = new TripListFragment(this);
-        fragmentTransaction.replace(R.id.frame_container,firstFragment);
+        fragmentTransaction.replace(R.id.frame_container, firstFragment);
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
 
@@ -43,16 +47,16 @@ public class BottomNavbarActivity extends AppCompatActivity {
         PopulatatChatHead();
     }
 
-    public void navigations(){
+    public void navigations() {
         dl = findViewById(R.id.bottomactivityDrawerlayout);
-        t = new ActionBarDrawerToggle(this, dl,R.string.navigation_drawer_open, R.string.navigation_drawer_close);
+        t = new ActionBarDrawerToggle(this, dl, R.string.navigation_drawer_open, R.string.navigation_drawer_close);
         t.setDrawerIndicatorEnabled(true);
         dl.addDrawerListener(t);
         t.syncState();
-        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
-        getSupportActionBar().setDisplayShowTitleEnabled(true);
-        getSupportActionBar().setHomeButtonEnabled(true);
+//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+//        getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
+//        getSupportActionBar().setDisplayShowTitleEnabled(true);
+//        getSupportActionBar().setHomeButtonEnabled(true);
 
         nv = findViewById(R.id.nv);
         nv.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
@@ -61,7 +65,7 @@ public class BottomNavbarActivity extends AppCompatActivity {
 
 
                 dl.closeDrawer(GravityCompat.START);
-                if(item.getItemId()==R.id.navigation_aboutus){
+                if (item.getItemId() == R.id.navigation_aboutus) {
                 }
                 return false;
 
@@ -69,18 +73,17 @@ public class BottomNavbarActivity extends AppCompatActivity {
         });
     }
 
-    public void PopulatatChatHead(){
-       RecyclerView  recyclerView= findViewById(R.id.userchatRecyclerView);
+    public void PopulatatChatHead() {
+        RecyclerView recyclerView = findViewById(R.id.userchatRecyclerView);
 
-      //make sute to use active users
+        //make sute to use active users
         try {
             UserBLL userBLL = new UserBLL();
             UserListAdapter userListAdapter = new UserListAdapter(this, userBLL.GetAllActiveUsers());
 
             recyclerView.setAdapter(userListAdapter);
-            recyclerView.setLayoutManager(new LinearLayoutManager(this));
-        }
-        catch (Exception ex){
+            recyclerView.setLayoutManager(new LinearLayoutManager(this, RecyclerView.HORIZONTAL, false));
+        } catch (Exception ex) {
             Toast.makeText(this, ex.getMessage(), Toast.LENGTH_SHORT).show();
         }
 

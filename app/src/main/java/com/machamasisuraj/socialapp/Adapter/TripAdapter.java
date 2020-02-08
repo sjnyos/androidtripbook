@@ -1,7 +1,6 @@
 package com.machamasisuraj.socialapp.Adapter;
 
 import android.content.Context;
-import android.graphics.drawable.Drawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -11,16 +10,12 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import androidx.annotation.NonNull;
-import androidx.constraintlayout.widget.ConstraintLayout;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.machamasisuraj.socialapp.BaseUrl.Url;
+import com.machamasisuraj.socialapp.BaseUrl.BaseUrl;
 import com.machamasisuraj.socialapp.Model.Trip;
 import com.machamasisuraj.socialapp.R;
-import com.squareup.picasso.Callback;
 import com.squareup.picasso.Picasso;
-
-import org.w3c.dom.Text;
 
 import java.util.List;
 
@@ -45,7 +40,7 @@ import java.util.List;
     public void onBindViewHolder(@NonNull final TpViewHolder holder, int position) {
         Trip trip = tripList.get(position);
 
-        Picasso.get().load(Url.base_url+"/uploads/"+trip.getImage()).into(holder.tripImage);
+        Picasso.get().load(BaseUrl.base_url+"/uploads/"+trip.getImage()).into(holder.tripImage);
         holder.ratingBar.setNumStars(trip.getSize());
         holder.tripName.setText(trip.getTripName());
         holder.address.setText(trip.getDestination());
