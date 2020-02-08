@@ -2,7 +2,7 @@ package com.machamasisuraj.socialapp.ApiService;
 
 import com.machamasisuraj.socialapp.Model.User;
 import com.machamasisuraj.socialapp.Model.Response.ImageResponse;
-import com.machamasisuraj.socialapp.Model.Response.SignUpResponse;
+import com.machamasisuraj.socialapp.Model.Response.LoginAndSignUpResponse;
 
 import java.util.List;
 
@@ -20,11 +20,11 @@ import retrofit2.http.Part;
 public interface UsersAPI {
 
     @POST("/users/signup")
-    Call<SignUpResponse> registerUser(@Body User users);
+    Call<LoginAndSignUpResponse> registerUser(@Body User users);
 
     @FormUrlEncoded
     @POST("/users/login")
-    Call<SignUpResponse> checkUser(@Field("username") String username, @Field("password") String password);
+    Call<LoginAndSignUpResponse> checkUser(@Field("username") String username, @Field("password") String password);
 
     @Multipart
     @POST("upload")
