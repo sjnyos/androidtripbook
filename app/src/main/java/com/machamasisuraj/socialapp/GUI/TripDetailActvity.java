@@ -50,7 +50,7 @@ public class TripDetailActvity extends AppCompatActivity {
         departuredate.setText(getIntent().getStringExtra("departureDate"));
         itenerary.setText(  getIntent().getStringExtra("itenerary"));
         tripdays.setText(getIntent().getStringExtra("tripdays"));
-        desc.setText( getIntent().getStringExtra("desc"));
+        desc.setText( getIntent().getStringExtra("desc")) ;
     }
 
 //    public Trip initTripObject() {
