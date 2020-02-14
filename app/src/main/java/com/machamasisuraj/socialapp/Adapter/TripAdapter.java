@@ -19,6 +19,8 @@ import com.machamasisuraj.socialapp.Model.Trip;
 import com.machamasisuraj.socialapp.R;
 import com.squareup.picasso.Picasso;
 
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
 import java.util.List;
 
  public class TripAdapter extends RecyclerView.Adapter<TripAdapter.TpViewHolder> {
@@ -119,4 +121,30 @@ import java.util.List;
             ratingBar=itemView.findViewById(R.id.ratingBar);
         }
     }
+     private static String convertMongoDate(String val) {
+         SimpleDateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
+         SimpleDateFormat outputFormat = new SimpleDateFormat("yyyy-MM-dd");
+         try {
+             String finalStr = outputFormat.format(inputFormat.parse(val));
+             System.out.println(finalStr);
+             return finalStr;
+         } catch (ParseException e) {
+             e.printStackTrace();
+         }
+         return "";
+     }
+
+     private static String convertMongoTime(String val) {
+         SimpleDateFormat inputFormat = new SimpleDateFormat("yyyy-MM-dd'T'HH:mm:ss.SSS'Z'");
+         SimpleDateFormat outputFormat = new SimpleDateFormat("HH:mm");
+         try {
+             String finalStr = outputFormat.format(inputFormat.parse(val));
+             System.out.println(finalStr);
+             return finalStr;
+         } catch (ParseException e) {
+             e.printStackTrace();
+         }
+         return "";
+     }
 }
+

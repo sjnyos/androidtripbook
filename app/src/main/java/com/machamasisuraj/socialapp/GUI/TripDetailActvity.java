@@ -4,10 +4,13 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.view.View;
 import android.widget.Button;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+import com.machamasisuraj.socialapp.BLL.ReservationBLL;
+import com.machamasisuraj.socialapp.Model.Reservation;
 import com.machamasisuraj.socialapp.Model.Trip;
 import com.machamasisuraj.socialapp.R;
 
@@ -51,6 +54,17 @@ public class TripDetailActvity extends AppCompatActivity {
         itenerary.setText(  getIntent().getStringExtra("itenerary"));
         tripdays.setText(getIntent().getStringExtra("tripdays"));
         desc.setText( getIntent().getStringExtra("desc")) ;
+    }
+    public void Reserve(){
+        btnReserve.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Reservation reservation = new Reservation();
+                ReservationBLL reservationBLL= new ReservationBLL();
+                reservationBLL.InsertReservation(reservation);
+            }
+        });
+
     }
 
 //    public Trip initTripObject() {
