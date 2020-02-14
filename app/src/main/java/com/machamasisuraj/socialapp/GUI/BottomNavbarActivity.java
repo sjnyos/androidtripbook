@@ -29,6 +29,8 @@ public class BottomNavbarActivity extends AppCompatActivity {
     private ActionBarDrawerToggle t;
     private NavigationView nv;
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);

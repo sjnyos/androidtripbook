@@ -2,6 +2,7 @@ package com.machamasisuraj.socialapp.BLL;
 
 import com.machamasisuraj.socialapp.ApiService.ReservationAPI;
 import com.machamasisuraj.socialapp.ApiService.RetrofitCaller;
+import com.machamasisuraj.socialapp.BaseUrl.BaseUrl;
 import com.machamasisuraj.socialapp.Model.Reservation;
 import com.machamasisuraj.socialapp.EnableStrictMode.StrictModeClass;
 
@@ -20,7 +21,7 @@ public class ReservationBLL {
     Boolean status = false;
     public List<Reservation> getReservationByUser(String userid){
         StrictModeClass.StrictMode();
-        Call<List<Reservation>> apiCall = reservationAPI.getByUserid(userid);
+        Call<List<Reservation>> apiCall = reservationAPI.getByUserid(userid, BaseUrl.token);
         try {
             mlists = apiCall.execute().body();
         } catch (IOException e) {
@@ -29,7 +30,7 @@ public class ReservationBLL {
         return mlists;
     }
     public Boolean InsertReservation(Reservation reservation){
-        Call<Reservation> reservationCall = reservationAPI.create(reservation);
+        Call<Reservation> reservationCall = reservationAPI.create(reservation,BaseUrl.token);
         reservationCall.enqueue(new Callback<Reservation>() {
             @Override
             public void onResponse(Call<Reservation> call, Response<Reservation> response) {

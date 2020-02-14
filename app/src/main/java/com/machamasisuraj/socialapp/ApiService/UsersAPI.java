@@ -1,5 +1,6 @@
 package com.machamasisuraj.socialapp.ApiService;
 
+import com.machamasisuraj.socialapp.BaseUrl.BaseUrl;
 import com.machamasisuraj.socialapp.Model.User;
 import com.machamasisuraj.socialapp.Model.Response.ImageResponse;
 import com.machamasisuraj.socialapp.Model.Response.LoginAndSignUpResponse;
@@ -30,12 +31,12 @@ public interface UsersAPI {
 
     @Multipart
     @POST("upload")
-    Call<ImageResponse> uploadImage(@Part MultipartBody.Part img);
+    Call<ImageResponse> uploadImage(@Part MultipartBody.Part img, @Header("Authorization") String authHeader);
 
     @GET("/users/me")
-    Call<User> getUserDetails(@Header("Authorization") String token);
+    Call<User> getUserDetails(@Header("Authorization") String token,@Header("Authorization") String authHeader);
 
     @GET("/users/active")
-    Call<List<User>> getActiveUserLists();
+    Call<List<User>> getActiveUserLists(@Header("Authorization") String authHeader);
 
 }

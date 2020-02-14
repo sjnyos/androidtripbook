@@ -1,6 +1,7 @@
 package com.machamasisuraj.socialapp.Adapter;
 
 import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -13,6 +14,7 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.machamasisuraj.socialapp.BaseUrl.BaseUrl;
+import com.machamasisuraj.socialapp.GUI.TripDetailActvity;
 import com.machamasisuraj.socialapp.Model.Trip;
 import com.machamasisuraj.socialapp.R;
 import com.squareup.picasso.Picasso;
@@ -38,7 +40,7 @@ import java.util.List;
 
     @Override
     public void onBindViewHolder(@NonNull final TpViewHolder holder, int position) {
-        Trip trip = tripList.get(position);
+        final Trip trip = tripList.get(position);
 
         Picasso.get().load(BaseUrl.base_url+"/uploads/"+trip.getImage()).into(holder.tripImage);
         holder.ratingBar.setNumStars(trip.getSize());
@@ -56,6 +58,42 @@ import java.util.List;
             public void onClick(View v) {
                 Toast.makeText(mContext, "Favourite ", Toast.LENGTH_SHORT).show();
                 holder.favourite.setImageResource(R.drawable.ic_favorite_all_black_24dp);
+            }
+        });
+        holder.tripImage.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(mContext, "Image view Click", Toast.LENGTH_SHORT).show();
+                Intent intent= new Intent(mContext, TripDetailActvity.class);
+
+                intent.putExtra("name",trip.getTripName());
+                intent.putExtra("country",trip.getCountry());
+                intent.putExtra("destination",trip.getDestination());
+                intent.putExtra("duration",  trip.getDuration());
+                intent.putExtra("arrivalDate",trip.getArrivalDate());
+                intent.putExtra("departureDate",trip.getDepartureDate());
+                intent.putExtra("itenerary",trip.getItenerary());
+                intent.putExtra("receiveTransportation",false);
+                intent.putExtra("food",trip.getFood());
+                intent.putExtra("maproute",trip.getMaproute());
+                intent.putExtra("price",trip.getPricePerEach());
+                intent.putExtra("tripdays",trip.getTripDays());
+                intent.putExtra("image",trip.getImage());
+                intent.putExtra("size",trip.getSize());
+                intent.putExtra("desc",trip.getDesc());
+                intent.putExtra("grade",trip.getGrade());
+                mContext.startActivity(intent);
+
+
+
+
+            }
+        });
+
+        holder.ratingBar.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(mContext, "Rating bar clicked", Toast.LENGTH_SHORT).show();
             }
         });
     }

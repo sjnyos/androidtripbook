@@ -24,16 +24,17 @@
         android:testOnly="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
-        <activity android:name="com.machamasisuraj.socialapp.GUI.AdminDashboardActivity" />
-        <activity android:name="com.machamasisuraj.socialapp.GUI.BottomNavbarActivity" >
-        </activity>
+        <activity android:name="com.machamasisuraj.socialapp.GUI.TripDetailActvity" />
+        <activity android:name="com.machamasisuraj.socialapp.GUI.AdminGUI.UsersActivity" />
+        <activity android:name="com.machamasisuraj.socialapp.GUI.AdminGUI.AdminTripActivity" />
+        <activity android:name="com.machamasisuraj.socialapp.GUI.AdminGUI.AdminDashboardActivity" />
+        <activity android:name="com.machamasisuraj.socialapp.GUI.BottomNavbarActivity" />
         <activity android:name="com.machamasisuraj.socialapp.GUI.BannerActivity" />
         <activity android:name="com.machamasisuraj.socialapp.GUI.ItemListActivity" />
         <activity android:name="com.machamasisuraj.socialapp.GUI.MainActivity" />
         <activity
             android:name="com.machamasisuraj.socialapp.GUI.SplashActivity"
-            android:theme="@style/Theme.Design.Light.NoActionBar" >
-        </activity>
+            android:theme="@style/Theme.Design.Light.NoActionBar" />
         <activity android:name="com.machamasisuraj.socialapp.GUI.LoginActivity" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />

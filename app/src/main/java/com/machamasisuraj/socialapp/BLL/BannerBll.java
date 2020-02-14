@@ -3,6 +3,7 @@ package com.machamasisuraj.socialapp.BLL;
 
 import com.machamasisuraj.socialapp.ApiService.BannerImageApi;
 import com.machamasisuraj.socialapp.ApiService.RetrofitCaller;
+import com.machamasisuraj.socialapp.BaseUrl.BaseUrl;
 import com.machamasisuraj.socialapp.Model.BannerItem;
 import com.machamasisuraj.socialapp.EnableStrictMode.StrictModeClass;
 
@@ -21,7 +22,7 @@ public class BannerBll {
 
     public List<BannerItem> getAllBanners() {
         StrictModeClass.StrictMode();
-        Call<List<BannerItem>> apicaller = bannerImageApi.lstsBanners();
+        Call<List<BannerItem>> apicaller = bannerImageApi.lstsBanners(BaseUrl.token);
         try {
             lstBanners = apicaller.execute().body();
         } catch (IOException e) {
@@ -32,7 +33,7 @@ public class BannerBll {
     }
 
     public boolean InsertBanner(BannerItem bannerItem) {
-        Call<BannerItem> bannerCaller = bannerImageApi.createBanner(bannerItem);
+        Call<BannerItem> bannerCaller = bannerImageApi.createBanner(bannerItem,BaseUrl.token);
         bannerCaller.enqueue(new Callback<BannerItem>() {
             @Override
             public void onResponse(Call<BannerItem> call, Response<BannerItem> response) {

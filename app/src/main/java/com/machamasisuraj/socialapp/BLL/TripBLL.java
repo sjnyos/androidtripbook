@@ -2,6 +2,7 @@ package com.machamasisuraj.socialapp.BLL;
 
 import com.machamasisuraj.socialapp.ApiService.RetrofitCaller;
 import com.machamasisuraj.socialapp.ApiService.TripApi;
+import com.machamasisuraj.socialapp.BaseUrl.BaseUrl;
 import com.machamasisuraj.socialapp.EnableStrictMode.StrictModeClass;
 import com.machamasisuraj.socialapp.Model.BannerItem;
 import com.machamasisuraj.socialapp.Model.Reservation;
@@ -28,7 +29,7 @@ public class TripBLL {
 
     public List<Trip> getTripLists(){
         StrictModeClass.StrictMode();
-        Call<List<Trip>> apicaller = tripApi.lIstTrip();
+        Call<List<Trip>> apicaller = tripApi.lIstTrip(BaseUrl.token);
         try {
             tripList = apicaller.execute().body();
         } catch (IOException e) {
@@ -38,7 +39,7 @@ public class TripBLL {
 
     }
     public Boolean CreateTrip( Trip trip){
-        Call<Trip> reservationCall = tripApi.createTrip(trip);
+        Call<Trip> reservationCall = tripApi.createTrip(trip,BaseUrl.token);
         reservationCall.enqueue(new Callback<Trip>() {
             @Override
             public void onResponse(Call<Trip> call, Response<Trip> response) {
