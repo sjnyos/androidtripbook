@@ -17,6 +17,7 @@ import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 import com.machamasisuraj.socialapp.Adapter.UserListAdapter;
 import com.machamasisuraj.socialapp.BLL.UserBLL;
@@ -28,7 +29,7 @@ public class BottomNavbarActivity extends AppCompatActivity {
     private DrawerLayout dl;
     private ActionBarDrawerToggle t;
     private NavigationView nv;
-
+    private BottomNavigationView bottomnavigation;
 
 
     @Override
@@ -37,6 +38,9 @@ public class BottomNavbarActivity extends AppCompatActivity {
         setContentView(R.layout.activity_bottom_navbar);
         TextView tokendisplay = findViewById(R.id.tokendisplay);
         tokendisplay.setText(getIntent().getExtras().getString("token"));
+        bottomnavigation = findViewById(R.id.bottomnavigation);
+        bottomnavigation.setSelectedItemId(R.id.navigation_home);
+
 
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -46,6 +50,7 @@ public class BottomNavbarActivity extends AppCompatActivity {
         fragmentTransaction.commit();
 
         navigations();
+        BottomNavitaionMenus();
         PopulatatChatHead();
     }
 
@@ -55,10 +60,6 @@ public class BottomNavbarActivity extends AppCompatActivity {
         t.setDrawerIndicatorEnabled(true);
         dl.addDrawerListener(t);
         t.syncState();
-//        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
-//        getSupportActionBar().setDefaultDisplayHomeAsUpEnabled(true);
-//        getSupportActionBar().setDisplayShowTitleEnabled(true);
-//        getSupportActionBar().setHomeButtonEnabled(true);
 
         nv = findViewById(R.id.nv);
         nv.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
@@ -88,6 +89,40 @@ public class BottomNavbarActivity extends AppCompatActivity {
         } catch (Exception ex) {
             Toast.makeText(this, ex.getMessage(), Toast.LENGTH_SHORT).show();
         }
+
+    }
+
+    public void BottomNavitaionMenus() {
+        bottomnavigation.setOnNavigationItemReselectedListener(new BottomNavigationView.OnNavigationItemReselectedListener() {
+            @Override
+            public void onNavigationItemReselected(@NonNull MenuItem menuItem) {
+                switch (menuItem.getItemId()) {
+                    case R.id.navigation_home: {
+                        FragmentManager fragmentManager = getSupportFragmentManager();
+                        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                        TripListFragment firstFragment = new TripListFragment(this);
+                        fragmentTransaction.replace(R.id.frame_container, firstFragment);
+                        fragmentTransaction.addToBackStack(null);
+                        fragmentTransaction.commit();
+
+                    }
+                    case R.id.navigation_trips: {
+
+                    }
+                    case R.id.bookings: {
+
+                    }
+                    case R.id.navigation_nearby: {
+
+                    }
+                    case R.id.navigation_aboutus: {
+
+                    }
+
+
+                }
+            }
+        });
 
     }
 }
