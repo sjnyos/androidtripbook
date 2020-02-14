@@ -82,7 +82,7 @@ import java.util.List;
                 intent.putExtra("size",trip.getSize());
                 intent.putExtra("desc",trip.getDesc());
                 intent.putExtra("grade",trip.getGrade());
-                mContext.startActivity(intent);
+                 mContext.startActivity(intent);
 
 
 
