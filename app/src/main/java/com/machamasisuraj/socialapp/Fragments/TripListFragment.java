@@ -1,4 +1,4 @@
-package com.machamasisuraj.socialapp.GUI;
+package com.machamasisuraj.socialapp.Fragments;
 
 
 import android.content.Context;

@@ -10,9 +10,7 @@ import androidx.fragment.app.FragmentTransaction;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import android.content.Intent;
 import android.os.Bundle;
-import android.text.Layout;
 import android.view.MenuItem;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -21,9 +19,8 @@ import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
 import com.machamasisuraj.socialapp.Adapter.UserListAdapter;
 import com.machamasisuraj.socialapp.BLL.UserBLL;
+import com.machamasisuraj.socialapp.Fragments.TripListFragment;
 import com.machamasisuraj.socialapp.R;
-
-import static android.widget.LinearLayout.HORIZONTAL;
 
 public class BottomNavbarActivity extends AppCompatActivity {
     private DrawerLayout dl;
@@ -93,23 +90,33 @@ public class BottomNavbarActivity extends AppCompatActivity {
     }
 
     public void BottomNavitaionMenus() {
-        bottomnavigation.setOnNavigationItemReselectedListener(new BottomNavigationView.OnNavigationItemReselectedListener() {
+
+        bottomnavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
-            public void onNavigationItemReselected(@NonNull MenuItem menuItem) {
+            public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
                 switch (menuItem.getItemId()) {
                     case R.id.navigation_home: {
-                        FragmentManager fragmentManager = getSupportFragmentManager();
-                        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                        TripListFragment firstFragment = new TripListFragment(this);
-                        fragmentTransaction.replace(R.id.frame_container, firstFragment);
-                        fragmentTransaction.addToBackStack(null);
-                        fragmentTransaction.commit();
 
                     }
                     case R.id.navigation_trips: {
+                        FragmentManager fragmentManager = getSupportFragmentManager();
+                        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                        TripListFragment firstFragment = new TripListFragment(BottomNavbarActivity.this);
+                        fragmentTransaction.replace(R.id.frame_container, firstFragment);
+                        fragmentTransaction.addToBackStack(null);
+                        fragmentTransaction.commit();
+                        Toast.makeText(BottomNavbarActivity.this, "qqqqq", Toast.LENGTH_SHORT).show();
 
                     }
                     case R.id.bookings: {
+                        FragmentManager fragmentManager = getSupportFragmentManager();
+                        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                        TripListFragment firstFragment = new TripListFragment(BottomNavbarActivity.this);
+                        fragmentTransaction.replace(R.id.frame_container, firstFragment);
+                        fragmentTransaction.addToBackStack(null);
+                        fragmentTransaction.commit();
+                        Toast.makeText(BottomNavbarActivity.this, "ppppppppppp", Toast.LENGTH_SHORT).show();
+
 
                     }
                     case R.id.navigation_nearby: {
@@ -118,11 +125,13 @@ public class BottomNavbarActivity extends AppCompatActivity {
                     case R.id.navigation_aboutus: {
 
                     }
+                    default:{ return true;}
 
 
                 }
             }
         });
+
 
     }
 }
