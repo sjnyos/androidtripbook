@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -22,8 +23,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class TripDetailActvity extends AppCompatActivity {
-    private Context mContext;
-    private TextView tripName,country,destination,duration,
+      private TextView tripName,country,destination,duration,
             arrivalDate,departuredate,itenerary,tripdays,desc,price,
             grade;
     private Button btnReserve;
@@ -50,6 +50,14 @@ public class TripDetailActvity extends AppCompatActivity {
         desc=findViewById(R.id.desc);
         price = findViewById(R.id.price);
         btnReserve= findViewById(R.id.btnReserve);
+        pickupaddress= findViewById(R.id.pickupaddress);
+        travellerCount= findViewById(R.id.travellerCount);
+        adult= findViewById(R.id.adult);
+        childCounts= findViewById(R.id.childCounts);
+        grade= findViewById(R.id.grade);
+
+
+
 
         BaseUrl.tripId=getIntent().getStringExtra("id");
         tripName.setText(  getIntent().getStringExtra("name"));
@@ -62,10 +70,12 @@ public class TripDetailActvity extends AppCompatActivity {
         tripdays.setText(getIntent().getStringExtra("tripdays"));
         desc.setText( getIntent().getStringExtra("desc")) ;
         price.setText( getIntent().getStringExtra("price"));
+        grade.setText(getIntent().getStringExtra("grade"));
 
         btnReserve.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+                Validation();
                 Toast.makeText(TripDetailActvity.this, "Reserved", Toast.LENGTH_SHORT).show();
                 Reservation reservation = new Reservation(new Date(),new Date(),new Date(),12,6,6,
                         "pickup Address","hotels ",
@@ -74,6 +84,29 @@ public class TripDetailActvity extends AppCompatActivity {
                 reservationBLL.InsertReservation(reservation);
             }
         });
+    }
+    public void Validation(){
+      //  pickupaddress,travellerCount,adult,childCounts;
+        if(TextUtils.isEmpty(pickupaddress.getText().toString())){
+            Toast.makeText(TripDetailActvity.this, "Input Cant be Empty", Toast.LENGTH_SHORT).show();
+            return;
+        }
+        else if(TextUtils.isEmpty(travellerCount.getText().toString())){
+            Toast.makeText(TripDetailActvity.this, "Input Cant be Empty", Toast.LENGTH_SHORT).show();
+            return;
+
+        } else if(TextUtils.isEmpty(adult.getText().toString())){
+            Toast.makeText(TripDetailActvity.this, "Input Cant be Empty", Toast.LENGTH_SHORT).show();
+            return;
+
+        }
+        else if(TextUtils.isEmpty(childCounts.getText().toString())){
+            Toast.makeText(TripDetailActvity.this, "Input Cant be Empty", Toast.LENGTH_SHORT).show();
+            return;
+
+        }
+
+
     }
 
 
