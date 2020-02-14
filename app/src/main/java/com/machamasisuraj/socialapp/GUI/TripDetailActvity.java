@@ -51,6 +51,7 @@ public class TripDetailActvity extends AppCompatActivity {
 
         BaseUrl.tripId=getIntent().getStringExtra("id");
         Toast.makeText(TripDetailActvity.this,BaseUrl.tripId, Toast.LENGTH_SHORT).show();
+        Toast.makeText(TripDetailActvity.this,BaseUrl.UserId+ "User id", Toast.LENGTH_SHORT).show();
         tripName.setText(  getIntent().getStringExtra("name"));
         country.setText( getIntent().getStringExtra("country"));
         destination.setText( getIntent().getStringExtra("destination"));

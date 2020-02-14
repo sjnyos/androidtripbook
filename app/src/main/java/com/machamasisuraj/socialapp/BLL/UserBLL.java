@@ -53,6 +53,8 @@ public class UserBLL {
                     loginResponse.body().getStatus().equals("Login success!")) {
 
                  BaseUrl.token += loginResponse.body().getToken();
+                   BaseUrl.UserId=loginResponse.body().getUser().get_id();
+
                 Log.d("token received", "checkUser: "+ BaseUrl.token);
                 status = true;
             }
