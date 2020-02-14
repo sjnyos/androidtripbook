@@ -22,14 +22,16 @@ public class UserBLL {
     UsersAPI userApi;
     boolean status;
 
+
     public UserBLL(){
         lstUsers=  new ArrayList<>();
         userApi= RetrofitCaller.getInstance().create(UsersAPI.class);
         status=false;
 
+
     }
     public List<User>  GetAllActiveUsers(){
-        Call<List<User>> userlists = userApi.getActiveUserLists();
+        Call<List<User>> userlists = userApi.getActiveUserLists(BaseUrl.token);
         try {
 
                 lstUsers= userlists.execute().body();

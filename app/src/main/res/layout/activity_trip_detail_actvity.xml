@@ -1,0 +1,133 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout  xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".GUI.TripDetailActvity"
+    android:layout_gravity="center"
+    android:gravity="center">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:src="@drawable/trekkingman"
+        android:id="@+id/tripImage"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tripName"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:text="Tri[Name"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:padding="10sp"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="horizontal">
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/country"
+        android:textSize="18sp"
+        android:padding="5sp"
+        android:layout_weight="1"
+        android:text="Coutnry"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/destination"
+        android:textSize="18sp"
+        android:layout_weight="1"
+        android:text="Destination"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/duration"
+        android:textSize="18sp"
+        android:layout_weight="1"
+        android:text="Duration"/>
+    </LinearLayout>
+       <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+           android:gravity="center"
+           android:layout_gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/arrivalDate"
+            android:textSize="18sp"
+            android:textStyle="bold"
+            android:text="Arrival Datge"/>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/departuredate"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:text="Departure Date"/>
+
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/itenerary"
+        android:textSize="18sp"
+        android:text="Itenerary"/>
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:orientation="vertical">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/price"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Price"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/tripdays"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:textColor="@color/colorBlue"
+        android:text="Trip Days"/>
+    </LinearLayout>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/desc"
+        android:textSize="20sp"
+        android:text="desc"
+        android:textStyle="normal"/>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/grade"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        android:text="Grade"/>
+    <Button
+        android:id="@+id/btnReserve"
+        android:layout_width="200dp"
+        android:layout_height="wrap_content"
+        android:text="Reserve"
+        android:textSize="20sp"
+        android:background="@color/colorPrimaryDark"
+        android:textColor="@color/colorWhite"
+        android:padding="20dp"/>
+
+
+</LinearLayout>

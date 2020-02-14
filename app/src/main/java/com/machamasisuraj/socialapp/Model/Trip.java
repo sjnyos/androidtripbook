@@ -10,7 +10,7 @@ public class Trip {
     private float pricePerEach;
     private boolean receiveTransportation;
 
-    public Trip(String tripName, String country, String destination,
+    public Trip( String tripName, String country, String destination,
                 String itenerary, String food, String maproute, String image, String desc, String grade,
                 int duration, int tripDays, int size, Date arrivalDate, Date departureDate,
                 float pricePerEach, boolean receiveTransportation) {
