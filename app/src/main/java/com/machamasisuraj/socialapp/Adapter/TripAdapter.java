@@ -67,7 +67,7 @@ import java.util.List;
             public void onClick(View v) {
                 Toast.makeText(mContext, "Image view Click", Toast.LENGTH_SHORT).show();
                 Intent intent= new Intent(mContext, TripDetailActvity.class);
-
+                intent.putExtra("id",trip.get_id());
                 intent.putExtra("name",trip.getTripName());
                 intent.putExtra("country",trip.getCountry());
                 intent.putExtra("destination",trip.getDestination());

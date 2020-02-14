@@ -4,16 +4,13 @@ import java.util.Date;
 
 public class Trip {
     private String tripName, country, destination,
-            itenerary, food, maproute, image, desc, grade;
+            itenerary, food, maproute, image, desc, grade,_id;
     private int  duration,tripDays, size;
     private Date arrivalDate, departureDate;
     private float pricePerEach;
     private boolean receiveTransportation;
 
-    public Trip( String tripName, String country, String destination,
-                String itenerary, String food, String maproute, String image, String desc, String grade,
-                int duration, int tripDays, int size, Date arrivalDate, Date departureDate,
-                float pricePerEach, boolean receiveTransportation) {
+    public Trip(String tripName, String country, String destination, String itenerary, String food, String maproute, String image, String desc, String grade, String _id, int duration, int tripDays, int size, Date arrivalDate, Date departureDate, float pricePerEach, boolean receiveTransportation) {
         this.tripName = tripName;
         this.country = country;
         this.destination = destination;
@@ -23,6 +20,7 @@ public class Trip {
         this.image = image;
         this.desc = desc;
         this.grade = grade;
+        this._id = _id;
         this.duration = duration;
         this.tripDays = tripDays;
         this.size = size;
@@ -30,8 +28,14 @@ public class Trip {
         this.departureDate = departureDate;
         this.pricePerEach = pricePerEach;
         this.receiveTransportation = receiveTransportation;
+    }
 
+    public String get_id() {
+        return _id;
+    }
 
+    public void set_id(String _id) {
+        this._id = _id;
     }
 
     public String getTripName() {
