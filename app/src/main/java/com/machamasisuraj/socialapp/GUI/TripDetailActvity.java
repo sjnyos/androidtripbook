@@ -6,6 +6,7 @@ import android.content.Context;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
@@ -27,6 +28,7 @@ public class TripDetailActvity extends AppCompatActivity {
             grade;
     private Button btnReserve;
     private ImageView tripImage;
+    private EditText pickupaddress,travellerCount,adult,childCounts;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,8 +52,6 @@ public class TripDetailActvity extends AppCompatActivity {
         btnReserve= findViewById(R.id.btnReserve);
 
         BaseUrl.tripId=getIntent().getStringExtra("id");
-        Toast.makeText(TripDetailActvity.this,BaseUrl.tripId, Toast.LENGTH_SHORT).show();
-        Toast.makeText(TripDetailActvity.this,BaseUrl.UserId+ "User id", Toast.LENGTH_SHORT).show();
         tripName.setText(  getIntent().getStringExtra("name"));
         country.setText( getIntent().getStringExtra("country"));
         destination.setText( getIntent().getStringExtra("destination"));
@@ -104,40 +104,4 @@ public class TripDetailActvity extends AppCompatActivity {
         return "";
     }
 
-//    public Trip initTripObject() {
-//        Date arrivalDate = new Date();
-//        try {
-//            arrivalDate = new SimpleDateFormat("dd/MM/yyyy").parse();
-//        } catch (ParseException e) {
-//            e.printStackTrace();
-//        }
-//        Date departureDate = new Date();
-//        try {
-//            departureDate = new SimpleDateFormat("dd/MM/yyyy").parse(getIntent().getStringExtra("arrivaldate"));
-//        } catch (ParseException e) {
-//            e.printStackTrace();
-//        }
-//
-//        Trip trip = new Trip(
-//              ,
-//               ,
-//               ,
-//              ,
-//                getIntent().getStringExtra("food"),
-//                getIntent().getStringExtra("maproute"),
-//                getIntent().getStringExtra("image"),
-//               ,
-//                getIntent().getStringExtra("grade"),
-//                Integer.parseInt(),
-//                Integer.parseInt(),
-//                Integer.parseInt(getIntent().getStringExtra("size")),
-//                arrivalDate,
-//                departureDate,
-//                Float.parseFloat(getIntent().getStringExtra("price")),
-//                Boolean.parseBoolean(getIntent().getStringExtra("receiveTransportation"))
-//
-//        );
-//        return  trip;
-//
-//    }
 }
