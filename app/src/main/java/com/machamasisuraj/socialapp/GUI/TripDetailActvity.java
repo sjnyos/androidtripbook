@@ -3,6 +3,7 @@ package com.machamasisuraj.socialapp.GUI;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -50,6 +51,7 @@ public class TripDetailActvity extends AppCompatActivity {
         desc=findViewById(R.id.desc);
         price = findViewById(R.id.price);
         btnReserve= findViewById(R.id.btnReserve);
+
         pickupaddress= findViewById(R.id.pickupaddress);
         travellerCount= findViewById(R.id.travellerCount);
         adult= findViewById(R.id.adult);
@@ -76,9 +78,12 @@ public class TripDetailActvity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Validation();
+
                 Toast.makeText(TripDetailActvity.this, "Reserved", Toast.LENGTH_SHORT).show();
-                Reservation reservation = new Reservation(new Date(),new Date(),new Date(),12,6,6,
-                        "pickup Address","hotels ",
+                Reservation reservation = new Reservation(new Date(),new Date(),new Date()
+                        ,Integer.parseInt(tripdays.getText().toString()),Integer.parseInt(adult.getText().toString())
+                        , Integer.parseInt(childCounts.getText().toString()),
+                        pickupaddress.getText().toString(),"Travel And Trek Hotel",
                         "Standard",BaseUrl.tripId, BaseUrl.UserId,2000);
                 ReservationBLL reservationBLL= new ReservationBLL();
                 reservationBLL.InsertReservation(reservation);
