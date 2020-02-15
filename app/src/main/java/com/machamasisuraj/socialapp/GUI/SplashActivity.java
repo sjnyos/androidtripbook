@@ -8,6 +8,7 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.machamasisuraj.socialapp.R;
+import com.machamasisuraj.socialapp.Sensors.LightSensor;
 import com.machamasisuraj.socialapp.Utilities.CheckNetwork;
 
 public class SplashActivity extends AppCompatActivity {
@@ -22,6 +23,10 @@ public class SplashActivity extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
+                //light sensor ajdust brightness
+                LightSensor lightSensor= new LightSensor(SplashActivity.this);
+                lightSensor.getLightInstance();
+
                 CheckNetwork checkNetwork= new CheckNetwork(SplashActivity.this);
 
                 if(checkNetwork.isNetworkAvailable()){
