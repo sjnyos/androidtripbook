@@ -39,16 +39,16 @@ public class BookingFragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        View view= inflater.inflate(R.layout.fragment_booking, container, false);
+        View view = inflater.inflate(R.layout.fragment_booking, container, false);
 
-        booking_Recycler= view.findViewById(R.id.booking_Recycler);
+        booking_Recycler = view.findViewById(R.id.booking_Recycler);
 
 
-        ReservationBLL reservationBLL= new ReservationBLL();
-        List<ShowReservation> list= reservationBLL.getReservationByUser(BaseUrl.UserId);
-        BookingAdapter bookingAdapter = new BookingAdapter(mContext,list);
+        ReservationBLL reservationBLL = new ReservationBLL();
+        List<ShowReservation> list = reservationBLL.getReservationByUser(BaseUrl.UserId);
+        BookingAdapter bookingAdapter = new BookingAdapter(mContext, list);
         booking_Recycler.setAdapter(bookingAdapter);
-        booking_Recycler.setLayoutManager( new LinearLayoutManager(mContext));
+        booking_Recycler.setLayoutManager(new LinearLayoutManager(mContext));
         return view;
     }
 

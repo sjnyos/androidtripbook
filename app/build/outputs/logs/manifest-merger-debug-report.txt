@@ -1,26 +1,32 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:2:1-37:12
-INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:2:1-37:12
-INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:2:1-37:12
-INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:2:1-37:12
+ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:2:1-63:12
+INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:2:1-63:12
+INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:2:1-63:12
+INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:2:1-63:12
 MERGED from [androidx.navigation:navigation-ui:2.2.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/b984a3c2fca340b09f3bb0bc964b01a5/jetified-navigation-ui-2.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/0a787c0ac8f42da800013c2d9496a009/material-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.etebarian:meow-bottom-navigation-java:1.2.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/d2bec84460656e22a3a131dc80a0462a/jetified-meow-bottom-navigation-java-1.2.0/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.appcompat:appcompat:1.1.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/5e5f78f8dbc227f0ef688d38b5b5d85c/constraintlayout-1.1.3/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/10950133dffae4847ab6594bb3fa86af/legacy-support-v4-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/999b6a866a139f3faaa025e0345e746c/jetified-play-services-maps-16.1.0/AndroidManifest.xml:17:1-38:12
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/f2791bcfd6f74144d1588ad157f71971/recyclerview-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [de.hdodenhof:circleimageview:3.0.1] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/4ac032934f479d079e077c3f6522073c/circleimageview-3.0.1/AndroidManifest.xml:2:1-11:12
 MERGED from [androidx.navigation:navigation-fragment:2.2.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/b4fdf0454cdb5402cb8ae1c4989435e8/navigation-fragment-2.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/ec3bc049c13482160f14731ba98f67de/lifecycle-extensions-2.2.0/AndroidManifest.xml:17:1-27:12
 MERGED from [com.squareup.picasso:picasso:2.71828] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/c61cb784fb48d21909ffca53e7bbcba3/jetified-picasso-2.71828/AndroidManifest.xml:2:1-14:12
 MERGED from [com.github.smarteist:autoimageslider:1.3.2] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/09e1f29ea08143e3750b9469f40646c9/autoimageslider-1.3.2/AndroidManifest.xml:2:1-17:12
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/d8624fefedf73366856329cefe60bc6a/play-services-location-17.0.0/AndroidManifest.xml:2:1-9:12
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/5bd029deeef9a105ca74ab7232bcf810/appcompat-resources-1.1.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/c9d230e4b8268ea9a4793d06242acadc/legacy-support-core-ui-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.drawerlayout:drawerlayout:1.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/f5cb34159a7188f420e51280591f22d2/drawerlayout-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.media:media:1.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/a59ddb09cabd13fb0e0e2d52e111ee1e/media-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/7be5a1e7defd8a27649273d44661bd17/legacy-support-core-utils-1.0.0/AndroidManifest.xml:17:1-22:12
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/79f738e139ba90e5ebb56545668d8919/play-services-base-17.0.0/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/0f8d3d1df9b157a7ce5104124fc6e725/play-services-places-placereport-17.0.0/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/bc603357456844f9f899cc74e7856641/play-services-tasks-17.0.0/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/4201f0aca13a75f37041a05c1bcb2af2/jetified-play-services-basement-17.0.0/AndroidManifest.xml:17:1-28:12
 MERGED from [androidx.fragment:fragment:1.2.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/2c1a9eb3a89dee5cffca4077dd94f739/fragment-1.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.viewpager:viewpager:1.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/e69e89f8cc9afccca2c4443e36da29ee/viewpager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.coordinatorlayout:coordinatorlayout:1.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/3b63ca910d2a680cb4433bd0b49ba488/coordinatorlayout-1.0.0/AndroidManifest.xml:17:1-22:12
@@ -53,41 +59,53 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] /home/sjnyos/.gradle/cach
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/7f2298edcc0be2dbea485080fe7ca170/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/66716d543b7cae4ae42f1a71fa52c15c/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/62c8683162ef4a345aa7ae2704bdfaad/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:2:1-37:12
-INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:2:1-37:12
-INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:2:1-37:12
+INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:2:1-63:12
+INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:2:1-63:12
+INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:2:1-63:12
 	package
 		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:3:5-43
 		INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml
 		INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml
 	android:versionName
 		INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:2:1-37:12
+		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:2:1-63:12
 		INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml
 	android:versionCode
 		INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:2:1-37:12
+		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:2:1-63:12
 		INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml
 	xmlns:android
 		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:2:11-69
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:10:5-79
+	android:name
+		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:10:22-76
 uses-permission#android.permission.INTERNET
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:5:5-67
+ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:11:5-67
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/999b6a866a139f3faaa025e0345e746c/jetified-play-services-maps-16.1.0/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/999b6a866a139f3faaa025e0345e746c/jetified-play-services-maps-16.1.0/AndroidManifest.xml:24:5-67
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:5:22-64
+		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:11:22-64
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:6:5-80
+ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:12:5-80
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:6:22-77
+		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:12:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:7:5-81
+ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:13:5-81
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:7:22-78
+		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:13:22-78
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:15:5-80
+	android:name
+		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:15:22-78
 application
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:9:5-35:19
+ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:17:5-61:19
 MERGED from [com.google.android.material:material:1.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/0a787c0ac8f42da800013c2d9496a009/material-1.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/0a787c0ac8f42da800013c2d9496a009/material-1.0.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/5e5f78f8dbc227f0ef688d38b5b5d85c/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/5e5f78f8dbc227f0ef688d38b5b5d85c/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/999b6a866a139f3faaa025e0345e746c/jetified-play-services-maps-16.1.0/AndroidManifest.xml:30:5-36:19
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/999b6a866a139f3faaa025e0345e746c/jetified-play-services-maps-16.1.0/AndroidManifest.xml:30:5-36:19
 MERGED from [de.hdodenhof:circleimageview:3.0.1] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/4ac032934f479d079e077c3f6522073c/circleimageview-3.0.1/AndroidManifest.xml:9:5-20
 MERGED from [de.hdodenhof:circleimageview:3.0.1] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/4ac032934f479d079e077c3f6522073c/circleimageview-3.0.1/AndroidManifest.xml:9:5-20
 MERGED from [androidx.lifecycle:lifecycle-extensions:2.2.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/ec3bc049c13482160f14731ba98f67de/lifecycle-extensions-2.2.0/AndroidManifest.xml:24:5-25:19
@@ -96,6 +114,16 @@ MERGED from [com.squareup.picasso:picasso:2.71828] /home/sjnyos/.gradle/caches/t
 MERGED from [com.squareup.picasso:picasso:2.71828] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/c61cb784fb48d21909ffca53e7bbcba3/jetified-picasso-2.71828/AndroidManifest.xml:7:5-12:19
 MERGED from [com.github.smarteist:autoimageslider:1.3.2] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/09e1f29ea08143e3750b9469f40646c9/autoimageslider-1.3.2/AndroidManifest.xml:11:5-15:19
 MERGED from [com.github.smarteist:autoimageslider:1.3.2] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/09e1f29ea08143e3750b9469f40646c9/autoimageslider-1.3.2/AndroidManifest.xml:11:5-15:19
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/d8624fefedf73366856329cefe60bc6a/play-services-location-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/d8624fefedf73366856329cefe60bc6a/play-services-location-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/79f738e139ba90e5ebb56545668d8919/play-services-base-17.0.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/79f738e139ba90e5ebb56545668d8919/play-services-base-17.0.0/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/0f8d3d1df9b157a7ce5104124fc6e725/play-services-places-placereport-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/0f8d3d1df9b157a7ce5104124fc6e725/play-services-places-placereport-17.0.0/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/bc603357456844f9f899cc74e7856641/play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/bc603357456844f9f899cc74e7856641/play-services-tasks-17.0.0/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/4201f0aca13a75f37041a05c1bcb2af2/jetified-play-services-basement-17.0.0/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/4201f0aca13a75f37041a05c1bcb2af2/jetified-play-services-basement-17.0.0/AndroidManifest.xml:22:5-26:19
 MERGED from [androidx.core:core:1.1.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/57692e4753601536b7ad4be218820432/core-1.1.0/AndroidManifest.xml:24:5-89
 MERGED from [androidx.core:core:1.1.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/57692e4753601536b7ad4be218820432/core-1.1.0/AndroidManifest.xml:24:5-89
 MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/762f234f9bf5aec8d03ea05168ad9072/lifecycle-process-2.2.0/AndroidManifest.xml:24:5-30:19
@@ -103,75 +131,87 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/sjnyos/.gradle/ca
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/6694cd58f7b0210e11a489b1bbbdd6d4/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/6694cd58f7b0210e11a489b1bbbdd6d4/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
 	android:requestLegacyExternalStorage
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:12:9-52
+		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:20:9-52
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/57692e4753601536b7ad4be218820432/core-1.1.0/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:14:9-35
+		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:22:9-35
 	android:label
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:11:9-41
+		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:19:9-41
 	android:roundIcon
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:13:9-54
+		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:21:9-54
 	android:allowBackup
 		ADDED from [com.github.smarteist:autoimageslider:1.3.2] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/09e1f29ea08143e3750b9469f40646c9/autoimageslider-1.3.2/AndroidManifest.xml:12:9-35
 	android:icon
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:10:9-43
+		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:18:9-43
 	android:theme
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:15:9-40
+		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:23:9-40
 	android:usesCleartextTraffic
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:16:9-44
+		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:24:9-44
+meta-data#com.google.android.geo.API_KEY
+ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:34:9-36:55
+	android:value
+		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:36:13-52
+	android:name
+		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:35:13-58
+activity#com.machamasisuraj.socialapp.GUI.MapsActivity
+ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:38:9-42:20
+	android:label
+		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:40:13-56
+	android:name
+		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:39:13-45
 activity#com.machamasisuraj.socialapp.GUI.TripDetailActvity
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:17:9-68
+ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:43:9-59
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:17:19-56
+		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:43:19-56
 activity#com.machamasisuraj.socialapp.GUI.AdminGUI.UsersActivity
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:18:9-64
+ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:44:9-64
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:18:19-61
+		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:44:19-61
 activity#com.machamasisuraj.socialapp.GUI.AdminGUI.AdminTripActivity
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:19:9-68
+ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:45:9-68
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:19:19-65
+		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:45:19-65
 activity#com.machamasisuraj.socialapp.GUI.AdminGUI.AdminDashboardActivity
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:20:9-73
+ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:46:9-73
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:20:19-70
+		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:46:19-70
 activity#com.machamasisuraj.socialapp.GUI.BottomNavbarActivity
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:21:9-62
+ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:47:9-62
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:21:19-59
+		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:47:19-59
 activity#com.machamasisuraj.socialapp.GUI.BannerActivity
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:22:9-56
+ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:48:9-56
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:22:19-53
+		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:48:19-53
 activity#com.machamasisuraj.socialapp.GUI.ItemListActivity
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:23:9-58
+ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:49:9-58
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:23:19-55
+		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:49:19-55
 activity#com.machamasisuraj.socialapp.GUI.MainActivity
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:24:9-54
+ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:50:9-54
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:24:19-51
+		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:50:19-51
 activity#com.machamasisuraj.socialapp.GUI.SplashActivity
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:25:9-27:69
+ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:51:9-53:69
 	android:theme
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:27:13-66
+		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:53:13-66
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:26:13-47
+		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:52:13-47
 activity#com.machamasisuraj.socialapp.GUI.LoginActivity
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:28:9-34:20
+ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:54:9-60:20
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:28:19-52
+		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:54:19-52
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:29:13-33:29
+ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:55:13-59:29
 action#android.intent.action.MAIN
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:30:17-69
+ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:56:17-69
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:30:25-66
+		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:56:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:32:17-77
+ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:58:17-77
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:32:27-74
+		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:58:27-74
 uses-sdk
 INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
 INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml
@@ -188,6 +228,8 @@ MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/sjnyos/.gra
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/5e5f78f8dbc227f0ef688d38b5b5d85c/constraintlayout-1.1.3/AndroidManifest.xml:5:5-7:41
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/10950133dffae4847ab6594bb3fa86af/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-v4:1.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/10950133dffae4847ab6594bb3fa86af/legacy-support-v4-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/999b6a866a139f3faaa025e0345e746c/jetified-play-services-maps-16.1.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:16.1.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/999b6a866a139f3faaa025e0345e746c/jetified-play-services-maps-16.1.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/f2791bcfd6f74144d1588ad157f71971/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.recyclerview:recyclerview:1.1.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/f2791bcfd6f74144d1588ad157f71971/recyclerview-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [de.hdodenhof:circleimageview:3.0.1] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/4ac032934f479d079e077c3f6522073c/circleimageview-3.0.1/AndroidManifest.xml:5:5-7:41
@@ -200,6 +242,8 @@ MERGED from [com.squareup.picasso:picasso:2.71828] /home/sjnyos/.gradle/caches/t
 MERGED from [com.squareup.picasso:picasso:2.71828] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/c61cb784fb48d21909ffca53e7bbcba3/jetified-picasso-2.71828/AndroidManifest.xml:5:5-44
 MERGED from [com.github.smarteist:autoimageslider:1.3.2] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/09e1f29ea08143e3750b9469f40646c9/autoimageslider-1.3.2/AndroidManifest.xml:7:5-9:41
 MERGED from [com.github.smarteist:autoimageslider:1.3.2] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/09e1f29ea08143e3750b9469f40646c9/autoimageslider-1.3.2/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/d8624fefedf73366856329cefe60bc6a/play-services-location-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:17.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/d8624fefedf73366856329cefe60bc6a/play-services-location-17.0.0/AndroidManifest.xml:5:5-44
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/5bd029deeef9a105ca74ab7232bcf810/appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.appcompat:appcompat-resources:1.1.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/5bd029deeef9a105ca74ab7232bcf810/appcompat-resources-1.1.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/c9d230e4b8268ea9a4793d06242acadc/legacy-support-core-ui-1.0.0/AndroidManifest.xml:20:5-44
@@ -210,6 +254,14 @@ MERGED from [androidx.media:media:1.0.0] /home/sjnyos/.gradle/caches/transforms-
 MERGED from [androidx.media:media:1.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/a59ddb09cabd13fb0e0e2d52e111ee1e/media-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/7be5a1e7defd8a27649273d44661bd17/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/7be5a1e7defd8a27649273d44661bd17/legacy-support-core-utils-1.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/79f738e139ba90e5ebb56545668d8919/play-services-base-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:17.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/79f738e139ba90e5ebb56545668d8919/play-services-base-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/0f8d3d1df9b157a7ce5104124fc6e725/play-services-places-placereport-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:17.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/0f8d3d1df9b157a7ce5104124fc6e725/play-services-places-placereport-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/bc603357456844f9f899cc74e7856641/play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:17.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/bc603357456844f9f899cc74e7856641/play-services-tasks-17.0.0/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/4201f0aca13a75f37041a05c1bcb2af2/jetified-play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:17.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/4201f0aca13a75f37041a05c1bcb2af2/jetified-play-services-basement-17.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.2.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/2c1a9eb3a89dee5cffca4077dd94f739/fragment-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.fragment:fragment:1.2.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/2c1a9eb3a89dee5cffca4077dd94f739/fragment-1.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.viewpager:viewpager:1.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/e69e89f8cc9afccca2c4443e36da29ee/viewpager-1.0.0/AndroidManifest.xml:20:5-44
@@ -284,6 +336,22 @@ INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml
 		INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml
 		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml
 		INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-maps:16.1.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/999b6a866a139f3faaa025e0345e746c/jetified-play-services-maps-16.1.0/AndroidManifest.xml:23:5-79
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/999b6a866a139f3faaa025e0345e746c/jetified-play-services-maps-16.1.0/AndroidManifest.xml:23:22-76
+uses-feature#0x00020000
+ADDED from [com.google.android.gms:play-services-maps:16.1.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/999b6a866a139f3faaa025e0345e746c/jetified-play-services-maps-16.1.0/AndroidManifest.xml:26:5-28:35
+	android:glEsVersion
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/999b6a866a139f3faaa025e0345e746c/jetified-play-services-maps-16.1.0/AndroidManifest.xml:27:9-41
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/999b6a866a139f3faaa025e0345e746c/jetified-play-services-maps-16.1.0/AndroidManifest.xml:28:9-32
+uses-library#org.apache.http.legacy
+ADDED from [com.google.android.gms:play-services-maps:16.1.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/999b6a866a139f3faaa025e0345e746c/jetified-play-services-maps-16.1.0/AndroidManifest.xml:33:9-35:40
+	android:required
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/999b6a866a139f3faaa025e0345e746c/jetified-play-services-maps-16.1.0/AndroidManifest.xml:35:13-37
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:16.1.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/999b6a866a139f3faaa025e0345e746c/jetified-play-services-maps-16.1.0/AndroidManifest.xml:34:13-50
 provider#com.squareup.picasso.PicassoProvider
 ADDED from [com.squareup.picasso:picasso:2.71828] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/c61cb784fb48d21909ffca53e7bbcba3/jetified-picasso-2.71828/AndroidManifest.xml:8:9-11:40
 	android:authorities
@@ -292,6 +360,20 @@ ADDED from [com.squareup.picasso:picasso:2.71828] /home/sjnyos/.gradle/caches/tr
 		ADDED from [com.squareup.picasso:picasso:2.71828] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/c61cb784fb48d21909ffca53e7bbcba3/jetified-picasso-2.71828/AndroidManifest.xml:11:13-37
 	android:name
 		ADDED from [com.squareup.picasso:picasso:2.71828] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/c61cb784fb48d21909ffca53e7bbcba3/jetified-picasso-2.71828/AndroidManifest.xml:9:13-64
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/79f738e139ba90e5ebb56545668d8919/play-services-base-17.0.0/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/79f738e139ba90e5ebb56545668d8919/play-services-base-17.0.0/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/79f738e139ba90e5ebb56545668d8919/play-services-base-17.0.0/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:17.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/79f738e139ba90e5ebb56545668d8919/play-services-base-17.0.0/AndroidManifest.xml:24:13-79
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:17.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/4201f0aca13a75f37041a05c1bcb2af2/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/4201f0aca13a75f37041a05c1bcb2af2/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:17.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/4201f0aca13a75f37041a05c1bcb2af2/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
 provider#androidx.lifecycle.ProcessLifecycleOwnerInitializer
 ADDED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/762f234f9bf5aec8d03ea05168ad9072/lifecycle-process-2.2.0/AndroidManifest.xml:25:9-29:43
 	android:authorities
