@@ -43,10 +43,10 @@ public class BookingFragment extends Fragment {
 
         booking_Recycler= view.findViewById(R.id.booking_Recycler);
 
+
         ReservationBLL reservationBLL= new ReservationBLL();
         List<ShowReservation> list= reservationBLL.getReservationByUser(BaseUrl.UserId);
         BookingAdapter bookingAdapter = new BookingAdapter(mContext,list);
-
         booking_Recycler.setAdapter(bookingAdapter);
         booking_Recycler.setLayoutManager( new LinearLayoutManager(mContext));
         return view;
