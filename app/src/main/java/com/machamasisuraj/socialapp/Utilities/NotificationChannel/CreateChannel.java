@@ -1,4 +1,4 @@
-package com.machamasisuraj.socialapp.Utilities.CreateChannel;
+package com.machamasisuraj.socialapp.Utilities.NotificationChannel;
 
 import android.app.NotificationChannel;
 import android.app.NotificationManager;

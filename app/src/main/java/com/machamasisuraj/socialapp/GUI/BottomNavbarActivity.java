@@ -30,6 +30,7 @@ import com.machamasisuraj.socialapp.BLL.UserBLL;
 import com.machamasisuraj.socialapp.Fragments.BookingFragment;
 import com.machamasisuraj.socialapp.Fragments.TripListFragment;
 import com.machamasisuraj.socialapp.R;
+import com.machamasisuraj.socialapp.Utilities.NotificationViewer;
 
 public class BottomNavbarActivity extends AppCompatActivity {
     private DrawerLayout dl;
@@ -46,6 +47,10 @@ public class BottomNavbarActivity extends AppCompatActivity {
         tokendisplay.setText(getIntent().getExtras().getString("token"));
         bottomnavigation = findViewById(R.id.bottomnavigation);
         bottomnavigation.setSelectedItemId(R.id.homego);
+
+        //display notification
+        NotificationViewer notificationViewer= new NotificationViewer(this,"New Exotic Places Nearby","Tap to View");
+        notificationViewer.ClassicDispplaynotification();
 
 
         FragmentManager fragmentManager = getSupportFragmentManager();
