@@ -34,7 +34,7 @@ public class LinkPermisson {
     }
     public void requestPermissionForReadExtertalStorage() throws Exception {
         try {
-            ActivityCompat.requestPermissions((Activity) mContext, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE},
+            ActivityCompat.requestPermissions((Activity) mContext, new String[]{Manifest.permission.READ_EXTERNAL_STORAGE, Manifest.permission.WRITE_EXTERNAL_STORAGE},
                     0);
         } catch (Exception e) {
             e.printStackTrace();
