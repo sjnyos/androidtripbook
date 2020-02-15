@@ -54,9 +54,13 @@ public class BottomNavbarActivity extends AppCompatActivity {
         fragmentTransaction.replace(R.id.frame_container, firstFragment);
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
+       //sensor
         ProximitySensor();
+        //drawer navigation
         navigations();
+        //bottom navigation
         BottomNavitaionMenus();
+        //chat head on the top of the layout
         PopulatatChatHead();
     }
 
