@@ -6,6 +6,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
 import android.widget.TextView;
+import android.widget.Toast;
 
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
@@ -19,6 +20,11 @@ public class BookingAdapter  extends  RecyclerView.Adapter<BookingAdapter.Viewho
     private Context mContext;
     private List<ShowReservation> reservationList;
 
+    public BookingAdapter(Context mContext, List<ShowReservation> reservationList) {
+        this.mContext = mContext;
+        this.reservationList = reservationList;
+    }
+
     @NonNull
     @Override
     public Viewholder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
@@ -29,20 +35,29 @@ public class BookingAdapter  extends  RecyclerView.Adapter<BookingAdapter.Viewho
     @Override
     public void onBindViewHolder(@NonNull Viewholder holder, int position) {
         ShowReservation showReservation=  reservationList.get(position);
-        bookingName= itemView.findViewById(R.id.bookingName);
-        tripdays= itemView.findViewById(R.id.tripdays);
-        startDate= itemView.findViewById(R.id.startDate);
-        endDate= itemView.findViewById(R.id.endDate);
-        booktravallercount= itemView.findViewById(R.id.booktravallercount);
-        bookadult= itemView.findViewById(R.id.bookadult);
-        bookchild= itemView.findViewById(R.id.bookchild);
-        bookpickupAddress= itemView.findViewById(R.id.bookpickupAddress);
-        bookhotel= itemView.findViewById(R.id.bookhotel);
-        bookPrice= itemView.findViewById(R.id.bookPrice);
-        btnedit= itemView.findViewById(R.id.btnedit);
-        btndelete=itemView.findViewById(R.id.btndelete);
+
         holder.tripdays.setText(showReservation.getTrip().getTripDays()+"");
-        holder.startDate.setText();
+        holder.startDate.setText(showReservation.getStartDate()+"");
+        holder.endDate.setText(showReservation.getEndDate()+"");
+        holder.booktravallercount.setText(showReservation.getTravellerCount()+"");
+        holder.bookadult.setText(showReservation.getAdult()+"");
+        holder.bookchild.setText(showReservation.getChild()+"");
+        holder.bookpickupAddress.setText(showReservation.getPickupAddress()+"");
+        holder.bookhotel.setText(showReservation.getAccomodation());
+        holder.bookPrice.setText(showReservation.getPrice()+"");
+        holder.btnedit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(mContext, "Delete", Toast.LENGTH_SHORT).show();
+            }
+        });
+        holder.btnedit.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(mContext, "EDit ", Toast.LENGTH_SHORT).show();
+            }
+        });
+
 
     }
 

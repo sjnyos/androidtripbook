@@ -17,8 +17,10 @@ import android.widget.Toast;
 
 import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.google.android.material.navigation.NavigationView;
+import com.machamasisuraj.socialapp.Adapter.BookingAdapter;
 import com.machamasisuraj.socialapp.Adapter.UserListAdapter;
 import com.machamasisuraj.socialapp.BLL.UserBLL;
+import com.machamasisuraj.socialapp.Fragments.BookingFragment;
 import com.machamasisuraj.socialapp.Fragments.TripListFragment;
 import com.machamasisuraj.socialapp.R;
 
@@ -111,8 +113,8 @@ public class BottomNavbarActivity extends AppCompatActivity {
                     case R.id.bookings: {
                         FragmentManager fragmentManager = getSupportFragmentManager();
                         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                        TripListFragment firstFragment = new TripListFragment(BottomNavbarActivity.this);
-                        fragmentTransaction.replace(R.id.frame_container, firstFragment);
+                         BookingFragment bookingFragment= new BookingFragment(BottomNavbarActivity.this);
+                        fragmentTransaction.replace(R.id.frame_container, bookingFragment);
                         fragmentTransaction.addToBackStack(null);
                         fragmentTransaction.commit();
                         Toast.makeText(BottomNavbarActivity.this, "ppppppppppp", Toast.LENGTH_SHORT).show();
