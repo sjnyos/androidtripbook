@@ -2,6 +2,7 @@ package com.machamasisuraj.socialapp.ApiService;
 
 import com.machamasisuraj.socialapp.Model.BannerItem;
 import com.machamasisuraj.socialapp.Model.Reservation;
+import com.machamasisuraj.socialapp.Model.ShowReservation;
 
 import java.util.List;
 
@@ -26,7 +27,7 @@ public interface ReservationAPI {
     Call<Reservation> getByID(@Path("id") String id,@Header("Authorization") String authHeader);
 
     @GET("/reserve/users/{id}")
-    Call<List< Reservation>> getByUserid(@Path("id") String id,@Header("Authorization") String authHeader);
+    Call<List<ShowReservation>> getByUserid(@Path("id") String id, @Header("Authorization") String authHeader);
 
     @PUT("/reserve/{id}")
     Call<Reservation> update(@Path("id") String id, @Body Reservation  reservation,@Header("Authorization") String authHeader);

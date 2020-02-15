@@ -2088,6 +2088,10 @@
         "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/0a787c0ac8f42da800013c2d9496a009/material-1.0.0/res/drawable/design_snackbar_background.xml"
     },
     {
+        "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/layout_booking_recycler.xml.flat",
+        "source": "/home/sjnyos/android Kiran sir/app/src/main/res/layout/booking_recycler.xml"
+    },
+    {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/drawable-watch-v20_abc_dialog_material_background.xml.flat",
         "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/drawable-watch-v20/abc_dialog_material_background.xml"
     },
@@ -2138,6 +2142,10 @@
     {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/drawable_btn_checkbox_unchecked_to_checked_mtrl_animation.xml.flat",
         "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/drawable/btn_checkbox_unchecked_to_checked_mtrl_animation.xml"
+    },
+    {
+        "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/layout_fragment_booking.xml.flat",
+        "source": "/home/sjnyos/android Kiran sir/app/src/main/res/layout/fragment_booking.xml"
     },
     {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/color_design_error.xml.flat",
