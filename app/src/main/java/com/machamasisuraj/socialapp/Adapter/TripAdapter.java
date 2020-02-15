@@ -98,6 +98,12 @@ import java.util.List;
                 Toast.makeText(mContext, "Rating bar clicked", Toast.LENGTH_SHORT).show();
             }
         });
+        holder.routeLocation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(mContext, "Route Location", Toast.LENGTH_SHORT).show();
+            }
+        });
     }
 
     @Override
@@ -107,7 +113,7 @@ import java.util.List;
 
     public class TpViewHolder extends RecyclerView.ViewHolder{
         private TextView tripName, difficulty,address;
-        private ImageView tripImage,  favourite,book;
+        private ImageView tripImage,  favourite,book,routeLocation;
         private RatingBar ratingBar;
 
         public TpViewHolder(@NonNull View itemView) {
@@ -119,6 +125,7 @@ import java.util.List;
             favourite=itemView.findViewById(R.id.favourite);
             book=itemView.findViewById(R.id.book);
             ratingBar=itemView.findViewById(R.id.ratingBar);
+            routeLocation=itemView.findViewById(R.id.routeLocation);
         }
     }
      private static String convertMongoDate(String val) {
