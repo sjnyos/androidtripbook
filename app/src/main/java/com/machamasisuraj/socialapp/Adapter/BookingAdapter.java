@@ -37,26 +37,21 @@ public class BookingAdapter  extends  RecyclerView.Adapter<BookingAdapter.Viewho
         ShowReservation showReservation=  reservationList.get(position);
 
         holder.tripdays.setText(showReservation.getTrip().getTripDays()+"");
-        holder.startDate.setText(showReservation.getStartDate()+"");
-        holder.endDate.setText(showReservation.getEndDate()+"");
-        holder.booktravallercount.setText(showReservation.getTravellerCount()+"");
-        holder.bookadult.setText(showReservation.getAdult()+"");
-        holder.bookchild.setText(showReservation.getChild()+"");
-        holder.bookpickupAddress.setText(showReservation.getPickupAddress()+"");
-        holder.bookhotel.setText(showReservation.getAccomodation());
-        holder.bookPrice.setText(showReservation.getPrice()+"");
+        holder.startDate.setText("Start :"+showReservation.getStartDate()+"");
+        holder.endDate.setText("End :"+showReservation.getEndDate()+"");
+        holder.booktravallercount.setText("total Travellers :"+ showReservation.getTravellerCount()+"");
+        holder.bookadult.setText("Adult : "+showReservation.getAdult()+"");
+        holder.bookchild.setText( "Child: "+showReservation.getChild()+"");
+        holder.bookpickupAddress.setText("Pick up: "+showReservation.getPickupAddress()+"");
+        holder.bookhotel.setText("Hotel :"+showReservation.getAccomodation());
+        holder.bookPrice.setText("Price :"+ showReservation.getPrice()+"");
         holder.btnedit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(mContext, "Delete", Toast.LENGTH_SHORT).show();
             }
         });
-        holder.btnedit.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Toast.makeText(mContext, "EDit ", Toast.LENGTH_SHORT).show();
-            }
-        });
+
 
 
     }
@@ -84,8 +79,7 @@ public class BookingAdapter  extends  RecyclerView.Adapter<BookingAdapter.Viewho
             bookpickupAddress= itemView.findViewById(R.id.bookpickupAddress);
             bookhotel= itemView.findViewById(R.id.bookhotel);
             bookPrice= itemView.findViewById(R.id.bookPrice);
-            btnedit= itemView.findViewById(R.id.btnedit);
-            btndelete=itemView.findViewById(R.id.btndelete);
+             btndelete=itemView.findViewById(R.id.btndelete);
 
         }
     }
