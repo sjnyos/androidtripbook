@@ -45,7 +45,7 @@ public class BookingAdapter  extends  RecyclerView.Adapter<BookingAdapter.Viewho
         holder.bookpickupAddress.setText("Pick up: "+showReservation.getPickupAddress()+"");
         holder.bookhotel.setText("Hotel :"+showReservation.getAccomodation());
         holder.bookPrice.setText("Price :"+ showReservation.getPrice()+"");
-        holder.btnedit.setOnClickListener(new View.OnClickListener() {
+        holder.btndelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Toast.makeText(mContext, "Delete", Toast.LENGTH_SHORT).show();

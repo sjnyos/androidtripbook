@@ -8,12 +8,12 @@
         "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/drawable-xhdpi-v4/abc_ic_menu_copy_mtrl_am_alpha.png"
     },
     {
-        "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/layout_activity_users.xml.flat",
-        "source": "/home/sjnyos/android Kiran sir/app/src/main/res/layout/activity_users.xml"
-    },
-    {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/layout_abc_expanded_menu_layout.xml.flat",
         "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/layout/abc_expanded_menu_layout.xml"
+    },
+    {
+        "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/layout_activity_users.xml.flat",
+        "source": "/home/sjnyos/android Kiran sir/app/src/main/res/layout/activity_users.xml"
     },
     {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_btn_switch_to_on_mtrl_00001.9.png.flat",
@@ -68,32 +68,32 @@
         "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/drawable/abc_seekbar_track_material.xml"
     },
     {
-        "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
-        "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/drawable-hdpi-v4/abc_list_selector_disabled_holo_dark.9.png"
-    },
-    {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_scrubber_control_to_pressed_mtrl_000.png.flat",
         "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/drawable-xxhdpi-v4/abc_scrubber_control_to_pressed_mtrl_000.png"
+    },
+    {
+        "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_list_selector_disabled_holo_dark.9.png.flat",
+        "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/drawable-hdpi-v4/abc_list_selector_disabled_holo_dark.9.png"
     },
     {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/layout-v26_abc_screen_toolbar.xml.flat",
         "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/layout-v26/abc_screen_toolbar.xml"
     },
     {
-        "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
-        "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/drawable-xxxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png"
-    },
-    {
-        "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/color_abc_search_url_text.xml.flat",
-        "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/color/abc_search_url_text.xml"
+        "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/color_abc_btn_colored_text_material.xml.flat",
+        "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/color/abc_btn_colored_text_material.xml"
     },
     {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/drawable_ic_accessibility_black_24dp.xml.flat",
         "source": "/home/sjnyos/android Kiran sir/app/src/main/res/drawable/ic_accessibility_black_24dp.xml"
     },
     {
-        "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/color_abc_btn_colored_text_material.xml.flat",
-        "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/color/abc_btn_colored_text_material.xml"
+        "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/color_abc_search_url_text.xml.flat",
+        "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/drawable-xxxhdpi-v4_abc_spinner_mtrl_am_alpha.9.png.flat",
+        "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/drawable-xxxhdpi-v4/abc_spinner_mtrl_am_alpha.9.png"
     },
     {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/layout_notification_template_media.xml.flat",
@@ -120,12 +120,12 @@
         "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/57692e4753601536b7ad4be218820432/core-1.1.0/res/drawable-xhdpi-v4/notification_bg_normal.9.png"
     },
     {
-        "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/layout_notification_template_lines_media.xml.flat",
-        "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/a59ddb09cabd13fb0e0e2d52e111ee1e/media-1.0.0/res/layout/notification_template_lines_media.xml"
-    },
-    {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/anim-v21_design_bottom_sheet_slide_in.xml.flat",
         "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/0a787c0ac8f42da800013c2d9496a009/material-1.0.0/res/anim-v21/design_bottom_sheet_slide_in.xml"
+    },
+    {
+        "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/layout_notification_template_lines_media.xml.flat",
+        "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/a59ddb09cabd13fb0e0e2d52e111ee1e/media-1.0.0/res/layout/notification_template_lines_media.xml"
     },
     {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/drawable-xxhdpi-v4_abc_list_pressed_holo_dark.9.png.flat",
@@ -192,12 +192,12 @@
         "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/drawable-mdpi-v4/abc_list_divider_mtrl_alpha.9.png"
     },
     {
-        "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
-        "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/drawable-xhdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png"
-    },
-    {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/layout_activity_item_create.xml.flat",
         "source": "/home/sjnyos/android Kiran sir/app/src/main/res/layout/activity_item_create.xml"
+    },
+    {
+        "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_scrubber_control_to_pressed_mtrl_005.png.flat",
+        "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/drawable-xhdpi-v4/abc_scrubber_control_to_pressed_mtrl_005.png"
     },
     {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/drawable-xhdpi-v4_abc_textfield_activated_mtrl_alpha.9.png.flat",
@@ -208,12 +208,12 @@
         "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/anim/btn_radio_to_on_mtrl_ring_outer_animation.xml"
     },
     {
-        "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/anim_abc_popup_exit.xml.flat",
-        "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/anim/abc_popup_exit.xml"
-    },
-    {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/color_mtrl_tabs_legacy_text_color_selector.xml.flat",
         "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/0a787c0ac8f42da800013c2d9496a009/material-1.0.0/res/color/mtrl_tabs_legacy_text_color_selector.xml"
+    },
+    {
+        "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/anim_abc_popup_exit.xml.flat",
+        "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/anim/abc_popup_exit.xml"
     },
     {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/drawable_abc_spinner_textfield_background_material.xml.flat",
@@ -404,12 +404,12 @@
         "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/drawable/abc_ratingbar_small_material.xml"
     },
     {
-        "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
-        "source": "/home/sjnyos/android Kiran sir/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
-    },
-    {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/drawable-hdpi-v4_abc_switch_track_mtrl_alpha.9.png.flat",
         "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/ff5579b0fd704d100dd064ce62c44ed8/appcompat-1.1.0/res/drawable-hdpi-v4/abc_switch_track_mtrl_alpha.9.png"
+    },
+    {
+        "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/mipmap-anydpi-v26_ic_launcher.xml.flat",
+        "source": "/home/sjnyos/android Kiran sir/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml"
     },
     {
         "merged": "/home/sjnyos/android Kiran sir/app/build/intermediates/res/merged/debug/interpolator_btn_checkbox_unchecked_mtrl_animation_interpolator_1.xml.flat",
