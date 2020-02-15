@@ -16,6 +16,7 @@ import com.machamasisuraj.socialapp.BLL.UserBLL;
 import com.machamasisuraj.socialapp.BaseUrl.BaseUrl;
 import com.machamasisuraj.socialapp.R;
 import com.machamasisuraj.socialapp.EnableStrictMode.StrictModeClass;
+import com.machamasisuraj.socialapp.Utilities.NotificationBroadcaster.NotificationService;
 import com.machamasisuraj.socialapp.Utilities.NotificationViewer;
 
 import java.net.URL;
@@ -38,6 +39,9 @@ public class LoginActivity extends AppCompatActivity {
         tvSignup = findViewById(R.id.tvSignup);
         etUsername.setText("suraj");
         etPassword.setText("suraj");
+
+        //starting backgraound process
+       // startService(new Intent(LoginActivity.this, NotificationService.class));
 
         tvSignup.setOnClickListener(new View.OnClickListener() {
             @Override

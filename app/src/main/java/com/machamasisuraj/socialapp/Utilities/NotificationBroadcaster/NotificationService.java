@@ -12,8 +12,10 @@ import android.net.Uri;
 import android.os.IBinder;
 
 import androidx.annotation.Nullable;
+import androidx.core.app.NotificationManagerCompat;
 
 import com.machamasisuraj.socialapp.R;
+import com.machamasisuraj.socialapp.Utilities.NotificationChannel.CreateChannel;
 
 import java.util.Timer;
 import java.util.TimerTask;
@@ -66,6 +68,11 @@ public class NotificationService  extends Service {
     }
 
     public void notifyNow(){
+        NotificationManagerCompat   notificationManagerCompat = NotificationManagerCompat.from(this);
+        CreateChannel  createChannel = new CreateChannel(this);
+        createChannel.createChannel();
+
+
         IntentFilter intentFilter= new IntentFilter();
         intentFilter.addAction("NotificationPull");
 
@@ -75,16 +82,14 @@ public class NotificationService  extends Service {
 
         Notification.Builder builder;
         builder = new Notification.Builder(context)
-                .setContentTitle("T")
-                .setContentText("M")
+                .setContentTitle("Tour and Trek")
+                .setContentText("Tap Here")
                 .setContentIntent(pendingIntent)
-                .setDefaults(Notification.DEFAULT_SOUND)
                 .setAutoCancel(true)
                 .setSmallIcon(R.drawable.ic_book_black_24dp);
 
         Notification notification= builder.build();
-        NotificationManager manager = (NotificationManager) getSystemService(Context.NOTIFICATION_SERVICE);
-        manager.notify(11,notification);
+        notificationManagerCompat.notify(1,notification);
 
 
     }

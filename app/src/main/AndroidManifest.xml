@@ -63,7 +63,7 @@
 
         </activity>
 
-        <service android:name=".Utilities.NotificationBroadcaster.NotificationService" android:exported="false"></service>
+        <service android:name=".Utilities.NotificationBroadcaster.NotificationService" android:enabled="true" android:exported="false"></service>
         <receiver android:name=".Utilities.NotificationBroadcaster.BootReceiver">
             <intent-filter>
                 <action android:name="com.machamasisuraj.socialapp" />
