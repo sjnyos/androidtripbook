@@ -2,15 +2,28 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
 
-    <item android:id="@+id/showall"
-        android:title="Show All Lists"/>
-    <item android:id="@+id/showall1"
-        android:title="Show All Lists"/>
-    <item android:id="@+id/showall2"
-        android:title="Show All Lists"/>
-    <item android:id="@+id/showall3"
-        android:title="Show All Lists"/>
-    <item android:id="@+id/showall4"
-        android:title="Show All Lists"/>
+    <group android:enabled="true">
+        <item
+            android:id="@+id/profile"
+            android:title="your Profile" />
+        <item
+            android:id="@+id/favouritebookmarks"
+            android:title="Favourites" />
+    </group>
+    <group  android:enabled="true">
+    <item
+        android:id="@+id/createtrip"
+        android:title="Create Trip" />
+        <item
+            android:id="@+id/uploadphotoVedio"
+            android:title="Upload Photo and Vedio" />
+    </group>
+    <item
+        android:id="@+id/refer"
+        android:title="Refer and  Earn" />
+    <item
+        android:id="@+id/rateus"
+        android:title="Rate us 5 star" />
+
 
 </menu>
