@@ -67,8 +67,8 @@
         android:layout_height="wrap_content"
         android:layout_marginStart="16dp"
         android:layout_marginTop="8dp"
-        android:textColor="#F3EDED"
         android:text="Stanford California"
+        android:textColor="#F3EDED"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/difficulty" />
 
@@ -97,12 +97,10 @@
         android:id="@+id/routeLocation"
         android:layout_width="49dp"
         android:layout_height="41dp"
-        android:layout_marginStart="20dp"
-        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
         app:layout_constraintBottom_toTopOf="@+id/favourite"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toEndOf="@+id/tripName"
         app:srcCompat="@drawable/ic_location_on_black_24dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>

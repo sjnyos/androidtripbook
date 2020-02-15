@@ -27,8 +27,7 @@ public class SplashActivity extends AppCompatActivity {
                 //light sensor ajdust brightness
                 LightSensor lightSensor= new LightSensor(SplashActivity.this);
                 lightSensor.getLightInstance();
-                //starting backgraound process
-                startService(new Intent(SplashActivity.this, NotificationService.class));
+
                 //check network availability
                 CheckNetwork checkNetwork= new CheckNetwork(SplashActivity.this);
 

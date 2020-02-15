@@ -225,9 +225,11 @@ ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:62:9-
 	android:name
 		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:62:19-52
 service#com.machamasisuraj.socialapp.Utilities.NotificationBroadcaster.NotificationService
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:66:9-123
+ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:66:9-146
+	android:enabled
+		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:66:88-110
 	android:exported
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:66:88-112
+		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:66:111-135
 	android:name
 		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:66:18-87
 receiver#com.machamasisuraj.socialapp.Utilities.NotificationBroadcaster.BootReceiver

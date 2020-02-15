@@ -14,6 +14,8 @@ import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.machamasisuraj.socialapp.BaseUrl.BaseUrl;
+import com.machamasisuraj.socialapp.GUI.BottomNavbarActivity;
+import com.machamasisuraj.socialapp.GUI.MapsActivity;
 import com.machamasisuraj.socialapp.GUI.TripDetailActvity;
 import com.machamasisuraj.socialapp.Model.Trip;
 import com.machamasisuraj.socialapp.R;
@@ -101,7 +103,8 @@ import java.util.List;
         holder.routeLocation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(mContext, "Route Location", Toast.LENGTH_SHORT).show();
+                Toast.makeText(mContext, "Wait a moment ....", Toast.LENGTH_SHORT).show();
+               mContext.startActivity(new Intent(mContext, MapsActivity.class));
             }
         });
     }
