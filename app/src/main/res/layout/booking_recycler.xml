@@ -17,7 +17,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Bookings Name"
+            android:text="Bookings "
             android:textSize="20dp" />
 
         <TextView
@@ -25,7 +25,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Bookings Name"
+            android:text="tripdays"
             android:textSize="20dp" />
 
     </LinearLayout>
@@ -65,6 +65,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
+            android:textStyle="italic"
             android:text="travaller count"
             android:textSize="20dp" />
 
@@ -74,6 +75,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Adult"
+            android:textStyle="italic"
             android:textSize="20dp" />
 
         <TextView
@@ -81,7 +83,8 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:text="Adult"
+            android:text="child"
+            android:textStyle="italic"
             android:textSize="20dp" />
 
     </LinearLayout>
@@ -106,6 +109,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:text="Hotels"
+            android:textStyle="italic"
             android:textSize="20dp" />
 
         <TextView
