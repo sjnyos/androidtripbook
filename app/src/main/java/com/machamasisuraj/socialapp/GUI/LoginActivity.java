@@ -16,6 +16,7 @@ import com.machamasisuraj.socialapp.BLL.UserBLL;
 import com.machamasisuraj.socialapp.BaseUrl.BaseUrl;
 import com.machamasisuraj.socialapp.R;
 import com.machamasisuraj.socialapp.EnableStrictMode.StrictModeClass;
+import com.machamasisuraj.socialapp.Utilities.NotificationViewer;
 
 import java.net.URL;
 
@@ -34,21 +35,22 @@ public class LoginActivity extends AppCompatActivity {
         etPassword = findViewById(R.id.etPassword);
         tvSignup = findViewById(R.id.tvSignup);
         btnLogin = findViewById(R.id.btnLogin);
-        tvSignup= findViewById(R.id.tvSignup);
+        tvSignup = findViewById(R.id.tvSignup);
         etUsername.setText("suraj");
         etPassword.setText("suraj");
 
-    tvSignup.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View v) {
-            startActivity(new Intent(LoginActivity.this,SignupActivity.class));
-        }
-    });
+        tvSignup.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                startActivity(new Intent(LoginActivity.this, SignupActivity.class));
+            }
+        });
 
         btnLogin.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                login(); }
+                login();
+            }
         });
 
 //        ReservationBLL reservationBLL= new ReservationBLL();

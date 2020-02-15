@@ -143,11 +143,11 @@ MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/sjnyo
 	android:label
 		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:19:9-41
 	android:roundIcon
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:21:9-54
+		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:21:9-57
 	android:allowBackup
 		ADDED from [com.github.smarteist:autoimageslider:1.3.2] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/09e1f29ea08143e3750b9469f40646c9/autoimageslider-1.3.2/AndroidManifest.xml:12:9-35
 	android:icon
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:18:9-43
+		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:18:9-52
 	android:theme
 		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:23:9-40
 	android:usesCleartextTraffic
