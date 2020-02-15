@@ -5,15 +5,16 @@
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     android:padding="0dp">
+
     <ImageView
+        android:id="@+id/tripImage"
         android:layout_width="match_parent"
         android:layout_height="250dp"
-        android:id="@+id/tripImage"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        android:src="@drawable/reflection"
+        android:contentDescription="Images"
         android:scaleType="fitXY"
-        android:contentDescription="Images" />
+        android:src="@drawable/reflection"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/tripName"
@@ -71,12 +72,13 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/difficulty" />
 
+
     <ImageView
         android:id="@+id/favourite"
-        android:layout_width="41dp"
-        android:layout_height="40dp"
+        android:layout_width="49dp"
+        android:layout_height="41dp"
         android:layout_marginEnd="24dp"
-        android:layout_marginBottom="64dp"
+        android:layout_marginBottom="72dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/ic_favorite_border_black_24dp" />
@@ -85,9 +87,20 @@
         android:id="@+id/book"
         android:layout_width="49dp"
         android:layout_height="41dp"
-        android:layout_marginEnd="16dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:srcCompat="@drawable/ic_book_black_24dp" />
+
+    <ImageView
+        android:id="@+id/routeLocation"
+        android:layout_width="49dp"
+        android:layout_height="41dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginBottom="20dp"
+        app:layout_constraintBottom_toTopOf="@+id/favourite"
+        app:layout_constraintStart_toEndOf="@+id/tripName"
+        app:srcCompat="@drawable/ic_location_on_black_24dp" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
