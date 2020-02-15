@@ -3,10 +3,12 @@ package com.machamasisuraj.socialapp.GUI;
 import android.content.Intent;
 import android.os.Bundle;
 import android.os.Handler;
+import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
 
 import com.machamasisuraj.socialapp.R;
+import com.machamasisuraj.socialapp.Utilities.CheckNetwork;
 
 public class SplashActivity extends AppCompatActivity {
 
@@ -20,9 +22,15 @@ public class SplashActivity extends AppCompatActivity {
         handler.postDelayed(new Runnable() {
             @Override
             public void run() {
+                CheckNetwork checkNetwork= new CheckNetwork(SplashActivity.this);
+
+                if(checkNetwork.isNetworkAvailable()){
                 Intent intent = new Intent(SplashActivity.this,LoginActivity.class);
                 startActivity(intent);
                 finish();
+                }else{
+                    Toast.makeText(SplashActivity.this, "Check the Network and Try Again", Toast.LENGTH_SHORT).show();
+                }
             }
         },2500);
 
