@@ -99,8 +99,6 @@ public class BottomNavbarActivity extends AppCompatActivity {
                 switch (menuItem.getItemId()) {
                     case R.id.navigation_home: {
 
-                    }
-                    case R.id.navigation_trips: {
                         FragmentManager fragmentManager = getSupportFragmentManager();
                         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
                         TripListFragment firstFragment = new TripListFragment(BottomNavbarActivity.this);
@@ -108,6 +106,10 @@ public class BottomNavbarActivity extends AppCompatActivity {
                         fragmentTransaction.addToBackStack(null);
                         fragmentTransaction.commit();
                         Toast.makeText(BottomNavbarActivity.this, "qqqqq", Toast.LENGTH_SHORT).show();
+                    }
+                    case R.id.navigation_trips: {
+
+                        Toast.makeText(BottomNavbarActivity.this, "Navigation Maps", Toast.LENGTH_SHORT).show();
 
                     }
                     case R.id.bookings: {
@@ -117,14 +119,15 @@ public class BottomNavbarActivity extends AppCompatActivity {
                         fragmentTransaction.replace(R.id.frame_container, bookingFragment);
                         fragmentTransaction.addToBackStack(null);
                         fragmentTransaction.commit();
-                        Toast.makeText(BottomNavbarActivity.this, "ppppppppppp", Toast.LENGTH_SHORT).show();
 
 
                     }
                     case R.id.navigation_nearby: {
+                        Toast.makeText(BottomNavbarActivity.this, "Nearby", Toast.LENGTH_SHORT).show();
 
                     }
                     case R.id.navigation_aboutus: {
+                        Toast.makeText(BottomNavbarActivity.this, "Abot us page", Toast.LENGTH_SHORT).show();
 
                     }
                     default:{ return true;}
