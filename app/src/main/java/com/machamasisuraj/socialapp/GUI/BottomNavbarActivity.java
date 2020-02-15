@@ -27,6 +27,7 @@ import com.google.android.material.navigation.NavigationView;
 import com.machamasisuraj.socialapp.Adapter.BookingAdapter;
 import com.machamasisuraj.socialapp.Adapter.UserListAdapter;
 import com.machamasisuraj.socialapp.BLL.UserBLL;
+import com.machamasisuraj.socialapp.BaseUrl.BaseUrl;
 import com.machamasisuraj.socialapp.Fragments.BookingFragment;
 import com.machamasisuraj.socialapp.Fragments.TripListFragment;
 import com.machamasisuraj.socialapp.R;
@@ -75,7 +76,6 @@ public class BottomNavbarActivity extends AppCompatActivity {
         t.setDrawerIndicatorEnabled(true);
         dl.addDrawerListener(t);
         t.syncState();
-
         nv = findViewById(R.id.nv);
         nv.setNavigationItemSelectedListener(new NavigationView.OnNavigationItemSelectedListener() {
             @Override
@@ -83,9 +83,13 @@ public class BottomNavbarActivity extends AppCompatActivity {
 
 
                 dl.closeDrawer(GravityCompat.START);
-                if (item.getItemId() == R.id.navigation_aboutus) {
+                if (item.getItemId() == R.id.logout)
+                {
+                    BaseUrl.UserId="";
+                    BaseUrl.token="";
+                    startActivity(new Intent(BottomNavbarActivity.this,LoginActivity.class));
                 }
-                return false;
+                return true;
 
             }
         });
