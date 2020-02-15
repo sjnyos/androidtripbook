@@ -117,34 +117,17 @@
             android:textSize="20dp" />
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
+
+    <Button
+        android:id="@+id/btndelete"
+        android:layout_gravity="right"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:orientation="horizontal"
-        android:weightSum="2">
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:background="@color/colorBlue"
-            android:text="Edit"
-            android:id="@+id/btnedit"
-            android:textColor="@color/colorWhite"
-            android:textSize="12sp" />
-        />
-
-        <Button
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_weight="1"
-            android:id="@+id/btndelete"
-            android:background="@color/colorRed"
-            android:text="Delete"
-            android:textColor="@color/colorWhite"
-            android:textSize="12sp" />
-        />
-    </LinearLayout>
-
+        android:layout_weight="1"
+        android:background="@color/colorRed"
+        android:text="Delete"
+        android:textColor="@color/colorWhite"
+        android:textSize="12sp" />
+    />
 
 </LinearLayout>
