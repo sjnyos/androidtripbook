@@ -98,6 +98,10 @@ uses-permission#android.permission.ACCESS_COARSE_LOCATION
 ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:15:5-80
 	android:name
 		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:15:22-78
+uses-permission#android.hardware.sensor.proximity
+ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:16:5-72
+	android:name
+		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:16:22-70
 application
 ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:17:5-62:19
 MERGED from [com.google.android.material:material:1.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/0a787c0ac8f42da800013c2d9496a009/material-1.0.0/AndroidManifest.xml:22:5-20
