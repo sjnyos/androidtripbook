@@ -42,6 +42,7 @@ public class BottomNavbarActivity extends AppCompatActivity {
         bottomnavigation.setSelectedItemId(R.id.homego);
 
 
+
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
         TripListFragment firstFragment = new TripListFragment(this);
@@ -106,7 +107,6 @@ public class BottomNavbarActivity extends AppCompatActivity {
                     fragmentTransaction.addToBackStack(null);
                     fragmentTransaction.commit();
                     Toast.makeText(BottomNavbarActivity.this, "qqqqq", Toast.LENGTH_SHORT).show();
-                    bottomnavigation.setSelectedItemId(R.id.homego);
                 } else if (menuItem.getItemId() == R.id.bookings) {
                     FragmentManager fragmentManager = getSupportFragmentManager();
                     FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -114,23 +114,20 @@ public class BottomNavbarActivity extends AppCompatActivity {
                     fragmentTransaction.replace(R.id.frame_container, bookingFragment);
                     fragmentTransaction.addToBackStack(null);
                     fragmentTransaction.commit();
-                    bottomnavigation.setSelectedItemId(R.id.bookings);
 
 
                 } else if (menuItem.getItemId() == R.id.navigation_nearby) {
                     Toast.makeText(BottomNavbarActivity.this, "Nearby", Toast.LENGTH_SHORT).show();
-                    bottomnavigation.setSelectedItemId(R.id.navigation_nearby);
 
                 } else if (menuItem.getItemId() == R.id.navigation_aboutus) {
                     Toast.makeText(BottomNavbarActivity.this, "Abot us page", Toast.LENGTH_SHORT).show();
-                    bottomnavigation.setSelectedItemId(R.id.navigation_aboutus);
 
                 } else if (menuItem.getItemId() == R.id.navigation_trips) {
 
                     startActivity(new Intent(BottomNavbarActivity.this, MapsActivity.class));
 
                 }
-                return false;
+                return true;
             }
         });
 
