@@ -39,7 +39,7 @@ public class BottomNavbarActivity extends AppCompatActivity {
         TextView tokendisplay = findViewById(R.id.tokendisplay);
         tokendisplay.setText(getIntent().getExtras().getString("token"));
         bottomnavigation = findViewById(R.id.bottomnavigation);
-        bottomnavigation.setSelectedItemId(R.id.navigation_home);
+        bottomnavigation.setSelectedItemId(R.id.homego);
 
 
         FragmentManager fragmentManager = getSupportFragmentManager();
@@ -97,44 +97,40 @@ public class BottomNavbarActivity extends AppCompatActivity {
         bottomnavigation.setOnNavigationItemSelectedListener(new BottomNavigationView.OnNavigationItemSelectedListener() {
             @Override
             public boolean onNavigationItemSelected(@NonNull MenuItem menuItem) {
-                switch (menuItem.getItemId()) {
-                    case R.id.navigation_home: {
+                if (menuItem.getItemId() == R.id.homego) {
 
-                        FragmentManager fragmentManager = getSupportFragmentManager();
-                        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                        TripListFragment firstFragment = new TripListFragment(BottomNavbarActivity.this);
-                        fragmentTransaction.replace(R.id.frame_container, firstFragment);
-                        fragmentTransaction.addToBackStack(null);
-                        fragmentTransaction.commit();
-                        Toast.makeText(BottomNavbarActivity.this, "qqqqq", Toast.LENGTH_SHORT).show();
-                    }
-                    case R.id.navigation_trips: {
-
-                        startActivity(new Intent(BottomNavbarActivity.this,MapsActivity.class));
-
-                    }
-                    case R.id.bookings: {
-                        FragmentManager fragmentManager = getSupportFragmentManager();
-                        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-                         BookingFragment bookingFragment= new BookingFragment(BottomNavbarActivity.this);
-                        fragmentTransaction.replace(R.id.frame_container, bookingFragment);
-                        fragmentTransaction.addToBackStack(null);
-                        fragmentTransaction.commit();
+                    FragmentManager fragmentManager = getSupportFragmentManager();
+                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                    TripListFragment firstFragment = new TripListFragment(BottomNavbarActivity.this);
+                    fragmentTransaction.replace(R.id.frame_container, firstFragment);
+                    fragmentTransaction.addToBackStack(null);
+                    fragmentTransaction.commit();
+                    Toast.makeText(BottomNavbarActivity.this, "qqqqq", Toast.LENGTH_SHORT).show();
+                    bottomnavigation.setSelectedItemId(R.id.homego);
+                } else if (menuItem.getItemId() == R.id.bookings) {
+                    FragmentManager fragmentManager = getSupportFragmentManager();
+                    FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+                    BookingFragment bookingFragment = new BookingFragment(BottomNavbarActivity.this);
+                    fragmentTransaction.replace(R.id.frame_container, bookingFragment);
+                    fragmentTransaction.addToBackStack(null);
+                    fragmentTransaction.commit();
+                    bottomnavigation.setSelectedItemId(R.id.bookings);
 
 
-                    }
-                    case R.id.navigation_nearby: {
-                        Toast.makeText(BottomNavbarActivity.this, "Nearby", Toast.LENGTH_SHORT).show();
+                } else if (menuItem.getItemId() == R.id.navigation_nearby) {
+                    Toast.makeText(BottomNavbarActivity.this, "Nearby", Toast.LENGTH_SHORT).show();
+                    bottomnavigation.setSelectedItemId(R.id.navigation_nearby);
 
-                    }
-                    case R.id.navigation_aboutus: {
-                        Toast.makeText(BottomNavbarActivity.this, "Abot us page", Toast.LENGTH_SHORT).show();
+                } else if (menuItem.getItemId() == R.id.navigation_aboutus) {
+                    Toast.makeText(BottomNavbarActivity.this, "Abot us page", Toast.LENGTH_SHORT).show();
+                    bottomnavigation.setSelectedItemId(R.id.navigation_aboutus);
 
-                    }
-                    default:{ return true;}
+                } else if (menuItem.getItemId() == R.id.navigation_trips) {
 
+                    startActivity(new Intent(BottomNavbarActivity.this, MapsActivity.class));
 
                 }
+                return false;
             }
         });
 

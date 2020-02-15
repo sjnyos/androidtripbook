@@ -4,7 +4,7 @@
             "outputFile": "/home/sjnyos/android Kiran sir/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-fi/values-fi.xml",
             "map": [
                 {
-                    "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/72685d50786693b38e7a6ebfc881c005/jetified-play-services-basement-16.0.1/res/values-fi/values.xml",
+                    "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/4201f0aca13a75f37041a05c1bcb2af2/jetified-play-services-basement-17.0.0/res/values-fi/values.xml",
                     "from": {
                         "startLines": "4",
                         "startColumns": "0",
@@ -38,7 +38,7 @@
                     }
                 },
                 {
-                    "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/d0e95a090f96bb440de1879181c7f163/jetified-play-services-base-16.0.1/res/values-fi/values.xml",
+                    "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/79f738e139ba90e5ebb56545668d8919/play-services-base-17.0.0/res/values-fi/values.xml",
                     "from": {
                         "startLines": "4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20",
                         "startColumns": "0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0",

@@ -48,6 +48,7 @@
         <activity android:name=".GUI.BannerActivity" />
         <activity android:name=".GUI.ItemListActivity" />
         <activity android:name=".GUI.MainActivity" />
+        <activity android:name=".GUI.SignupActivity"/>
         <activity
             android:name=".GUI.SplashActivity"
             android:theme="@style/Theme.Design.Light.NoActionBar" />

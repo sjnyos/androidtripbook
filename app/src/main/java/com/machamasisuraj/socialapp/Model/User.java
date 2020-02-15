@@ -35,6 +35,15 @@ public class User {
         this.password =password;
     }
 
+    public User(String firstname, String lastname, String username, String password, String image){
+        this.firstname=firstname;
+        this.lastname=lastname;
+        this.username=username;
+        this.password=password;
+        this.image=image;
+    }
+
+
     public String getUsername() {
         return username;
     }

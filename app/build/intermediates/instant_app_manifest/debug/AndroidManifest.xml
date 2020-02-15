@@ -65,6 +65,7 @@
         <activity android:name="com.machamasisuraj.socialapp.GUI.BannerActivity" />
         <activity android:name="com.machamasisuraj.socialapp.GUI.ItemListActivity" />
         <activity android:name="com.machamasisuraj.socialapp.GUI.MainActivity" />
+        <activity android:name="com.machamasisuraj.socialapp.GUI.SignupActivity" />
         <activity
             android:name="com.machamasisuraj.socialapp.GUI.SplashActivity"
             android:theme="@style/Theme.Design.Light.NoActionBar" />
