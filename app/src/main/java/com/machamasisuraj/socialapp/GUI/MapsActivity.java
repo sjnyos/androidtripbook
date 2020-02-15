@@ -66,6 +66,9 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         googleMap.animateCamera(CameraUpdateFactory.newLatLng(latLng));
         googleMap.animateCamera(CameraUpdateFactory.newLatLngZoom(latLng, 5));
         googleMap.addMarker(markerOptions);
+       googleMap.getUiSettings().setZoomControlsEnabled(true);
+       googleMap.getUiSettings().isCompassEnabled();
+       googleMap.getUiSettings().setMapToolbarEnabled(true);
     }
     @Override
     public void onRequestPermissionsResult(int requestCode, @NonNull String[] permissions, @NonNull int[] grantResults) {
