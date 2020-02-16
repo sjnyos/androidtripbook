@@ -5,6 +5,7 @@ import android.content.Intent;
 import android.hardware.Sensor;
 import android.hardware.SensorManager;
 import android.os.Bundle;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -102,23 +103,45 @@ public class LoginActivity extends AppCompatActivity {
         if(checkNetwork.isNetworkAvailable()) {
             String username = etUsername.getText().toString();
             String password = etPassword.getText().toString();
+            if (Validation()) {
 
+                UserBLL loginBLL = new UserBLL();
 
-            UserBLL loginBLL = new UserBLL();
-
-            StrictModeClass.StrictMode();
-            if (loginBLL.checkUser(username, password)) {
-                Intent intent = new Intent(LoginActivity.this, BottomNavbarActivity.class);
-                intent.putExtra("token", BaseUrl.token);
-                startActivity(intent);
-                finish();
+                StrictModeClass.StrictMode();
+                if (loginBLL.checkUser(username, password)) {
+                    Intent intent = new Intent(LoginActivity.this, BottomNavbarActivity.class);
+                    intent.putExtra("token", BaseUrl.token);
+                    startActivity(intent);
+                    finish();
+                } else {
+                    Toast.makeText(this, "Either username or password is incorrect", Toast.LENGTH_SHORT).show();
+                    etUsername.requestFocus();
+                }
             } else {
-                Toast.makeText(this, "Either username or password is incorrect", Toast.LENGTH_SHORT).show();
-                etUsername.requestFocus();
+                Toast.makeText(this, "Cannot Connect to " + BaseUrl.base_url, Toast.LENGTH_SHORT).show();
             }
-        }else{
-            Toast.makeText(this, "Cannot Connect to "+BaseUrl.base_url, Toast.LENGTH_SHORT).show();
         }
+    }
+
+    public boolean Validation(){
+        //  pickupaddress,travellerCount,adult,childCounts;
+        if(TextUtils.isEmpty(etUsername.getText().toString())){
+            etUsername.setError("Can't be Empty!");
+            etUsername.requestFocus();
+            //  Toast.makeText(TripDetailActvity.this, "Input Cant be Empty", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+        else if(TextUtils.isEmpty(etPassword.getText().toString())) {
+            etPassword.setError("Can't be Empty!");
+            etPassword.requestFocus();
+            //  Toast.makeText(TripDetailActvity.this, "Input Cant be Empty", Toast.LENGTH_SHORT).show();
+            return false;
+        }
+              else{
+            return true;
+        }
+
+
     }
 
     @Override

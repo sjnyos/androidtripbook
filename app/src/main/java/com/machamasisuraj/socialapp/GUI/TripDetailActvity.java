@@ -91,38 +91,50 @@ public class TripDetailActvity extends AppCompatActivity {
         btnReserve.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Validation();
+                if (Validation()) {
 
-                Toast.makeText(TripDetailActvity.this, "Reserved", Toast.LENGTH_SHORT).show();
-                Reservation reservation = new Reservation(new Date(),new Date(),new Date()
-                        ,Integer.parseInt(tripdays.getText().toString()),Integer.parseInt(adult.getText().toString())
-                        , Integer.parseInt(childCounts.getText().toString()),
-                        pickupaddress.getText().toString(),"Travel And Trek Hotel",
-                        "Standard",BaseUrl.tripId, BaseUrl.UserId,2000);
-                ReservationBLL reservationBLL= new ReservationBLL();
-                reservationBLL.InsertReservation(reservation);
+                    Toast.makeText(TripDetailActvity.this, "Reserved", Toast.LENGTH_SHORT).show();
+                    Reservation reservation = new Reservation(new Date(), new Date(), new Date()
+                            , Integer.parseInt(tripdays.getText().toString()), Integer.parseInt(adult.getText().toString())
+                            , Integer.parseInt(childCounts.getText().toString()),
+                            pickupaddress.getText().toString(), "Travel And Trek Hotel",
+                            "Standard", BaseUrl.tripId, BaseUrl.UserId, 2000);
+                    ReservationBLL reservationBLL = new ReservationBLL();
+                    reservationBLL.InsertReservation(reservation);
+                }
             }
         });
     }
-    public void Validation(){
+    public boolean Validation(){
       //  pickupaddress,travellerCount,adult,childCounts;
         if(TextUtils.isEmpty(pickupaddress.getText().toString())){
-            Toast.makeText(TripDetailActvity.this, "Input Cant be Empty", Toast.LENGTH_SHORT).show();
-            return;
+            pickupaddress.setError("Can't be Empty!");
+            pickupaddress.requestFocus();
+          //  Toast.makeText(TripDetailActvity.this, "Input Cant be Empty", Toast.LENGTH_SHORT).show();
+            return false;
         }
         else if(TextUtils.isEmpty(travellerCount.getText().toString())){
-            Toast.makeText(TripDetailActvity.this, "Input Cant be Empty", Toast.LENGTH_SHORT).show();
-            return;
+            travellerCount.setError("Can't be Empty!");
+            travellerCount.requestFocus();
+            //  Toast.makeText(TripDetailActvity.this, "Input Cant be Empty", Toast.LENGTH_SHORT).show();
+            return false;
 
         } else if(TextUtils.isEmpty(adult.getText().toString())){
+            adult.setError("Can't be Empty!");
+            adult.requestFocus();
             Toast.makeText(TripDetailActvity.this, "Input Cant be Empty", Toast.LENGTH_SHORT).show();
-            return;
+            return false;
 
         }
         else if(TextUtils.isEmpty(childCounts.getText().toString())){
-            Toast.makeText(TripDetailActvity.this, "Input Cant be Empty", Toast.LENGTH_SHORT).show();
-            return;
+            childCounts.setError("Can't be Empty!");
+            childCounts.requestFocus();
+            // Toast.makeText(TripDetailActvity.this, "Input Cant be Empty", Toast.LENGTH_SHORT).show();
+            return false;
 
+        }
+        else{
+            return true;
         }
 
 

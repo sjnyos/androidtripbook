@@ -8,6 +8,7 @@ import android.hardware.SensorManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
+import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -84,9 +85,6 @@ public class SignupActivity extends AppCompatActivity {
                 imgProfile.setImageResource(R.drawable.ic_launcher_background);
             }
         });
-
-
-
         imgProfile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -97,11 +95,11 @@ public class SignupActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 if (etSignUpPassword.getText().toString().equals(etConfirmPassword.getText().toString())) {
-                    if(validate()) {
+                    if(Validation()) {
                         try {
                             saveImageOnly();
                         }catch (Exception ex){
-                            Toast.makeText(SignupActivity.this, "Image will be Empty", Toast.LENGTH_SHORT).show();
+                            Toast.makeText(SignupActivity.this, "No Image Selected, You can set Image later too.", Toast.LENGTH_SHORT).show();
                         }
 
                         signUp();
@@ -116,13 +114,46 @@ public class SignupActivity extends AppCompatActivity {
         });
     }
 
-    private boolean validate() {
-        boolean status=true;
-        if (etSignUpUsername.getText().toString().length() < 6) {
-            etSignUpUsername.setError("Minimum 6 character");
-            status=false;
+    public boolean Validation(){
+        //  pickupaddress,travellerCount,adult,childCounts;
+        if(TextUtils.isEmpty(etFirstName.getText().toString())){
+            etFirstName.setError("Can't be Empty!");
+            etFirstName.requestFocus();
+            //  Toast.makeText(TripDetailActvity.this, "Input Cant be Empty", Toast.LENGTH_SHORT).show();
+            return false;
         }
-        return status;
+        else if(TextUtils.isEmpty(etLastName.getText().toString())){
+            etLastName.setError("Can't be Empty!");
+            etLastName.requestFocus();
+            //  Toast.makeText(TripDetailActvity.this, "Input Cant be Empty", Toast.LENGTH_SHORT).show();
+            return false;
+
+        } else if(TextUtils.isEmpty(etSignUpUsername.getText().toString())){
+            etSignUpUsername.setError("Can't be Empty!");
+            etSignUpUsername.requestFocus();
+           // Toast.makeText(TripDetailActvity.this, "Input Cant be Empty", Toast.LENGTH_SHORT).show();
+            return false;
+
+        }
+        else if(TextUtils.isEmpty(etConfirmPassword.getText().toString())){
+            etConfirmPassword.setError("Can't be Empty!");
+            etConfirmPassword.requestFocus();
+            // Toast.makeText(TripDetailActvity.this, "Input Cant be Empty", Toast.LENGTH_SHORT).show();
+            return false;
+
+        }
+        else if(TextUtils.isEmpty(etSignUpPassword.getText().toString())){
+            etSignUpPassword.setError("Can't be Empty!");
+            etSignUpPassword.requestFocus();
+            // Toast.makeText(TripDetailActvity.this, "Input Cant be Empty", Toast.LENGTH_SHORT).show();
+            return false;
+
+        }
+        else{
+            return true;
+        }
+
+
     }
 
     private void BrowseImage() {
