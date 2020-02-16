@@ -1,7 +1,10 @@
 package com.machamasisuraj.socialapp.GUI;
 
+import android.content.Context;
 import android.content.Intent;
 import android.database.Cursor;
+import android.hardware.Sensor;
+import android.hardware.SensorManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.provider.MediaStore;
@@ -23,6 +26,7 @@ import com.machamasisuraj.socialapp.Model.Response.ImageResponse;
 import com.machamasisuraj.socialapp.Model.Response.LoginAndSignUpResponse;
 import com.machamasisuraj.socialapp.Model.User;
 import com.machamasisuraj.socialapp.R;
+import com.machamasisuraj.socialapp.Sensors.ShakeDetector;
 
 import java.io.File;
 import java.io.IOException;
@@ -42,6 +46,14 @@ public class SignupActivity extends AppCompatActivity {
     String imagePath;
     private String imageName = "";
 
+    static int PReqCode = 1 ;
+    static int REQUESCODE = 1 ;
+
+    private ShakeDetector mShakeDetector;
+    private SensorManager mSensorManager;
+    private Sensor mAccelerometer;
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -54,6 +66,21 @@ public class SignupActivity extends AppCompatActivity {
         etSignUpPassword = findViewById(R.id.etSignUpPassword);
         etConfirmPassword = findViewById(R.id.etConfirmPassword);
         btnSignup = findViewById(R.id.btnSignup);
+        mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+        mAccelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+        mShakeDetector = new ShakeDetector(new ShakeDetector.OnShakeListener() {
+            @Override
+            public void onShake() {
+                etFirstName.setText("");
+                etLastName.setText("");
+                etSignUpUsername.setText("");
+                etSignUpPassword.setText("");
+                etConfirmPassword .setText("");
+                imgProfile.setImageResource(R.drawable.ic_launcher_background);
+            }
+        });
+
+
 
         imgProfile.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,7 +93,7 @@ public class SignupActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (etSignUpPassword.getText().toString().equals(etConfirmPassword.getText().toString())) {
                     if(validate()) {
-                        //saveImageOnly();
+                        saveImageOnly();
                         signUp();
                     }
                 } else {
@@ -177,6 +204,18 @@ public class SignupActivity extends AppCompatActivity {
                 Toast.makeText(SignupActivity.this, "Error" + t.getLocalizedMessage(), Toast.LENGTH_SHORT).show();
             }
         });
+
+    }
+    @Override
+    protected void onPause() {
+        mSensorManager.unregisterListener(mShakeDetector);
+        super.onPause();
+    }
+
+    @Override    protected void onResume() {
+
+        mSensorManager.registerListener(mShakeDetector, mAccelerometer, SensorManager.SENSOR_DELAY_UI);
+        super.onResume();
 
     }
 }
