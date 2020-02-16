@@ -2,6 +2,8 @@ package com.machamasisuraj.socialapp.Fragments;
 
 
 import android.content.Context;
+import android.hardware.Sensor;
+import android.hardware.SensorManager;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -20,6 +22,7 @@ import com.machamasisuraj.socialapp.BaseUrl.BaseUrl;
 import com.machamasisuraj.socialapp.Model.ShowReservation;
 import com.machamasisuraj.socialapp.Model.Trip;
 import com.machamasisuraj.socialapp.R;
+import com.machamasisuraj.socialapp.Sensors.ShakeDetector;
 
 import java.util.List;
 
@@ -30,6 +33,12 @@ public class BookingFragment extends Fragment {
 
     private Context mContext;
     private RecyclerView booking_Recycler;
+    static int PReqCode = 1 ;
+    static int REQUESCODE = 1 ;
+
+    private ShakeDetector mShakeDetector;
+    private SensorManager mSensorManager;
+    private Sensor mAccelerometer;
 
     public BookingFragment(Context mContext) {
         this.mContext = mContext;
@@ -46,10 +55,34 @@ public class BookingFragment extends Fragment {
 
         ReservationBLL reservationBLL = new ReservationBLL();
         List<ShowReservation> list = reservationBLL.getReservationByUser(BaseUrl.UserId);
-        BookingAdapter bookingAdapter = new BookingAdapter(mContext, list);
+       final BookingAdapter bookingAdapter = new BookingAdapter(mContext, list);
         booking_Recycler.setAdapter(bookingAdapter);
         booking_Recycler.setLayoutManager(new LinearLayoutManager(mContext));
+
+        mSensorManager = (SensorManager)mContext.getSystemService(Context.SENSOR_SERVICE);
+        mAccelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+        mShakeDetector = new ShakeDetector(new ShakeDetector.OnShakeListener() {
+            @Override
+            public void onShake() {
+                bookingAdapter.notifyDataSetChanged();
+            }
+        });
+
         return view;
+    }
+
+    @Override
+    public void onPause() {
+        mSensorManager.unregisterListener(mShakeDetector);
+        super.onPause();
+    }
+
+    @Override
+    public void onResume() {
+
+        mSensorManager.registerListener(mShakeDetector, mAccelerometer, SensorManager.SENSOR_DELAY_UI);
+        super.onResume();
+
     }
 
 }

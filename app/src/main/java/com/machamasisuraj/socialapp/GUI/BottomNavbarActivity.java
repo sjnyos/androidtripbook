@@ -31,6 +31,7 @@ import com.machamasisuraj.socialapp.BaseUrl.BaseUrl;
 import com.machamasisuraj.socialapp.Fragments.BookingFragment;
 import com.machamasisuraj.socialapp.Fragments.TripListFragment;
 import com.machamasisuraj.socialapp.R;
+import com.machamasisuraj.socialapp.Sensors.ShakeDetector;
 import com.machamasisuraj.socialapp.Utilities.NotificationViewer;
 
 public class BottomNavbarActivity extends AppCompatActivity {
@@ -38,8 +39,30 @@ public class BottomNavbarActivity extends AppCompatActivity {
     private ActionBarDrawerToggle t;
     private NavigationView nv;
     private BottomNavigationView bottomnavigation;
+    static int PReqCode = 1 ;
+    static int REQUESCODE = 1 ;
+    private ShakeDetector mShakeDetector;
+    private SensorManager mSensorManager;
+    private Sensor mAccelerometer;
 
 
+
+    @Override
+    protected void onResume() {
+        super.onResume();
+        mSensorManager.registerListener(mShakeDetector, mAccelerometer, SensorManager.SENSOR_DELAY_UI);
+        mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+        mAccelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+        mSensorManager.unregisterListener(mShakeDetector);
+    }
+
+
+
+    @Override
+    protected void onPause() {
+        mSensorManager.unregisterListener(mShakeDetector);
+        super.onPause();
+    }
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -68,6 +91,8 @@ public class BottomNavbarActivity extends AppCompatActivity {
         BottomNavitaionMenus();
         //chat head on the top of the layout
         PopulatatChatHead();
+
+
     }
 
     public void navigations() {
@@ -101,10 +126,19 @@ public class BottomNavbarActivity extends AppCompatActivity {
         //make sute to use active users
         try {
             UserBLL userBLL = new UserBLL();
-            UserListAdapter userListAdapter = new UserListAdapter(this, userBLL.GetAllActiveUsers());
+            final UserListAdapter userListAdapter = new UserListAdapter(this, userBLL.GetAllActiveUsers());
 
             recyclerView.setAdapter(userListAdapter);
             recyclerView.setLayoutManager(new LinearLayoutManager(this, RecyclerView.HORIZONTAL, false));
+
+            mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+            mAccelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+            mShakeDetector = new ShakeDetector(new ShakeDetector.OnShakeListener() {
+                @Override
+                public void onShake() {
+                        userListAdapter.notifyDataSetChanged();
+                }
+            });
         } catch (Exception ex) {
             Toast.makeText(this, ex.getMessage(), Toast.LENGTH_SHORT).show();
         }

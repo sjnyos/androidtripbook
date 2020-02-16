@@ -39,7 +39,6 @@
         android:requestLegacyExternalStorage="true"
         android:roundIcon="@drawable/ic_book_black_24dp"
         android:supportsRtl="true"
-        android:testOnly="true"
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true" >
 

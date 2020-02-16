@@ -1,6 +1,9 @@
 package com.machamasisuraj.socialapp.GUI;
 
+import android.content.Context;
 import android.content.Intent;
+import android.hardware.Sensor;
+import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
@@ -16,6 +19,7 @@ import com.machamasisuraj.socialapp.BLL.UserBLL;
 import com.machamasisuraj.socialapp.BaseUrl.BaseUrl;
 import com.machamasisuraj.socialapp.R;
 import com.machamasisuraj.socialapp.EnableStrictMode.StrictModeClass;
+import com.machamasisuraj.socialapp.Sensors.ShakeDetector;
 import com.machamasisuraj.socialapp.Utilities.NotificationBroadcaster.NotificationService;
 import com.machamasisuraj.socialapp.Utilities.NotificationViewer;
 
@@ -26,6 +30,12 @@ public class LoginActivity extends AppCompatActivity {
     private Button btnLogin;
     private EditText etUsername, etPassword;
     private TextView tvSignup;
+    static int PReqCode = 1 ;
+    static int REQUESCODE = 1 ;
+
+    private ShakeDetector mShakeDetector;
+    private SensorManager mSensorManager;
+    private Sensor mAccelerometer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -43,6 +53,17 @@ public class LoginActivity extends AppCompatActivity {
 
         //starting backgraound process
        // startService(new Intent(LoginActivity.this, NotificationService.class));
+
+
+        mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
+        mAccelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
+        mShakeDetector = new ShakeDetector(new ShakeDetector.OnShakeListener() {
+            @Override
+            public void onShake() {
+                etUsername.setText("");
+                etPassword .setText("");
+            }
+        });
 
         tvSignup.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -66,6 +87,7 @@ public class LoginActivity extends AppCompatActivity {
         String username = etUsername.getText().toString();
         String password = etPassword.getText().toString();
 
+
         UserBLL loginBLL = new UserBLL();
 
         StrictModeClass.StrictMode();
@@ -79,4 +101,18 @@ public class LoginActivity extends AppCompatActivity {
             etUsername.requestFocus();
         }
     }
+
+    @Override
+    protected void onPause() {
+        mSensorManager.unregisterListener(mShakeDetector);
+        super.onPause();
+    }
+
+    @Override    protected void onResume() {
+
+        mSensorManager.registerListener(mShakeDetector, mAccelerometer, SensorManager.SENSOR_DELAY_UI);
+        super.onResume();
+
+    }
+
 }
