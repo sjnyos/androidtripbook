@@ -51,8 +51,8 @@ public class NotificationViewer {
 
         Notification notification = new NotificationCompat.Builder(mContext,CreateChannel.Channel_1)
                 .setSmallIcon(R.drawable.ic_book_black_24dp)
-                .setContentTitle("Black box")
-                .setContentText("this is the black box message")
+                .setContentTitle(title)
+                .setContentText(content)
                 .setCategory(NotificationCompat.CATEGORY_MESSAGE)
                 .build();
         notificationManagerCompat.notify(2,notification);

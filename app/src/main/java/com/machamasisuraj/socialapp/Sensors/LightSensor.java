@@ -8,6 +8,8 @@ import android.hardware.SensorManager;
 import android.util.Log;
 import android.widget.Toast;
 
+import com.machamasisuraj.socialapp.Utilities.NotificationViewer;
+
 public class LightSensor {
     private Context mContext;
     public LightSensor(Context mContext){
@@ -23,6 +25,7 @@ public class LightSensor {
             public void onSensorChanged(SensorEvent event) {
                 if(event.sensor.getType()==Sensor.TYPE_LIGHT){
                     Log.i("Sensor Changed", "onSensor Change :" + event.values[0]);
+                    NotificationViewer notificationViewer= new NotificationViewer(mContext, "Adjusting Light", "Adjustment in Brightness for better App Expericences");
                 }
             }
 
