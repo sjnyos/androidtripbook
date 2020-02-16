@@ -19,7 +19,10 @@ import com.machamasisuraj.socialapp.BLL.UserBLL;
 import com.machamasisuraj.socialapp.BaseUrl.BaseUrl;
 import com.machamasisuraj.socialapp.R;
 import com.machamasisuraj.socialapp.EnableStrictMode.StrictModeClass;
+import com.machamasisuraj.socialapp.Sensors.LightSensor;
+import com.machamasisuraj.socialapp.Sensors.ProximitySensor;
 import com.machamasisuraj.socialapp.Sensors.ShakeDetector;
+import com.machamasisuraj.socialapp.Utilities.CheckNetwork;
 import com.machamasisuraj.socialapp.Utilities.NotificationBroadcaster.NotificationService;
 import com.machamasisuraj.socialapp.Utilities.NotificationViewer;
 
@@ -53,6 +56,7 @@ public class LoginActivity extends AppCompatActivity {
 
         //starting backgraound process
        // startService(new Intent(LoginActivity.this, NotificationService.class));
+        SensorInit();
 
 
         mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
@@ -83,22 +87,37 @@ public class LoginActivity extends AppCompatActivity {
 //        reservationBLL.getReservationByUser("5e3114800c6e6248b984f9b9");
     }
 
+    public void SensorInit() {
+
+        LightSensor lightSensor= new LightSensor(this);
+        lightSensor.getLightInstance();
+        ProximitySensor proximitySensor= new ProximitySensor(this);
+        proximitySensor.ProximitySensor();
+
+    }
     private void login() {
-        String username = etUsername.getText().toString();
-        String password = etPassword.getText().toString();
+
+        CheckNetwork checkNetwork= new CheckNetwork(LoginActivity.this);
+
+        if(checkNetwork.isNetworkAvailable()) {
+            String username = etUsername.getText().toString();
+            String password = etPassword.getText().toString();
 
 
-        UserBLL loginBLL = new UserBLL();
+            UserBLL loginBLL = new UserBLL();
 
-        StrictModeClass.StrictMode();
-        if (loginBLL.checkUser(username, password)) {
-            Intent intent = new Intent(LoginActivity.this, BottomNavbarActivity.class);
-            intent.putExtra("token", BaseUrl.token);
-            startActivity(intent);
-            finish();
-        } else {
-            Toast.makeText(this, "Either username or password is incorrect", Toast.LENGTH_SHORT).show();
-            etUsername.requestFocus();
+            StrictModeClass.StrictMode();
+            if (loginBLL.checkUser(username, password)) {
+                Intent intent = new Intent(LoginActivity.this, BottomNavbarActivity.class);
+                intent.putExtra("token", BaseUrl.token);
+                startActivity(intent);
+                finish();
+            } else {
+                Toast.makeText(this, "Either username or password is incorrect", Toast.LENGTH_SHORT).show();
+                etUsername.requestFocus();
+            }
+        }else{
+            Toast.makeText(this, "Cannot Connect to "+BaseUrl.base_url, Toast.LENGTH_SHORT).show();
         }
     }
 

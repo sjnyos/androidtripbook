@@ -4,6 +4,7 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Context;
 import android.content.Intent;
+import android.hardware.SensorManager;
 import android.os.Bundle;
 import android.text.TextUtils;
 import android.view.View;
@@ -18,6 +19,8 @@ import com.machamasisuraj.socialapp.BaseUrl.BaseUrl;
 import com.machamasisuraj.socialapp.Model.Reservation;
 import com.machamasisuraj.socialapp.Model.Trip;
 import com.machamasisuraj.socialapp.R;
+import com.machamasisuraj.socialapp.Sensors.LightSensor;
+import com.machamasisuraj.socialapp.Sensors.ProximitySensor;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -36,6 +39,17 @@ public class TripDetailActvity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_trip_detail_actvity);
         bindControls();
+        //sensorinint
+        SensorInit();
+
+    }
+
+    public void SensorInit() {
+
+        LightSensor lightSensor= new LightSensor(this);
+        lightSensor.getLightInstance();
+        ProximitySensor proximitySensor= new ProximitySensor(this);
+        proximitySensor.ProximitySensor();
 
     }
 

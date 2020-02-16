@@ -26,6 +26,8 @@ import com.machamasisuraj.socialapp.Model.Response.ImageResponse;
 import com.machamasisuraj.socialapp.Model.Response.LoginAndSignUpResponse;
 import com.machamasisuraj.socialapp.Model.User;
 import com.machamasisuraj.socialapp.R;
+import com.machamasisuraj.socialapp.Sensors.LightSensor;
+import com.machamasisuraj.socialapp.Sensors.ProximitySensor;
 import com.machamasisuraj.socialapp.Sensors.ShakeDetector;
 
 import java.io.File;
@@ -57,6 +59,9 @@ public class SignupActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+        //sensor init
+        SensorInit();
         setContentView(R.layout.activity_signup);
 
         imgProfile = findViewById(R.id.imgProfile);
@@ -93,7 +98,12 @@ public class SignupActivity extends AppCompatActivity {
             public void onClick(View v) {
                 if (etSignUpPassword.getText().toString().equals(etConfirmPassword.getText().toString())) {
                     if(validate()) {
-                        saveImageOnly();
+                        try {
+                            saveImageOnly();
+                        }catch (Exception ex){
+                            Toast.makeText(SignupActivity.this, "Image will be Empty", Toast.LENGTH_SHORT).show();
+                        }
+
                         signUp();
                     }
                 } else {
@@ -216,6 +226,14 @@ public class SignupActivity extends AppCompatActivity {
 
         mSensorManager.registerListener(mShakeDetector, mAccelerometer, SensorManager.SENSOR_DELAY_UI);
         super.onResume();
+
+    }
+    public void SensorInit() {
+
+        LightSensor lightSensor= new LightSensor(this);
+        lightSensor.getLightInstance();
+        ProximitySensor proximitySensor= new ProximitySensor(this);
+        proximitySensor.ProximitySensor();
 
     }
 }

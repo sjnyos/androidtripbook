@@ -4,6 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:padding="10dp"
     android:layout_gravity="center"
     android:gravity="center"
     android:orientation="vertical"
@@ -23,6 +24,7 @@
                 android:id="@+id/tripImage"
                 android:layout_width="match_parent"
                 android:layout_height="200dp"
+                android:scaleType="fitXY"
                 android:src="@drawable/trekkingman" />
 
             <TextView
@@ -112,6 +114,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:text="Price"
+                    android:textColor="@color/colorBlue"
                     android:textSize="20sp"
                     android:textStyle="bold" />
 

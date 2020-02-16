@@ -31,6 +31,8 @@ import com.machamasisuraj.socialapp.BaseUrl.BaseUrl;
 import com.machamasisuraj.socialapp.Fragments.BookingFragment;
 import com.machamasisuraj.socialapp.Fragments.TripListFragment;
 import com.machamasisuraj.socialapp.R;
+import com.machamasisuraj.socialapp.Sensors.LightSensor;
+import com.machamasisuraj.socialapp.Sensors.ProximitySensor;
 import com.machamasisuraj.socialapp.Sensors.ShakeDetector;
 import com.machamasisuraj.socialapp.Utilities.NotificationViewer;
 
@@ -74,7 +76,7 @@ public class BottomNavbarActivity extends AppCompatActivity {
 
         //display notification
         NotificationViewer notificationViewer= new NotificationViewer(this,"New Exotic Places Nearby","Tap to View");
-        notificationViewer.ClassicDispplaynotification();
+        notificationViewer.PopupDisplayNotification();
 
 
         FragmentManager fragmentManager = getSupportFragmentManager();
@@ -84,7 +86,7 @@ public class BottomNavbarActivity extends AppCompatActivity {
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
        //sensor
-        ProximitySensor();
+        SensorInit();
         //drawer navigation
         navigations();
         //bottom navigation
@@ -186,47 +188,14 @@ public class BottomNavbarActivity extends AppCompatActivity {
 
     }
 
-    public void ProximitySensor() {
-        SensorManager mySensorManager;
-        Sensor myProximitySensor;
-        mySensorManager = (SensorManager) getSystemService(
-                Context.SENSOR_SERVICE);
-        myProximitySensor = mySensorManager.getDefaultSensor(
-                Sensor.TYPE_PROXIMITY);
-        if (myProximitySensor == null) {
-            Toast.makeText(this, "No Proximity Sensor!", Toast.LENGTH_SHORT).show();
-        } else {
-            mySensorManager.registerListener(proximitySensorEventListener,
-                    myProximitySensor,
-                    SensorManager.SENSOR_DELAY_NORMAL);
-        }
+    public void SensorInit() {
 
+        LightSensor lightSensor= new LightSensor(this);
+        lightSensor.getLightInstance();
+        ProximitySensor proximitySensor= new ProximitySensor(this);
+        proximitySensor.ProximitySensor();
 
     }
-    SensorEventListener proximitySensorEventListener
-            = new SensorEventListener() {
-        @Override
-        public void onAccuracyChanged(Sensor sensor, int accuracy) {
-            // TODO Auto-generated method stub
-        }
-        @Override
-        public void onSensorChanged(SensorEvent event) {
-            // TODO Auto-generated method stub
-            WindowManager.LayoutParams params = BottomNavbarActivity.this.getWindow().getAttributes();
-            if(event.sensor.getType()==Sensor.TYPE_PROXIMITY){
 
-                if(event.values[0]==0){
-                    params.flags |= WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON;
-                    params.screenBrightness = 0;
-                    getWindow().setAttributes(params);
-                }
-                else{
-                    params.flags |= WindowManager.LayoutParams.FLAG_KEEP_SCREEN_ON;
-                    params.screenBrightness = -1f;
-                    getWindow().setAttributes(params);
-                }
-            }
-        }
-    };
 }
 
