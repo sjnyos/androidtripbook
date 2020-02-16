@@ -1,4 +1,4 @@
-# stw300cem-final-assignment-sjnyos
+# Travel and Tour Management App
 stw300cem-final-assignment-sjnyos created by GitHub Classroom
 
 Introduction
