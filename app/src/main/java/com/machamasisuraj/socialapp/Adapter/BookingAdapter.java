@@ -11,6 +11,7 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.recyclerview.widget.RecyclerView;
 
+import com.machamasisuraj.socialapp.BLL.ReservationBLL;
 import com.machamasisuraj.socialapp.Model.ShowReservation;
 import com.machamasisuraj.socialapp.R;
 
@@ -36,8 +37,8 @@ public class BookingAdapter extends RecyclerView.Adapter<BookingAdapter.Viewhold
     }
 
     @Override
-    public void onBindViewHolder(@NonNull Viewholder holder, int position) {
-        ShowReservation showReservation = reservationList.get(position);
+    public void onBindViewHolder(@NonNull Viewholder holder, final int position) {
+        final ShowReservation showReservation = reservationList.get(position);
 
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
         String arrivalDate = dateFormat.format(showReservation.getStartDate());
@@ -55,7 +56,9 @@ public class BookingAdapter extends RecyclerView.Adapter<BookingAdapter.Viewhold
         holder.btndelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(mContext, "Delete", Toast.LENGTH_SHORT).show();
+                Toast.makeText(mContext, "Booking Canceled", Toast.LENGTH_SHORT).show();
+                reservationList.remove(position);
+                notifyDataSetChanged();
             }
         });
     }

@@ -49,6 +49,25 @@ public class ReservationBLL {
         return status;
     }
 
+    public boolean DeleteReservation(String Id){
+        Call<Reservation> reservationCall = reservationAPI.delete(Id,BaseUrl.token);
+        reservationCall.enqueue(new Callback<Reservation>() {
+            @Override
+            public void onResponse(Call<Reservation> call, Response<Reservation> response) {
+                if(response.isSuccessful()){
+                    status=true;
+                }
+            }
+
+            @Override
+            public void onFailure(Call<Reservation> call, Throwable t) {
+                status=false;
+
+            }
+        });
+        return  status;
+    }
+
 
 
 

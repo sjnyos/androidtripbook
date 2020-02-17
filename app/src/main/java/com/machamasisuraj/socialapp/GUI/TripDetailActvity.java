@@ -21,6 +21,7 @@ import com.machamasisuraj.socialapp.Model.Trip;
 import com.machamasisuraj.socialapp.R;
 import com.machamasisuraj.socialapp.Sensors.LightSensor;
 import com.machamasisuraj.socialapp.Sensors.ProximitySensor;
+import com.squareup.picasso.Picasso;
 
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
@@ -71,6 +72,7 @@ public class TripDetailActvity extends AppCompatActivity {
         adult= findViewById(R.id.adult);
         childCounts= findViewById(R.id.childCounts);
         grade= findViewById(R.id.grade);
+        tripImage= findViewById(R.id.tripImage);
 
 
 
@@ -87,6 +89,8 @@ public class TripDetailActvity extends AppCompatActivity {
         desc.setText( getIntent().getStringExtra("desc")) ;
         price.setText( getIntent().getStringExtra("price"));
         grade.setText(getIntent().getStringExtra("grade"));
+        String imagename =getIntent().getStringExtra("image");
+        Picasso.get().load(BaseUrl.base_url+"/uploads/"+imagename).into(tripImage);
 
         btnReserve.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -95,7 +99,9 @@ public class TripDetailActvity extends AppCompatActivity {
 
                     Toast.makeText(TripDetailActvity.this, "Reserved", Toast.LENGTH_SHORT).show();
                     Reservation reservation = new Reservation(new Date(), new Date(), new Date()
-                            , Integer.parseInt(tripdays.getText().toString()), Integer.parseInt(adult.getText().toString())
+
+                            , tripdays.getText().toString().equals("")? 0:Integer.parseInt(tripdays.getText().toString())
+                            , Integer.parseInt(adult.getText().toString())
                             , Integer.parseInt(childCounts.getText().toString()),
                             pickupaddress.getText().toString(), "Travel And Trek Hotel",
                             "Standard", BaseUrl.tripId, BaseUrl.UserId, 2000);

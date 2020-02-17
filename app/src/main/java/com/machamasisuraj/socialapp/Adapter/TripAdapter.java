@@ -86,6 +86,7 @@ import java.util.List;
                 intent.putExtra("size",trip.getSize());
                 intent.putExtra("desc",trip.getDesc());
                 intent.putExtra("grade",trip.getGrade());
+                intent.putExtra("image", trip.getImage());
                  mContext.startActivity(intent);
 
 

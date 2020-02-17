@@ -25,6 +25,7 @@
         android:fontFamily="serif"
         android:text="Standford Dish Loop Trial"
         android:textColor="#F3EDED"
+       android:textAllCaps="true"
         android:textSize="20sp"
         android:textStyle="bold"
         android:typeface="normal"
