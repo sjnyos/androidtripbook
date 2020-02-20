@@ -52,8 +52,8 @@ public class LoginActivity extends AppCompatActivity {
         btnLogin = findViewById(R.id.btnLogin);
         tvSignup = findViewById(R.id.tvSignup);
 
-//        etUsername.setText("suraj");
-//        etPassword.setText("suraj");
+        etUsername.setText("jaruss");
+        etPassword.setText("jaruss");
 
         //starting backgraound process
        // startService(new Intent(LoginActivity.this, NotificationService.class));

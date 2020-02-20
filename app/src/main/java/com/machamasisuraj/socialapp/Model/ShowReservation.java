@@ -5,12 +5,13 @@ import java.util.Date;
 public class ShowReservation {
     private Date startDate, endDate, pickup;
     private int travellerCount, adult, child;
-    private String pickupAddress, accomodation, reservation_type;
+    private String pickupAddress, accomodation, reservation_type,_id;
     private float price;
     private Trip trip;
     private User user;
 
-    public ShowReservation(Date startDate, Date endDate, Date pickup, int travellerCount, int adult, int child, String pickupAddress, String accomodation, String reservation_type, float price, Trip trip, User user) {
+    public ShowReservation(String _id,Date startDate, Date endDate, Date pickup, int travellerCount, int adult, int child, String pickupAddress, String accomodation, String reservation_type, float price, Trip trip, User user) {
+       this._id=_id;
         this.startDate = startDate;
         this.endDate = endDate;
         this.pickup = pickup;
@@ -23,6 +24,14 @@ public class ShowReservation {
         this.price = price;
         this.trip = trip;
         this.user = user;
+    }
+
+    public String get_id() {
+        return _id;
+    }
+
+    public void set_id(String _id) {
+        this._id = _id;
     }
 
     public Date getStartDate() {

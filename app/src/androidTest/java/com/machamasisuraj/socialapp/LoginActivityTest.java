@@ -9,6 +9,7 @@ import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.filters.LargeTest;
 import androidx.test.rule.ActivityTestRule;
 
+import com.google.android.material.bottomappbar.BottomAppBarTopEdgeTreatment;
 import com.machamasisuraj.socialapp.GUI.BottomNavbarActivity;
 import com.machamasisuraj.socialapp.GUI.LoginActivity;
 import com.machamasisuraj.socialapp.GUI.SignupActivity;
@@ -52,15 +53,14 @@ public class LoginActivityTest {
        @Test
         public void CheckLogin(){
             onView(withId(R.id.etUsername))
-                    .perform(typeText("suraj1"),closeSoftKeyboard());
+                    .perform(typeText("jaruss"),closeSoftKeyboard());
 
             onView(withId(R.id.etPassword))
-                    .perform(typeText("suraj"),closeSoftKeyboard());
+                    .perform(typeText("jaruss"),closeSoftKeyboard());
 
             onView(withId(R.id.btnLogin))
                     .perform(click());
-           intended(hasComponent(new ComponentName(getTargetContext(), BottomNavbarActivity.class)));
-           // intended(hasComponent(BottomNavbarActivity.class.getName()));
+           intended(hasComponent(BottomAppBarTopEdgeTreatment.class.getName()));
         }
 
 

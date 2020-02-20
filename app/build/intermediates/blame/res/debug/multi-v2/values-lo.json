@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "/home/sjnyos/android Kiran sir/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lo/values-lo.xml",
+            "outputFile": "/home/sjnyos/Final Android Assignment Kiran sir/app/build/intermediates/incremental/mergeDebugResources/merged.dir/values-lo/values-lo.xml",
             "map": [
                 {
                     "source": "/home/sjnyos/.gradle/caches/transforms-2/files-2.1/4201f0aca13a75f37041a05c1bcb2af2/jetified-play-services-basement-17.0.0/res/values-lo/values.xml",

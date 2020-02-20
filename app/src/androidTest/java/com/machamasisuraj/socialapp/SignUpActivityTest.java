@@ -1,12 +1,14 @@
 package com.machamasisuraj.socialapp;
 
 import android.content.ComponentName;
+import android.content.Intent;
 
 import androidx.test.espresso.intent.rule.IntentsTestRule;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
 import androidx.test.filters.LargeTest;
 import androidx.test.rule.ActivityTestRule;
 
+import com.machamasisuraj.socialapp.GUI.BottomNavbarActivity;
 import com.machamasisuraj.socialapp.GUI.LoginActivity;
 import com.machamasisuraj.socialapp.GUI.MainActivity;
 import com.machamasisuraj.socialapp.GUI.SignupActivity;
@@ -34,7 +36,7 @@ public class SignUpActivityTest {
     public IntentsTestRule<SignupActivity>
             testRule = new IntentsTestRule<>(SignupActivity.class);
     @Test
-    public void CheckInputValidation(){
+    public void RegisterNewUser(){
         onView(withId(R.id.etFirstName))
                 .perform(typeText("suraj123"),closeSoftKeyboard());
 
@@ -49,7 +51,7 @@ public class SignUpActivityTest {
                 .perform(typeText("password"),closeSoftKeyboard());
         onView(withId(R.id.btnSignup))
                 .perform(click());
-        intended(hasComponent(new ComponentName(getTargetContext(), LoginActivity.class)));
+        intended(hasComponent(LoginActivity.class.getName()));
 
 
     }

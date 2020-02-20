@@ -1,6 +1,8 @@
 package com.machamasisuraj.socialapp.Adapter;
 
 import android.content.Context;
+import android.graphics.Color;
+import android.graphics.drawable.ColorDrawable;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -14,6 +16,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.machamasisuraj.socialapp.BLL.ReservationBLL;
 import com.machamasisuraj.socialapp.Model.ShowReservation;
 import com.machamasisuraj.socialapp.R;
+import com.machamasisuraj.socialapp.custom.CustomDialogClass;
 
 import java.text.DateFormat;
 import java.text.ParseException;
@@ -37,7 +40,7 @@ public class BookingAdapter extends RecyclerView.Adapter<BookingAdapter.Viewhold
     }
 
     @Override
-    public void onBindViewHolder(@NonNull Viewholder holder, final int position) {
+    public void onBindViewHolder(@NonNull final Viewholder holder, final int position) {
         final ShowReservation showReservation = reservationList.get(position);
 
         DateFormat dateFormat = new SimpleDateFormat("yyyy-MM-dd");
@@ -45,20 +48,42 @@ public class BookingAdapter extends RecyclerView.Adapter<BookingAdapter.Viewhold
         String departureDate = dateFormat.format(showReservation.getStartDate());
 
         holder.tripdays.setText("Trip Days : " + showReservation.getTrip().getTripDays() + "");
-        holder.startDate.setText("Start :" +  arrivalDate+ "");
-        holder.endDate.setText("End :" +  departureDate + "");
+        holder.startDate.setText("Start :" + arrivalDate + "");
+        holder.endDate.setText("End :" + departureDate + "");
         holder.booktravallercount.setText("total Travellers :" + showReservation.getTravellerCount() + "");
         holder.bookadult.setText("Adult : " + showReservation.getAdult() + "");
         holder.bookchild.setText("Child: " + showReservation.getChild() + "");
         holder.bookpickupAddress.setText("Pick up: " + showReservation.getPickupAddress() + "");
         holder.bookhotel.setText("Hotel :" + showReservation.getAccomodation());
         holder.bookPrice.setText("Price :" + showReservation.getPrice() + "");
+
         holder.btndelete.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(mContext, "Booking Canceled", Toast.LENGTH_SHORT).show();
-                reservationList.remove(position);
-                notifyDataSetChanged();
+
+                final CustomDialogClass cdd = new CustomDialogClass(mContext);
+                cdd.getWindow().setBackgroundDrawable(new ColorDrawable(Color.TRANSPARENT));
+                cdd.show();
+                cdd.yes.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Toast.makeText(mContext, "this is yes", Toast.LENGTH_SHORT).show();
+                        ReservationBLL reservationBLL = new ReservationBLL();
+                        reservationBLL.DeleteReservation(showReservation.get_id());
+                        notifyDataSetChanged();
+                        cdd.dismiss();
+                    }
+                });
+
+                cdd.no.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        Toast.makeText(mContext, "this is no", Toast.LENGTH_SHORT).show();
+                        cdd.dismiss();
+                    }
+                });
+
+
             }
         });
     }

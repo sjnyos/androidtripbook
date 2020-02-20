@@ -116,6 +116,10 @@ public class BottomNavbarActivity extends AppCompatActivity {
                     BaseUrl.token="";
                     startActivity(new Intent(BottomNavbarActivity.this,LoginActivity.class));
                 }
+                else if(item.getItemId()==R.id.profile){
+                    Intent intent= new Intent(BottomNavbarActivity.this,ProfileActivity.class);
+                    startActivity(intent);
+                }
                 return true;
 
             }
@@ -160,7 +164,7 @@ public class BottomNavbarActivity extends AppCompatActivity {
                     fragmentTransaction.replace(R.id.frame_container, firstFragment);
                     fragmentTransaction.addToBackStack(null);
                     fragmentTransaction.commit();
-                    Toast.makeText(BottomNavbarActivity.this, "qqqqq", Toast.LENGTH_SHORT).show();
+                    //Toast.makeText(BottomNavbarActivity.this, "qqqqq", Toast.LENGTH_SHORT).show();
                 } else if (menuItem.getItemId() == R.id.bookings) {
                     FragmentManager fragmentManager = getSupportFragmentManager();
                     FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
@@ -171,10 +175,10 @@ public class BottomNavbarActivity extends AppCompatActivity {
 
 
                 } else if (menuItem.getItemId() == R.id.navigation_nearby) {
-                    Toast.makeText(BottomNavbarActivity.this, "Nearby", Toast.LENGTH_SHORT).show();
+                   // Toast.makeText(BottomNavbarActivity.this, "Nearby", Toast.LENGTH_SHORT).show();
 
                 } else if (menuItem.getItemId() == R.id.navigation_aboutus) {
-                    Toast.makeText(BottomNavbarActivity.this, "Abot us page", Toast.LENGTH_SHORT).show();
+                 //   Toast.makeText(BottomNavbarActivity.this, "Abot us page", Toast.LENGTH_SHORT).show();
 
                 } else if (menuItem.getItemId() == R.id.navigation_trips) {
 

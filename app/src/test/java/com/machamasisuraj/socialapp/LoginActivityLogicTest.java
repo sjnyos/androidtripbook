@@ -15,7 +15,7 @@ public class LoginActivityLogicTest {
     public void checkUse() throws  Exception
     {
         UserBLL userBLL = new UserBLL();
-        boolean expectedResult=userBLL.checkUser("suraj1", "suraj1");
+        boolean expectedResult=userBLL.checkUser("jaruss", "jaruss");
         boolean actualResult =true;
         assertEquals(expectedResult,actualResult);
     }

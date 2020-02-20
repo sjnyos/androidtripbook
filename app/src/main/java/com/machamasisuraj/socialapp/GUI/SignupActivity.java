@@ -12,6 +12,7 @@ import android.text.TextUtils;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
+import android.widget.RadioButton;
 import android.widget.Toast;
 
 import androidx.annotation.Nullable;
@@ -46,6 +47,7 @@ public class SignupActivity extends AppCompatActivity {
     private CircleImageView imgProfile;
     private EditText etFirstName, etLastName, etSignUpUsername, etSignUpPassword, etConfirmPassword;
     private Button btnSignup;
+    private RadioButton male,female;
     String imagePath;
     private String imageName = "";
 
@@ -72,6 +74,9 @@ public class SignupActivity extends AppCompatActivity {
         etSignUpPassword = findViewById(R.id.etSignUpPassword);
         etConfirmPassword = findViewById(R.id.etConfirmPassword);
         btnSignup = findViewById(R.id.btnSignup);
+        male=findViewById(R.id.male);
+        female=findViewById(R.id.female);
+        male.setChecked(true);
         mSensorManager = (SensorManager) getSystemService(Context.SENSOR_SERVICE);
         mAccelerometer = mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER);
         mShakeDetector = new ShakeDetector(new ShakeDetector.OnShakeListener() {
@@ -223,8 +228,9 @@ public class SignupActivity extends AppCompatActivity {
         String lname = etLastName.getText().toString();
         String username = etSignUpUsername.getText().toString();
         String password = etSignUpPassword.getText().toString();
+        String gender = male.isChecked() ? "male":"female";
 
-        User users = new User(fname, lname, username, password, imageName);
+        User users = new User(fname, lname, username, password, imageName,gender);
 
         UsersAPI usersAPI = RetrofitCaller.getInstance().create(UsersAPI.class);
         Call<LoginAndSignUpResponse> signUpCall = usersAPI.registerUser(users);

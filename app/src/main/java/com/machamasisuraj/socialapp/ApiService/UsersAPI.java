@@ -18,6 +18,7 @@ import retrofit2.http.Headers;
 import retrofit2.http.Multipart;
 import retrofit2.http.POST;
 import retrofit2.http.Part;
+import retrofit2.http.Path;
 
 public interface UsersAPI {
 
@@ -34,9 +35,13 @@ public interface UsersAPI {
     Call<ImageResponse> uploadImage(@Part MultipartBody.Part img, @Header("Authorization") String authHeader);
 
     @GET("/users/me")
-    Call<User> getUserDetails(@Header("Authorization") String token,@Header("Authorization") String authHeader);
+    Call<User> getUserDetails(@Header("Authorization") String authHeader);
 
     @GET("/users/active")
     Call<List<User>> getActiveUserLists(@Header("Authorization") String authHeader);
+
+    @GET("/users/profile/{id}")
+    Call<User> getprofile(@Path("id") String id,@Header("Authorization") String authHeader);
+
 
 }

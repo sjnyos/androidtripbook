@@ -4,8 +4,8 @@ import java.util.Date;
 
 public class User {
 
-    private String username, password,firstname,lastname,
-    bio,interestedin,gender,userstatus,image,_id;
+    private String username, password, firstname, lastname,
+            bio, interestedin, gender, userstatus, image, _id;
     private Date dateofbirth;
 
     public User(String username, String password, String firstname, String lastname, String bio, String interestedin, String gender, String userstatus, String image, String _id, Date dateofbirth) {
@@ -22,25 +22,30 @@ public class User {
         this.dateofbirth = dateofbirth;
     }
 
+    public User() {
+    }
+
+
+    public User(String username, String password) {
+        this.username = username;
+        this.password = password;
+    }
+
+    public User(String firstname, String lastname, String username, String password, String image, String gender) {
+        this.firstname = firstname;
+        this.lastname = lastname;
+        this.username = username;
+        this.password = password;
+        this.image = image;
+        this.gender = gender;
+    }
+
     public String get_id() {
         return _id;
     }
 
     public void set_id(String _id) {
         this._id = _id;
-    }
-
-    public User(String username, String password){
-        this.username=username;
-        this.password =password;
-    }
-
-    public User(String firstname, String lastname, String username, String password, String image){
-        this.firstname=firstname;
-        this.lastname=lastname;
-        this.username=username;
-        this.password=password;
-        this.image=image;
     }
 
 
@@ -116,6 +121,11 @@ public class User {
         this.dateofbirth = dateofbirth;
     }
 
-    public void setImage(String image){   this.image=image;}
-    public String getImage(){ return image;}
+    public void setImage(String image) {
+        this.image = image;
+    }
+
+    public String getImage() {
+        return image;
+    }
 }

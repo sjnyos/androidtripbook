@@ -14,6 +14,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import retrofit2.Call;
+import retrofit2.Callback;
 import retrofit2.Response;
 
 public class UserBLL {
@@ -62,5 +63,18 @@ public class UserBLL {
             e.printStackTrace();
         }
         return status;
+    }
+    public User geTProfile(){
+        User userdata= new User();
+
+        Call<User> user = userApi.getprofile(BaseUrl.UserId,BaseUrl.token);
+        StrictModeClass.StrictMode();
+        try {
+          userdata=  user.execute().body();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+        return userdata;
+
     }
 }
