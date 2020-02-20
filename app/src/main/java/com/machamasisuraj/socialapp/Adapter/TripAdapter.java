@@ -15,8 +15,10 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import com.machamasisuraj.socialapp.BaseUrl.BaseUrl;
 import com.machamasisuraj.socialapp.GUI.BottomNavbarActivity;
+import com.machamasisuraj.socialapp.GUI.CustomMapActivity;
 import com.machamasisuraj.socialapp.GUI.MapsActivity;
 import com.machamasisuraj.socialapp.GUI.TripDetailActvity;
+import com.machamasisuraj.socialapp.Model.LatitudeLongitude;
 import com.machamasisuraj.socialapp.Model.Trip;
 import com.machamasisuraj.socialapp.R;
 import com.squareup.picasso.Picasso;
@@ -104,8 +106,11 @@ import java.util.List;
         holder.routeLocation.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(mContext, "Wait a moment ....", Toast.LENGTH_SHORT).show();
-               mContext.startActivity(new Intent(mContext, MapsActivity.class));
+                LatitudeLongitude.lat=27.7183924;
+                LatitudeLongitude.lon=85.257141;
+                LatitudeLongitude.marker="Trip to Here";
+                Intent intent = new Intent(mContext,CustomMapActivity.class);
+                mContext.startActivity(intent);
             }
         });
     }
