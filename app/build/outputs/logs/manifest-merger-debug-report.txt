@@ -1,9 +1,9 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:2:1-78:12
-INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:2:1-78:12
-INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:2:1-78:12
-INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:2:1-78:12
+ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:2:1-81:12
+INJECTED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:2:1-81:12
+INJECTED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:2:1-81:12
+INJECTED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:2:1-81:12
 MERGED from [androidx.navigation:navigation-ui:2.2.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/b984a3c2fca340b09f3bb0bc964b01a5/jetified-navigation-ui-2.2.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.google.android.material:material:1.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/0a787c0ac8f42da800013c2d9496a009/material-1.0.0/AndroidManifest.xml:17:1-24:12
 MERGED from [com.etebarian:meow-bottom-navigation-java:1.2.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/d2bec84460656e22a3a131dc80a0462a/jetified-meow-bottom-navigation-java-1.2.0/AndroidManifest.xml:2:1-11:12
@@ -59,63 +59,63 @@ MERGED from [androidx.documentfile:documentfile:1.0.0] /home/sjnyos/.gradle/cach
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/7f2298edcc0be2dbea485080fe7ca170/localbroadcastmanager-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.print:print:1.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/66716d543b7cae4ae42f1a71fa52c15c/print-1.0.0/AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/62c8683162ef4a345aa7ae2704bdfaad/interpolator-1.0.0/AndroidManifest.xml:17:1-22:12
-INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:2:1-78:12
-INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:2:1-78:12
-INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:2:1-78:12
+INJECTED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:2:1-81:12
+INJECTED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:2:1-81:12
+INJECTED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:2:1-81:12
 	package
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:3:5-43
-		INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml
-		INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:3:5-43
+		INJECTED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml
+		INJECTED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:2:1-78:12
-		INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml
+		INJECTED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:2:1-81:12
+		INJECTED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:2:1-78:12
-		INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml
+		INJECTED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:2:1-81:12
+		INJECTED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml
 	xmlns:android
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:2:11-69
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:10:5-79
+ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:10:5-79
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:10:22-76
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:10:22-76
 uses-permission#android.permission.INTERNET
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:11:5-67
+ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:11:5-67
 MERGED from [com.google.android.gms:play-services-maps:16.1.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/999b6a866a139f3faaa025e0345e746c/jetified-play-services-maps-16.1.0/AndroidManifest.xml:24:5-67
 MERGED from [com.google.android.gms:play-services-maps:16.1.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/999b6a866a139f3faaa025e0345e746c/jetified-play-services-maps-16.1.0/AndroidManifest.xml:24:5-67
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:11:22-64
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:11:22-64
 uses-permission#android.permission.READ_EXTERNAL_STORAGE
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:12:5-80
+ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:12:5-80
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:12:22-77
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:12:22-77
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:13:5-81
+ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:13:5-81
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:13:22-78
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:13:22-78
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:15:5-80
+ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:14:5-81
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:15:22-78
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:14:22-78
 uses-permission#android.hardware.sensor.proximity
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:16:5-72
+ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:15:5-73
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:16:22-70
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:15:22-70
 uses-permission#android.permission.RECEIVE_BOOT_COMPLETED
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:17:5-80
+ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:16:5-81
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:17:22-78
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:16:22-78
 uses-permission#android.permission.WAKE_LOCK
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:18:5-68
+ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:17:5-68
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:18:22-65
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:17:22-65
 uses-permission#com.google.android.wearable.permission.RECEIVE_COMPLICATION_DATA
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:19:5-104
+ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:18:5-104
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:19:22-101
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:18:22-101
 application
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:20:5-76:19
+ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:20:5-79:19
 MERGED from [com.google.android.material:material:1.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/0a787c0ac8f42da800013c2d9496a009/material-1.0.0/AndroidManifest.xml:22:5-20
 MERGED from [com.google.android.material:material:1.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/0a787c0ac8f42da800013c2d9496a009/material-1.0.0/AndroidManifest.xml:22:5-20
 MERGED from [androidx.constraintlayout:constraintlayout:1.1.3] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/5e5f78f8dbc227f0ef688d38b5b5d85c/constraintlayout-1.1.3/AndroidManifest.xml:9:5-20
@@ -147,117 +147,127 @@ MERGED from [androidx.lifecycle:lifecycle-process:2.2.0] /home/sjnyos/.gradle/ca
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/6694cd58f7b0210e11a489b1bbbdd6d4/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
 MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/6694cd58f7b0210e11a489b1bbbdd6d4/versionedparcelable-1.1.0/AndroidManifest.xml:24:5-25:19
 	android:requestLegacyExternalStorage
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:23:9-52
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:23:9-52
 	android:appComponentFactory
 		ADDED from [androidx.core:core:1.1.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/57692e4753601536b7ad4be218820432/core-1.1.0/AndroidManifest.xml:24:18-86
 	android:supportsRtl
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:25:9-35
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:25:9-35
 	android:label
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:22:9-41
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:22:9-41
 	android:roundIcon
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:24:9-57
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:24:9-57
 	android:allowBackup
 		ADDED from [com.github.smarteist:autoimageslider:1.3.2] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/09e1f29ea08143e3750b9469f40646c9/autoimageslider-1.3.2/AndroidManifest.xml:12:9-35
 	android:icon
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:21:9-52
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:21:9-52
 	android:theme
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:26:9-40
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:26:9-40
 	android:usesCleartextTraffic
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:27:9-44
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:27:9-44
 meta-data#com.google.android.geo.API_KEY
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:37:9-39:55
+ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:37:9-39:55
 	android:value
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:39:13-52
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:39:13-52
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:38:13-58
-activity#com.machamasisuraj.socialapp.GUI.MapsActivity
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:41:9-45:20
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:38:13-58
+activity#com.machamasisuraj.socialapp.GUI.CustomMapActivity
+ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:41:9-43:74
 	android:label
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:43:13-56
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:43:13-62
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:42:13-45
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:42:13-50
+activity#com.machamasisuraj.socialapp.GUI.ProfileActivity
+ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:44:9-57
+	android:name
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:44:19-54
+activity#com.machamasisuraj.socialapp.GUI.MapsActivity
+ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:45:9-47:59
+	android:label
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:47:13-56
+	android:name
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:46:13-45
 activity#com.machamasisuraj.socialapp.GUI.TripDetailActvity
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:46:9-59
+ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:48:9-59
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:46:19-56
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:48:19-56
 activity#com.machamasisuraj.socialapp.GUI.AdminGUI.UsersActivity
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:47:9-64
+ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:49:9-64
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:47:19-61
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:49:19-61
 activity#com.machamasisuraj.socialapp.GUI.AdminGUI.AdminTripActivity
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:48:9-68
+ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:50:9-68
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:48:19-65
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:50:19-65
 activity#com.machamasisuraj.socialapp.GUI.AdminGUI.AdminDashboardActivity
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:49:9-73
+ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:51:9-73
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:49:19-70
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:51:19-70
 activity#com.machamasisuraj.socialapp.GUI.BottomNavbarActivity
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:50:9-62
+ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:52:9-62
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:50:19-59
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:52:19-59
 activity#com.machamasisuraj.socialapp.GUI.BannerActivity
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:51:9-56
+ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:53:9-56
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:51:19-53
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:53:19-53
 activity#com.machamasisuraj.socialapp.GUI.ItemListActivity
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:52:9-58
+ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:54:9-58
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:52:19-55
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:54:19-55
 activity#com.machamasisuraj.socialapp.GUI.MainActivity
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:53:9-54
+ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:55:9-54
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:53:19-51
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:55:19-51
 activity#com.machamasisuraj.socialapp.GUI.SignupActivity
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:54:9-55
+ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:56:9-56
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:54:19-53
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:56:19-53
 activity#com.machamasisuraj.socialapp.GUI.SplashActivity
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:55:9-63:20
+ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:57:9-65:20
 	android:theme
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:57:13-66
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:59:13-66
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:56:13-47
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:58:13-47
 intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:58:13-62:29
+ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:60:13-64:29
 action#android.intent.action.MAIN
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:59:17-69
+ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:61:17-69
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:59:25-66
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:61:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:61:17-77
+ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:63:17-77
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:61:27-74
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:63:27-74
 activity#com.machamasisuraj.socialapp.GUI.LoginActivity
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:64:9-66:20
+ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:66:9-55
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:64:19-52
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:66:19-52
 service#com.machamasisuraj.socialapp.Utilities.NotificationBroadcaster.NotificationService
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:68:9-146
+ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:68:9-71:40
 	android:enabled
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:68:88-110
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:70:13-35
 	android:exported
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:68:111-135
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:71:13-37
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:68:18-87
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:69:13-82
 receiver#com.machamasisuraj.socialapp.Utilities.NotificationBroadcaster.BootReceiver
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:69:9-74:20
+ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:73:9-78:20
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:69:19-81
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:73:19-81
 intent-filter#action:name:android.intent.action.BOOT_COMPLETED+action:name:com.machamasisuraj.socialapp
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:70:13-73:29
+ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:74:13-77:29
 action#com.machamasisuraj.socialapp
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:71:17-71
+ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:75:17-71
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:71:25-68
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:75:25-68
 action#android.intent.action.BOOT_COMPLETED
-ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:72:17-79
+ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:76:17-79
 	android:name
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml:72:25-76
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml:76:25-76
 uses-sdk
-INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml
-INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml
+INJECTED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml
+INJECTED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml
 MERGED from [androidx.navigation:navigation-ui:2.2.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/b984a3c2fca340b09f3bb0bc964b01a5/jetified-navigation-ui-2.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.navigation:navigation-ui:2.2.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/b984a3c2fca340b09f3bb0bc964b01a5/jetified-navigation-ui-2.2.0/AndroidManifest.xml:20:5-22:41
 MERGED from [com.google.android.material:material:1.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/0a787c0ac8f42da800013c2d9496a009/material-1.0.0/AndroidManifest.xml:20:5-44
@@ -368,16 +378,16 @@ MERGED from [androidx.print:print:1.0.0] /home/sjnyos/.gradle/caches/transforms-
 MERGED from [androidx.print:print:1.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/66716d543b7cae4ae42f1a71fa52c15c/print-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/62c8683162ef4a345aa7ae2704bdfaad/interpolator-1.0.0/AndroidManifest.xml:20:5-44
 MERGED from [androidx.interpolator:interpolator:1.0.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/62c8683162ef4a345aa7ae2704bdfaad/interpolator-1.0.0/AndroidManifest.xml:20:5-44
-INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml
-INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml
+INJECTED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml
+INJECTED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml
 	android:targetSdkVersion
-		INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml
-		INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml
+		INJECTED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml
+		INJECTED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml
-		ADDED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml
-		INJECTED from /home/sjnyos/android Kiran sir/app/src/main/AndroidManifest.xml
+		INJECTED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml
+		ADDED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml
+		INJECTED from /home/sjnyos/Final Android Assignment Kiran sir/app/src/main/AndroidManifest.xml
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.android.gms:play-services-maps:16.1.0] /home/sjnyos/.gradle/caches/transforms-2/files-2.1/999b6a866a139f3faaa025e0345e746c/jetified-play-services-maps-16.1.0/AndroidManifest.xml:23:5-79
 	android:name

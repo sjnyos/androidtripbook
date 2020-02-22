@@ -92,8 +92,6 @@ import java.util.List;
                  mContext.startActivity(intent);
 
 
-
-
             }
         });
 
