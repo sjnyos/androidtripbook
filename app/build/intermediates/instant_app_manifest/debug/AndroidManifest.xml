@@ -9,33 +9,47 @@
         android:minSdkVersion="21"
         android:targetSdkVersion="29" />
 
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
     <application
         android:allowBackup="true"
         android:appComponentFactory="androidx.core.app.CoreComponentFactory"
         android:debuggable="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
+        android:requestLegacyExternalStorage="true"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:testOnly="true"
-        android:theme="@style/AppTheme" >
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true" >
+        <activity android:name="com.machamasisuraj.socialapp.UI.BannerActivity" >
+        </activity>
+        <activity android:name="com.machamasisuraj.socialapp.UI.ItemListActivity" />
+        <activity android:name="com.machamasisuraj.socialapp.UI.ItemCreateActivity" />
+        <activity android:name="com.machamasisuraj.socialapp.UI.MainActivity" />
         <activity
-            android:name="com.machamasisuraj.socialapp.SplashActivity"
-            android:theme="@style/Theme.AppCompat.Light.NoActionBar" >
+            android:name="com.machamasisuraj.socialapp.UI.SplashActivity"
+            android:theme="@style/Theme.Design.Light.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name="com.machamasisuraj.socialapp.LoginActivity" >
-            <intent-filter>
-                <action android:name="android.intent.action.MAIN" />
+        <activity android:name="com.machamasisuraj.socialapp.UI.LoginActivity" />
+        <activity android:name="com.machamasisuraj.socialapp.UI.SignupActivity" />
 
-                <category android:name="android.intent.category.LAUNCHER" />
-            </intent-filter>
-        </activity>
-        <activity android:name="com.machamasisuraj.socialapp.MainActivity" />
+        <provider
+            android:name="com.squareup.picasso.PicassoProvider"
+            android:authorities="com.machamasisuraj.socialapp.com.squareup.picasso"
+            android:exported="false" />
+        <provider
+            android:name="androidx.lifecycle.ProcessLifecycleOwnerInitializer"
+            android:authorities="com.machamasisuraj.socialapp.lifecycle-process"
+            android:exported="false"
+            android:multiprocess="true" />
     </application>
 
 </manifest>
