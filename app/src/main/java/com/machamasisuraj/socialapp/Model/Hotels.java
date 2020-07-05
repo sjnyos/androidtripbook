@@ -10,6 +10,7 @@ public class Hotels {
         this.hotelType = hotelType;
     }
 
+
     public String getName() {
         return name;
     }
